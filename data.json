@@ -1,0 +1,19 @@
+{
+  "words": [
+    {"english": "hello", "welsh": "helo"},
+    {"english": "goodbye", "welsh": "hwyl fawr"},
+    {"english": "thank you", "welsh": "diolch"},
+    {"english": "please", "welsh": "os gwelwch yn dda"},
+    {"english": "water", "welsh": "dŵr"},
+    {"english": "food", "welsh": "bwyd"},
+    {"english": "house", "welsh": "tŷ"},
+    {"english": "car", "welsh": "car"},
+    {"english": "book", "welsh": "llyfr"},
+    {"english": "good morning", "welsh": "bore da"},
+    {"english": "good night", "welsh": "nos da"},
+    {"english": "how are you?", "welsh": "sut wyt ti?"},
+    {"english": "I am fine", "welsh": "dw i'n iawn"},
+    {"english": "what is your name?", "welsh": "beth yw dy enw di?"},
+    {"english": "my name is", "welsh": "fy enw i yw"}
+  ]
+}
