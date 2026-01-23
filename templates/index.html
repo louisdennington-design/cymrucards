@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welsh Language Practice</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#69A879" />
+  <title>Welsh Language Practice</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- Override: solid background -->
+  <style>
+    body { background: #69A879; }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>🏴󐁧󐁢󐁷󐁬󐁳󐁿 Welsh Practice</h1>
-            <div class="controls">
-                <label class="toggle">
-                    <input type="checkbox" id="languageToggle">
-                    <span class="toggle-slider"></span>
-                    <span class="toggle-label">Welsh First</span>
-                </label>
-            </div>
-        </header>
+  <div class="container">
+    <header>
+      <h1>Welsh Practice</h1>
 
-        <main>
-            <div class="card" id="wordCard">
-                <div class="word-display">
-                    <div id="primaryWord" class="primary-word">Click "Next" to start!</div>
-                    <div id="translation" class="translation hidden"></div>
-                </div>
-                
-                <div class="card-actions">
-                    <button id="revealBtn" class="btn btn-primary" disabled>Show Translation</button>
-                    <button id="nextBtn" class="btn btn-secondary">Next</button>
-                </div>
-            </div>
+      <div class="controls">
+        <!-- Language direction toggle: English ↔ Welsh -->
+        <label class="toggle" aria-label="Switch prompt language between English and Welsh">
+          <!-- unchecked = English first, checked = Welsh first -->
+          <span class="toggle-label">English</span>
 
-            <div class="progress">
-                <span id="progressText">Ready to start</span>
-            </div>
-        </main>
+          <input type="checkbox" id="languageToggle" />
+          <span class="toggle-slider" aria-hidden="true"></span>
 
-        <footer>
-            <button id="resetBtn" class="btn btn-small">Reset Session</button>
-        </footer>
-    </div>
+          <span class="toggle-label">Welsh</span>
+        </label>
+      </div>
+    </header>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <main role="main">
+      <div class="card" id="wordCard">
+        <div class="word-display">
+          <div id="primaryWord" class="primary-word">Click "Next" to start!</div>
+          <div id="translation" class="translation hidden"></div>
+        </div>
+
+        <div class="card-actions">
+          <button id="revealBtn" class="btn btn-primary" disabled>Show Translation</button>
+          <button id="nextBtn" class="btn btn-secondary">Next</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <button id="resetBtn" class="btn btn-small">Reset Session</button>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
