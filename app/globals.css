@@ -9,3 +9,24 @@
 body {
   @apply bg-slate-50 text-slate-900;
 }
+
+.flashcard-scene {
+  perspective: 1200px;
+}
+
+.flashcard-inner {
+  min-height: 18rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 220ms ease;
+}
+
+.flashcard-face {
+  backface-visibility: hidden;
+  inset: 0;
+  position: absolute;
+}
+
+.flashcard-face-back {
+  transform: rotateY(180deg);
+}

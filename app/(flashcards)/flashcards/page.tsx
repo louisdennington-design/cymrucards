@@ -1,19 +1,29 @@
+import { AuthPanel } from '@/components/auth-panel';
 import { FlashcardSession } from '@/components/flashcard-session';
+import { SessionSetupForm } from '@/components/session-setup-form';
 import { createSupabaseAdminClient } from '@/server/supabase-admin';
 import { createSupabaseServerClient } from '@/server/supabase-server';
 import type { Database } from '@/types/database';
-import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
 const CARDS_PER_MINUTE = 10;
+const DEFAULT_FILTER_TYPES: PartOfSpeechOption[] = ['noun', 'adjective', 'verb_infinitive', 'conjugation', 'phrase'];
 
 type SessionWord = Pick<Database['public']['Tables']['words']['Row'], 'english' | 'id' | 'welsh'>;
 type DurationOption = '1' | '3' | '5' | 'unlimited';
+type PartOfSpeechOption = 'adjective' | 'conjugation' | 'noun' | 'phrase' | 'verb_infinitive';
+type RarityOption = 'common' | 'intermediate' | 'rare';
 type SearchParams = {
   duration?: DurationOption;
+  rarity?: RarityOption;
+  types?: string;
 };
 type UserProgressSelection = Pick<Database['public']['Tables']['user_progress']['Row'], 'due_date' | 'word_id'>;
+type FilterableWord = Pick<
+  Database['public']['Tables']['words']['Row'],
+  'english' | 'frequency_rank' | 'id' | 'part_of_speech' | 'welsh'
+>;
 
 const SESSION_OPTIONS: Array<{ estimatedCards: number | null; label: string; value: DurationOption }> = [
   { estimatedCards: 10, label: '1 minute', value: '1' },
@@ -30,8 +40,43 @@ function getQueueSize(duration: DurationOption) {
   return Number(duration) * CARDS_PER_MINUTE;
 }
 
+function getSelectedTypes(rawTypes: string | undefined) {
+  if (!rawTypes) {
+    return DEFAULT_FILTER_TYPES;
+  }
+
+  const parsedTypes = rawTypes
+    .split(',')
+    .map((type) => type.trim())
+    .filter((type): type is PartOfSpeechOption => DEFAULT_FILTER_TYPES.includes(type as PartOfSpeechOption));
+
+  return parsedTypes.length > 0 ? parsedTypes : DEFAULT_FILTER_TYPES;
+}
+
+function matchesRarity(word: Pick<FilterableWord, 'frequency_rank'>, rarity: RarityOption) {
+  if (word.frequency_rank === null) {
+    return true;
+  }
+
+  if (rarity === 'common') {
+    return word.frequency_rank >= 1 && word.frequency_rank <= 500;
+  }
+
+  if (rarity === 'intermediate') {
+    return word.frequency_rank >= 501 && word.frequency_rank <= 2000;
+  }
+
+  return word.frequency_rank >= 2001;
+}
+
+function applyWordFilters(words: FilterableWord[], rarity: RarityOption, types: PartOfSpeechOption[]) {
+  const allowedTypes = new Set(types);
+
+  return words.filter((word) => allowedTypes.has(word.part_of_speech as PartOfSpeechOption) && matchesRarity(word, rarity));
+}
+
 function buildScheduledWords(
-  allWords: SessionWord[],
+  allWords: FilterableWord[],
   progressRows: UserProgressSelection[],
   limit: number | null,
   today: string,
@@ -69,6 +114,8 @@ export default async function FlashcardsPage({ searchParams }: { searchParams?: 
     data: { user },
   } = await supabaseServer.auth.getUser();
   const selectedDuration = searchParams?.duration;
+  const selectedRarity = searchParams?.rarity ?? 'common';
+  const selectedTypes = getSelectedTypes(searchParams?.types);
 
   if (!selectedDuration) {
     return (
@@ -76,26 +123,11 @@ export default async function FlashcardsPage({ searchParams }: { searchParams?: 
         <div className="space-y-2">
           <h1 className="text-2xl font-semibold">Flashcard session</h1>
           <p className="text-sm text-slate-600">
-            Select a session length to begin the text-only flashcard review.
+            Sign in, choose a queue, and begin the text-only flashcard review.
           </p>
         </div>
-        <section className="rounded-lg border border-slate-200 bg-white p-4">
-          <h2 className="text-base font-semibold">Session length</h2>
-          <div className="mt-4 grid gap-3">
-            {SESSION_OPTIONS.map((option) => (
-              <Link
-                className="rounded-md border border-slate-200 px-4 py-3 text-sm text-slate-900"
-                href={`/flashcards?duration=${option.value}`}
-                key={option.value}
-              >
-                <span className="block font-medium">{option.label}</span>
-                <span className="block text-slate-600">
-                  {option.estimatedCards === null ? 'No card limit' : `About ${option.estimatedCards} cards`}
-                </span>
-              </Link>
-            ))}
-          </div>
-        </section>
+        <AuthPanel initialUserEmail={user?.email ?? null} redirectPath="/flashcards" />
+        <SessionSetupForm initialRarity={selectedRarity} initialTypes={selectedTypes} />
       </main>
     );
   }
@@ -107,7 +139,7 @@ export default async function FlashcardsPage({ searchParams }: { searchParams?: 
   if (user) {
     const [{ data: allWords, error: wordsError }, { data: progressRows, error: progressError }] =
       await Promise.all([
-        supabaseAdmin.from('words').select('id, welsh, english'),
+        supabaseAdmin.from('words').select('id, welsh, english, frequency_rank, part_of_speech'),
         supabaseAdmin
           .from('user_progress')
           .select('word_id, due_date')
@@ -122,15 +154,24 @@ export default async function FlashcardsPage({ searchParams }: { searchParams?: 
       throw new Error(`Unable to load review progress: ${progressError.message}`);
     }
 
-    words = buildScheduledWords(allWords ?? [], progressRows ?? [], queueSize, new Date().toISOString().slice(0, 10));
+    const filteredWords = applyWordFilters(allWords ?? [], selectedRarity, selectedTypes);
+    words = buildScheduledWords(filteredWords, progressRows ?? [], queueSize, new Date().toISOString().slice(0, 10));
   } else {
-    const { data: fallbackWords, error } = await supabaseAdmin.from('words').select('id, welsh, english').limit(10);
+    const { data: fallbackWords, error } = await supabaseAdmin
+      .from('words')
+      .select('id, welsh, english, frequency_rank, part_of_speech')
+      .limit(100);
 
     if (error) {
       throw new Error(`Unable to load flashcards: ${error.message}`);
     }
 
-    words = fallbackWords ?? [];
+    const filteredWords = applyWordFilters(fallbackWords ?? [], selectedRarity, selectedTypes);
+    words = filteredWords.slice(0, queueSize ?? filteredWords.length).map((word) => ({
+      english: word.english,
+      id: word.id,
+      welsh: word.welsh,
+    }));
   }
 
   return (
@@ -138,7 +179,7 @@ export default async function FlashcardsPage({ searchParams }: { searchParams?: 
       <div className="space-y-2">
         <h1 className="text-2xl font-semibold">Flashcard session</h1>
         <p className="text-sm text-slate-600">
-          Text-only session flow with spec-aligned SM-2 review priority and no gestures.
+          Tap to flip, swipe right to keep learning, and swipe left to mark a card learned.
         </p>
       </div>
       <FlashcardSession

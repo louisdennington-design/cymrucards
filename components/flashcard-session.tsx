@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import type { User } from '@supabase/supabase-js';
 import { createSupabaseBrowserClient } from '@/server/supabase-browser';
 import type { Database } from '@/types/database';
@@ -71,9 +71,11 @@ export function FlashcardSession({ initialUser, isUnlimited, sessionLabel, words
   const [correctCount, setCorrectCount] = useState(0);
   const [incorrectCount, setIncorrectCount] = useState(0);
   const [isAnswerVisible, setIsAnswerVisible] = useState(false);
+  const [dragOffset, setDragOffset] = useState(0);
   const [saveError, setSaveError] = useState<string | null>(null);
   const [isSaving, setIsSaving] = useState(false);
   const [user, setUser] = useState<Pick<User, 'id'> | null>(initialUser);
+  const dragStartX = useRef<number | null>(null);
   const supabase = createSupabaseBrowserClient();
 
   const currentWord = words[currentIndex];
@@ -182,7 +184,65 @@ export function FlashcardSession({ initialUser, isUnlimited, sessionLabel, words
     }
 
     setCurrentIndex((index) => index + 1);
+    setDragOffset(0);
     setIsAnswerVisible(false);
+  }
+
+  function handleCardTap() {
+    if (isSaving || isAnswerVisible) {
+      return;
+    }
+
+    setIsAnswerVisible(true);
+    setDragOffset(0);
+  }
+
+  function handleCardKeyDown(event: React.KeyboardEvent<HTMLDivElement>) {
+    if (event.key !== 'Enter' && event.key !== ' ') {
+      return;
+    }
+
+    event.preventDefault();
+    handleCardTap();
+  }
+
+  function handlePointerDown(event: React.PointerEvent<HTMLDivElement>) {
+    if (!isAnswerVisible || isSaving) {
+      return;
+    }
+
+    dragStartX.current = event.clientX;
+    event.currentTarget.setPointerCapture(event.pointerId);
+  }
+
+  function handlePointerMove(event: React.PointerEvent<HTMLDivElement>) {
+    if (dragStartX.current === null || !isAnswerVisible || isSaving) {
+      return;
+    }
+
+    setDragOffset(event.clientX - dragStartX.current);
+  }
+
+  function handlePointerEnd(event: React.PointerEvent<HTMLDivElement>) {
+    if (dragStartX.current === null) {
+      return;
+    }
+
+    event.currentTarget.releasePointerCapture(event.pointerId);
+    const finalOffset = dragOffset;
+    dragStartX.current = null;
+
+    if (finalOffset <= -100) {
+      void handleAnswer(true);
+      return;
+    }
+
+    if (finalOffset >= 100) {
+      void handleAnswer(false);
+      return;
+    }
+
+    setDragOffset(0);
   }
 
   if (words.length === 0) {
@@ -198,8 +258,8 @@ export function FlashcardSession({ initialUser, isUnlimited, sessionLabel, words
     return (
       <section className="rounded-lg border border-slate-200 bg-white p-4">
         <h2 className="text-xl font-semibold">Session complete</h2>
-        <p className="mt-4 text-sm text-slate-600">Correct: {correctCount}</p>
-        <p className="mt-1 text-sm text-slate-600">Incorrect: {incorrectCount}</p>
+        <p className="mt-4 text-sm text-slate-600">Learned: {correctCount}</p>
+        <p className="mt-1 text-sm text-slate-600">Keep learning: {incorrectCount}</p>
         {saveError ? <p className="mt-4 text-sm text-amber-700">{saveError}</p> : null}
       </section>
     );
@@ -211,39 +271,56 @@ export function FlashcardSession({ initialUser, isUnlimited, sessionLabel, words
       <p className="mt-1 text-sm text-slate-600">
         Card {currentIndex + 1} of {isUnlimited ? `${words.length}` : words.length}
       </p>
-      <div className="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-6 text-center">
-        <p className="text-2xl font-semibold">{currentWord.welsh}</p>
-        {isAnswerVisible ? <p className="mt-4 text-base text-slate-700">{currentWord.english}</p> : null}
+      <div
+        className="flashcard-scene mt-4"
+        onClick={handleCardTap}
+        onKeyDown={handleCardKeyDown}
+        onPointerCancel={handlePointerEnd}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerEnd}
+        role="button"
+        tabIndex={0}
+      >
+        <div
+          className="flashcard-inner"
+          style={{
+            transform: `translateX(${dragOffset}px) rotate(${dragOffset / 14}deg) rotateY(${isAnswerVisible ? 180 : 0}deg)`,
+          }}
+        >
+          <div className="flashcard-face rounded-lg border border-slate-200 bg-slate-50 p-6 text-center">
+            <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Welsh</p>
+            <p className="mt-4 text-2xl font-semibold">{currentWord.welsh}</p>
+            <p className="mt-6 text-sm text-slate-500">Tap to flip</p>
+          </div>
+          <div className="flashcard-face flashcard-face-back rounded-lg border border-slate-200 bg-white p-6 text-center">
+            <p className="text-xs uppercase tracking-[0.2em] text-slate-500">English</p>
+            <p className="mt-4 text-2xl font-semibold">{currentWord.english}</p>
+            <p className="mt-6 text-sm text-slate-500">Swipe left if learned, right if you want to keep learning.</p>
+          </div>
+        </div>
       </div>
 
-      {!isAnswerVisible ? (
-        <button
-          className="mt-4 rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white"
-          onClick={() => setIsAnswerVisible(true)}
-          type="button"
-        >
-          Show answer
-        </button>
-      ) : (
+      {isAnswerVisible ? (
         <div className="mt-4 flex gap-3">
+          <button
+            className="rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-60"
+            disabled={isSaving}
+            onClick={() => void handleAnswer(false)}
+            type="button"
+          >
+            Keep learning
+          </button>
           <button
             className="rounded-md bg-emerald-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-60"
             disabled={isSaving}
             onClick={() => void handleAnswer(true)}
             type="button"
           >
-            Correct
-          </button>
-          <button
-            className="rounded-md bg-rose-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-60"
-            disabled={isSaving}
-            onClick={() => void handleAnswer(false)}
-            type="button"
-          >
-            Incorrect
+            Learned
           </button>
         </div>
-      )}
+      ) : null}
 
       {isSaving ? <p className="mt-3 text-sm text-slate-600">Saving progress…</p> : null}
       {saveError ? <p className="mt-3 text-sm text-amber-700">{saveError}</p> : null}

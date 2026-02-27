@@ -1,16 +1,24 @@
 import legacyWords from '@/supabase/seed/legacy-words.json';
 import Link from 'next/link';
+import { AuthPanel } from '@/components/auth-panel';
+import { createSupabaseServerClient } from '@/server/supabase-server';
 
-export default function HomePage() {
+export const dynamic = 'force-dynamic';
+
+export default async function HomePage() {
   const categoryCount = new Set(legacyWords.words.map((word) => word.legacy_type)).size;
+  const supabase = createSupabaseServerClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-md flex-col gap-6 p-6">
       <h1 className="text-2xl font-semibold">Welsh Vocabulary Practice</h1>
       <p className="text-sm text-slate-600">
-        A minimal text-only flashcard session is now available. Gestures, scheduling,
-        and other later-scope features are still intentionally excluded.
+        Magic-link sign-in, vocabulary filters, and tap-to-flip flashcards are now available.
       </p>
+      <AuthPanel initialUserEmail={user?.email ?? null} redirectPath="/" />
       <section className="rounded-lg border border-slate-200 bg-white p-4">
         <h2 className="text-base font-semibold">Data pipeline status</h2>
         <dl className="mt-3 space-y-3 text-sm text-slate-600">
@@ -33,7 +41,7 @@ export default function HomePage() {
         className="inline-flex w-fit rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white"
         href="/flashcards"
       >
-        Start minimal flashcards
+        Start flashcards
       </Link>
     </main>
   );
