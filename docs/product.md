@@ -181,9 +181,9 @@ Offline storage must:
 
 ---
 
-## Audio (phase 2)
+## Audio
 
-Each word may include a pronunciation audio file.
+Audio is out of scope for the current MVP and may be reconsidered in a future phase.
 
 ---
 
