@@ -13,6 +13,7 @@ type FlashcardSessionProps = {
 };
 
 type UserProgressInsert = Database['public']['Tables']['user_progress']['Insert'];
+type UserProgressRow = Database['public']['Tables']['user_progress']['Row'];
 
 export function FlashcardSession({ initialUser, words }: FlashcardSessionProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,6 +27,18 @@ export function FlashcardSession({ initialUser, words }: FlashcardSessionProps) 
 
   const currentWord = words[currentIndex];
   const isComplete = currentIndex >= words.length;
+
+  function getNextIntervalDays(existingProgress: Pick<UserProgressRow, 'correct' | 'review_interval_days'> | null, isCorrect: boolean) {
+    if (!isCorrect) {
+      return 1;
+    }
+
+    if (!existingProgress?.correct) {
+      return 1;
+    }
+
+    return Math.max(existingProgress.review_interval_days, 1) * 2;
+  }
 
   async function saveProgress(wordId: string, isCorrect: boolean) {
     const activeUser =
@@ -42,12 +55,28 @@ export function FlashcardSession({ initialUser, words }: FlashcardSessionProps) 
     }
 
     const now = new Date().toISOString();
+    const { data: existingProgress, error: existingProgressError } = await supabase
+      .schema('public')
+      .from('user_progress')
+      .select('correct, review_interval_days')
+      .eq('user_id', activeUser.id)
+      .eq('word_id', wordId)
+      .maybeSingle();
+
+    if (existingProgressError) {
+      throw existingProgressError;
+    }
+
+    const reviewIntervalDays = getNextIntervalDays(existingProgress, isCorrect);
+    const nextDueAt = new Date(Date.now() + reviewIntervalDays * 24 * 60 * 60 * 1000).toISOString();
     const payload: UserProgressInsert = {
       user_id: activeUser.id,
       word_id: wordId,
       correct: isCorrect,
       last_reviewed_at: now,
       last_reviewed: now,
+      next_due_at: nextDueAt,
+      review_interval_days: reviewIntervalDays,
     };
     const { error } = await supabase.schema('public').from('user_progress').upsert(payload, {
       onConflict: 'user_id,word_id',

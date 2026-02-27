@@ -36,7 +36,9 @@ export interface Database {
           interval: number;
           last_reviewed: string | null;
           last_reviewed_at: string | null;
+          next_due_at: string | null;
           repetitions: number;
+          review_interval_days: number;
           review_count: number;
           status: Database['public']['Enums']['progress_status'];
           updated_at: string;
@@ -51,7 +53,9 @@ export interface Database {
           interval?: number;
           last_reviewed?: string | null;
           last_reviewed_at?: string | null;
+          next_due_at?: string | null;
           repetitions?: number;
+          review_interval_days?: number;
           review_count?: number;
           status?: Database['public']['Enums']['progress_status'];
           updated_at?: string;
@@ -66,7 +70,9 @@ export interface Database {
           interval?: number;
           last_reviewed?: string | null;
           last_reviewed_at?: string | null;
+          next_due_at?: string | null;
           repetitions?: number;
+          review_interval_days?: number;
           review_count?: number;
           status?: Database['public']['Enums']['progress_status'];
           updated_at?: string;
