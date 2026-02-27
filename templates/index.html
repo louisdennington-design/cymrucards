@@ -3,38 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#69A879" />
-  <title>Welsh Language Practice</title>
-
+  <title>Welsh flashcards</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-  <!-- Override: solid background -->
-  <style>
-    body { background: #69A879; }
-  </style>
 </head>
-
 <body>
   <div class="container">
     <header>
       <h1>Welsh Practice</h1>
-
       <div class="controls">
-        <!-- Language direction toggle: English ↔ Welsh -->
-        <label class="toggle" aria-label="Switch prompt language between English and Welsh">
-          <!-- unchecked = English first, checked = Welsh first -->
-          <span class="toggle-label">English</span>
-
-          <input type="checkbox" id="languageToggle" />
-          <span class="toggle-slider" aria-hidden="true"></span>
-
-          <span class="toggle-label">Welsh</span>
+        <label class="toggle">
+          <input type="checkbox" id="languageToggle">
+          <span class="toggle-slider"></span>
+          <span class="toggle-label">Welsh / English</span>
         </label>
       </div>
     </header>
 
-    <main role="main">
+    <main>
       <div class="card" id="wordCard">
+
+        <!-- Mode dropdown ABOVE the words, still inside the white frame -->
+        <div class="mode-row">
+          <select id="materialType" class="mode-select" aria-label="Practice mode">
+            <option value="verb_infinitives">Verb infinitives</option>
+            <option value="present_tense_conjugations">Present tense conjugations</option>
+            <option value="compound_past_tense_conjugations">Compound past tense conjugations</option>
+            <option value="preterite_conjugations">Preterite conjugations</option>
+            <option value="nouns">Nouns</option>
+            <option value="adjectives">Adjectives</option>
+            <option value="time_expressions">Time expressions</option>
+            <option value="whole_phrases">Whole phrases</option>
+          </select>
+        </div>
+
         <div class="word-display">
           <div id="primaryWord" class="primary-word">Click "Next" to start!</div>
           <div id="translation" class="translation hidden"></div>
@@ -43,6 +44,73 @@
         <div class="card-actions">
           <button id="revealBtn" class="btn btn-primary" disabled>Show Translation</button>
           <button id="nextBtn" class="btn btn-secondary">Next</button>
+        </div>
+      </div>
+
+      <!-- Progress + alphabet toggle/panel -->
+      <div class="progress">
+        <div class="progress-line">
+          <span id="progressPercent">0%</span> of flashcards completed
+        </div>
+
+        <button id="alphabetBtn" class="alphabet-toggle" type="button" aria-expanded="false" aria-controls="alphabetPanel">
+          Display alphabet
+        </button>
+
+        <div id="alphabetPanel" class="alphabet-panel hidden" aria-hidden="true">
+          <div class="alphabet-grid">
+            <div class="alphabet-item"><strong>A a</strong> — “a” as in <em>cat</em></div>
+            <div class="alphabet-item"><strong>B b</strong> — “b” as in <em>bat</em></div>
+            <div class="alphabet-item"><strong>C c</strong> — always “k” as in <em>cat</em></div>
+            <div class="alphabet-item"><strong>CH ch</strong> — as in Scottish <em>loch</em></div>
+            <div class="alphabet-item"><strong>D d</strong> — “d” as in <em>dog</em></div>
+            <div class="alphabet-item"><strong>DD dd</strong> — “th” as in <em>this</em></div>
+            <div class="alphabet-item"><strong>E e</strong> — “e” as in <em>bed</em></div>
+            <div class="alphabet-item"><strong>F f</strong> — “v” as in <em>van</em></div>
+            <div class="alphabet-item"><strong>FF ff</strong> — “f” as in <em>fan</em></div>
+            <div class="alphabet-item"><strong>G g</strong> — hard “g” as in <em>go</em></div>
+            <div class="alphabet-item"><strong>NG ng</strong> — as in <em>sing</em></div>
+            <div class="alphabet-item"><strong>H h</strong> — “h” as in <em>hat</em></div>
+            <div class="alphabet-item"><strong>I i</strong> — “ee” as in <em>see</em></div>
+            <div class="alphabet-item"><strong>L l</strong> — “l” as in <em>lip</em></div>
+            <div class="alphabet-item"><strong>LL ll</strong> — voiceless “l” (airy hiss + l)</div>
+            <div class="alphabet-item"><strong>M m</strong> — “m” as in <em>man</em></div>
+            <div class="alphabet-item"><strong>N n</strong> — “n” as in <em>no</em></div>
+            <div class="alphabet-item"><strong>O o</strong> — “o” as in <em>not</em></div>
+            <div class="alphabet-item"><strong>P p</strong> — “p” as in <em>pen</em></div>
+            <div class="alphabet-item"><strong>PH ph</strong> — “f” as in <em>fan</em></div>
+            <div class="alphabet-item"><strong>R r</strong> — rolled/tapped</div>
+            <div class="alphabet-item"><strong>RH rh</strong> — voiceless “r”</div>
+            <div class="alphabet-item"><strong>S s</strong> — “s” as in <em>sun</em></div>
+            <div class="alphabet-item"><strong>T t</strong> — “t” as in <em>top</em></div>
+            <div class="alphabet-item"><strong>TH th</strong> — “th” as in <em>thin</em></div>
+            <div class="alphabet-item"><strong>U u</strong> — like “i” in <em>bit</em> (often)</div>
+            <div class="alphabet-item"><strong>W w</strong> — “oo” as in <em>book</em> / vowel in Welsh</div>
+            <div class="alphabet-item"><strong>Y y</strong> — varies; often “uh” or “i”</div>
+
+            <div class="alphabet-item"><strong>AE ae</strong> — like “eye” (varies)</div>
+            <div class="alphabet-item"><strong>AI ai</strong> — like “eye”</div>
+            <div class="alphabet-item"><strong>AU au</strong> — like “aye/ow” (varies)</div>
+            <div class="alphabet-item"><strong>AW aw</strong> — like “ow” in <em>cow</em></div>
+            <div class="alphabet-item"><strong>EI ei</strong> — like “ay” in <em>say</em></div>
+            <div class="alphabet-item"><strong>EU eu</strong> — “eh-oo” (tight)</div>
+            <div class="alphabet-item"><strong>EW ew</strong> — “eh-oo” (similar)</div>
+            <div class="alphabet-item"><strong>IW iw</strong> — “ee-oo”</div>
+            <div class="alphabet-item"><strong>OE oe</strong> — “oy” (varies)</div>
+            <div class="alphabet-item"><strong>OI oi</strong> — “oy” in <em>boy</em></div>
+            <div class="alphabet-item"><strong>OU ou</strong> — “oy/oh-oo” (varies)</div>
+            <div class="alphabet-item"><strong>OW ow</strong> — “oh”</div>
+            <div class="alphabet-item"><strong>UW uw</strong> — “ee-oo” (tight)</div>
+            <div class="alphabet-item"><strong>WY wy</strong> — “oo-ee” / “wi” (varies)</div>
+
+            <div class="alphabet-item"><strong>Â â</strong> — long “a”</div>
+            <div class="alphabet-item"><strong>Ê ê</strong> — long “e”</div>
+            <div class="alphabet-item"><strong>Î î</strong> — long “i”</div>
+            <div class="alphabet-item"><strong>Ô ô</strong> — long “o”</div>
+            <div class="alphabet-item"><strong>Û û</strong> — long “u”</div>
+            <div class="alphabet-item"><strong>Ŵ ŵ</strong> — long “w”</div>
+            <div class="alphabet-item"><strong>Ŷ ŷ</strong> — long “y”</div>
+          </div>
         </div>
       </div>
     </main>

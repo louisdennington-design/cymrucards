@@ -1,205 +1,310 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #69A879; /* solid background */
+  min-height: 100svh; /* safer on mobile browsers than 100vh */
+  color: #333;
 }
 
 .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 14px;          /* reduced */
+  min-height: 100svh;     /* safer on mobile browsers than 100vh */
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 12px;    /* reduced */
 }
 
 header h1 {
-    color: white;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+  color: #fff;
+  font-size: 1.65rem;     /* slightly reduced */
+  margin-bottom: 10px;    /* reduced */
 }
 
 .controls {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
+/* Toggle */
 .toggle {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
 }
 
 .toggle input {
-    display: none;
+  display: none;
 }
 
 .toggle-slider {
-    width: 50px;
-    height: 24px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    position: relative;
-    transition: background 0.3s;
+  width: 54px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  position: relative;
+  transition: background 0.2s ease;
 }
 
 .toggle-slider::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
-    top: 2px;
-    left: 2px;
-    transition: transform 0.3s;
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.2s ease;
 }
 
 .toggle input:checked + .toggle-slider {
-    background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.55);
 }
 
 .toggle input:checked + .toggle-slider::before {
-    transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+/* Card */
 .card {
-    background: white;
-    border-radius: 20px;
-    padding: 30px 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin-bottom: 20px;
+  background: #fff;
+  border-radius: 18px;     /* slightly reduced */
+  padding: 20px 16px;      /* reduced */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  margin-bottom: 12px;     /* reduced */
+}
+
+/* Mode dropdown row (above word display) */
+.mode-row {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.mode-select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  font-size: 1rem;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.mode-select:focus {
+  border-color: rgba(52, 152, 219, 0.6);
+  box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.18);
 }
 
 .word-display {
-    margin-bottom: 30px;
-    min-height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  margin-bottom: 14px;   /* reduced */
+  min-height: 86px;      /* slightly reduced */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .primary-word {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #20323f;
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
 
+/* Revealed text in black */
 .translation {
-    font-size: 1.3rem;
-    color: #e74c3c;
-    font-weight: 500;
-    transition: opacity 0.3s;
+  font-size: 1.25rem;
+  color: #111; /* changed from red to black-ish */
+  font-weight: 600;
+  transition: opacity 0.2s ease;
 }
 
+/* Use this for display:none patterns if you want later. For now it matches your current JS usage */
 .hidden {
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
+/* Buttons: side-by-side always (thumb friendly) */
 .card-actions {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
 }
 
 .btn {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s;
-    min-width: 120px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+  width: 100%;
+  min-width: 0; /* allow grid to size properly */
 }
 
 .btn-primary {
-    background: #3498db;
-    color: white;
+  background: #3498db;
+  color: #fff;
 }
 
 .btn-primary:hover:not(:disabled) {
-    background: #2980b9;
-    transform: translateY(-2px);
+  background: #2f86c1;
+  transform: translateY(-1px);
 }
 
+/* Next button now same palette (different blue shade) */
 .btn-secondary {
-    background: #2ecc71;
-    color: white;
+  background: #2f86c1; /* darker/sister shade of primary */
+  color: #fff;
 }
 
-.btn-secondary:hover {
-    background: #27ae60;
-    transform: translateY(-2px);
+.btn-secondary:hover:not(:disabled) {
+  background: #2a79ad;
+  transform: translateY(-1px);
 }
 
 .btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    transform: none !important;
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none !important;
 }
 
+/* Progress */
 .progress {
-    text-align: center;
-    color: white;
-    font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
+.progress-line {
+  line-height: 1.2;
+}
+
+/* Pulse animation for the percentage only */
+#progressPercent {
+  display: inline-block;
+  font-weight: 800;
+}
+
+.pulse {
+  animation: progressPulse 220ms ease-in-out;
+}
+
+@keyframes progressPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+/* Alphabet toggle + panel */
+.alphabet-toggle {
+  border: none;
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+}
+
+.alphabet-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.alphabet-panel {
+  width: 100%;
+  max-width: 420px;
+  background: #fff; /* opaque white box */
+  color: #20323f;
+  border-radius: 16px;
+  padding: 14px 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+  text-align: left;
+}
+
+/* two columns */
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 12px;
+}
+
+.alphabet-item {
+  font-size: 0.92rem;
+  line-height: 1.25;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 10px; /* reduced */
 }
 
 .btn-small {
-    padding: 8px 16px;
-    font-size: 0.8rem;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+  padding: 9px 16px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.22);
+  color: #fff;
 }
 
 .btn-small:hover {
-    background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 15px;
-    }
-    
-    .card {
-        padding: 20px 15px;
-    }
-    
-    .card-actions {
-        flex-direction: column;
-    }
-    
-    .btn {
-        min-width: auto;
-        width: 100%;
-    }
+  .container {
+    padding: 12px; /* reduced */
+  }
+
+  .card {
+    padding: 18px 14px;
+    border-radius: 16px;
+  }
+
+  .primary-word {
+    font-size: 1.45rem;
+  }
+
+  .translation {
+    font-size: 1.18rem;
+  }
+
+  /* Keep buttons side-by-side even on small screens */
+  .card-actions {
+    grid-template-columns: 1fr 1fr;
+  }
 }

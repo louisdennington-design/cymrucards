@@ -1,0 +1,6004 @@
+{
+  "words": [
+    {
+      "english": "he didn't go to the market.",
+      "welsh": "Aeth e ddim i'r farchnad."
+    },
+    {
+      "english": "you (plural) didn't go to the park.",
+      "welsh": "Aethoch chi ddim i'r parc."
+    },
+    {
+      "english": "We didn't buy a coffee.",
+      "welsh": "Wnaethon ni ddim prynu coffi."
+    },
+    {
+      "english": "You (plural) are travelling by train tomorrow.",
+      "welsh": "Rydych chi'n teithio ar y trên yfory."
+    },
+    {
+      "english": "she went to the town yesterday.",
+      "welsh": "Aeth hi i'r dref ddoe."
+    },
+    {
+      "english": "good afternoon",
+      "welsh": "prynhawn da"
+    },
+    {
+      "english": "new journey",
+      "welsh": "taith newydd"
+    },
+    {
+      "english": "He is working at work early.",
+      "welsh": "Mae e'n gweithio yn y gwaith yn gynnar."
+    },
+    {
+      "english": "She is walking in the park this afternoon.",
+      "welsh": "Mae hi'n cerdded yn y parc y prynhawn 'ma."
+    },
+    {
+      "english": "You drank water today.",
+      "welsh": "Gwnest ti yfed dŵr heddiw."
+    },
+    {
+      "english": "You (plural) are speaking Welsh often.",
+      "welsh": "Rydych chi'n siarad Cymraeg yn aml."
+    },
+    {
+      "english": "afterwards",
+      "welsh": "wedyn"
+    },
+    {
+      "english": "I am good.",
+      "welsh": "Dw i'n da."
+    },
+    {
+      "english": "chairs",
+      "welsh": "cadeiriau"
+    },
+    {
+      "english": "keys",
+      "welsh": "allweddi"
+    },
+    {
+      "english": "You are not cold.",
+      "welsh": "Dwyt ti ddim yn oer."
+    },
+    {
+      "english": "You are sad.",
+      "welsh": "Rwyt ti'n drist."
+    },
+    {
+      "english": "You are not watching a film this afternoon.",
+      "welsh": "Dwyt ti ddim yn gwylio ffilm y prynhawn 'ma."
+    },
+    {
+      "english": "slow day",
+      "welsh": "diwrnod araf"
+    },
+    {
+      "english": "He is not speaking Welsh for a short time.",
+      "welsh": "Dydy e ddim yn siarad Cymraeg am amser byr."
+    },
+    {
+      "english": "I didn't go to the town.",
+      "welsh": "Es i ddim i'r dref."
+    },
+    {
+      "english": "You are travelling by bus for a short time.",
+      "welsh": "Rwyt ti'n teithio ar y bws am amser byr."
+    },
+    {
+      "english": "We are reading a book now.",
+      "welsh": "Rydyn ni'n darllen llyfr rŵan."
+    },
+    {
+      "english": "You are not calm.",
+      "welsh": "Dwyt ti ddim yn tawel."
+    },
+    {
+      "english": "warm day",
+      "welsh": "diwrnod cynnes"
+    },
+    {
+      "english": "We are drinking tea last night.",
+      "welsh": "Rydyn ni'n yfed te neithiwr."
+    },
+    {
+      "english": "you (plural) have a key.",
+      "welsh": "Mae gyda chi allwedd."
+    },
+    {
+      "english": "you went to the station after work.",
+      "welsh": "Aest ti i'r orsaf ar ôl gwaith."
+    },
+    {
+      "english": "you haven't eaten lunch.",
+      "welsh": "Dwyt ti ddim wedi bwyta cinio."
+    },
+    {
+      "english": "He is eating lunch at the moment.",
+      "welsh": "Mae e'n bwyta cinio ar yr adeg hon."
+    },
+    {
+      "english": "We are not speaking Welsh for a short time.",
+      "welsh": "Dydyn ni ddim yn siarad Cymraeg am amser byr."
+    },
+    {
+      "english": "They are not looking for the map now.",
+      "welsh": "Dydyn nhw ddim yn chwilio am y map rŵan."
+    },
+    {
+      "english": "She is not watching television in the evening.",
+      "welsh": "Dydy hi ddim yn gwylio teledu gyda'r nos."
+    },
+    {
+      "english": "small day",
+      "welsh": "diwrnod bach"
+    },
+    {
+      "english": "you (plural) went to the market yesterday.",
+      "welsh": "Aethoch chi i'r farchnad ddoe."
+    },
+    {
+      "english": "wind",
+      "welsh": "gwynt"
+    },
+    {
+      "english": "journey (singular) / journeys (plural)",
+      "welsh": "taith / teithiau"
+    },
+    {
+      "english": "You are early.",
+      "welsh": "Rwyt ti'n gynnar."
+    },
+    {
+      "english": "I am thirsty.",
+      "welsh": "Dw i'n sychedig."
+    },
+    {
+      "english": "station",
+      "welsh": "gorsaf"
+    },
+    {
+      "english": "You (plural) are tidying up the house early.",
+      "welsh": "Rydych chi'n tacluso y tŷ yn gynnar."
+    },
+    {
+      "english": "You (plural) are tidying up my bedroom this morning.",
+      "welsh": "Rydych chi'n tacluso fy ystafell wely y bore 'ma."
+    },
+    {
+      "english": "I am busy.",
+      "welsh": "Dw i'n prysur."
+    },
+    {
+      "english": "I am eating breakfast in the afternoon.",
+      "welsh": "Dw i'n bwyta brecwast yn y prynhawn."
+    },
+    {
+      "english": "You are eating cake tomorrow.",
+      "welsh": "Rwyt ti'n bwyta cacen yfory."
+    },
+    {
+      "english": "after work",
+      "welsh": "ar ôl gwaith"
+    },
+    {
+      "english": "coat",
+      "welsh": "cot"
+    },
+    {
+      "english": "phone (singular) / phones (plural)",
+      "welsh": "ffôn / ffonau"
+    },
+    {
+      "english": "He ate lunch today.",
+      "welsh": "Gwnaeth e bwyta cinio heddiw."
+    },
+    {
+      "english": "You are practising music in the evening.",
+      "welsh": "Rwyt ti'n ymarfer cerddoriaeth gyda'r nos."
+    },
+    {
+      "english": "You are big.",
+      "welsh": "Rwyt ti'n mawr."
+    },
+    {
+      "english": "they don't have a phone.",
+      "welsh": "Does gyda nhw ddim ffôn."
+    },
+    {
+      "english": "school (singular) / schools (plural)",
+      "welsh": "ysgol / ysgolion"
+    },
+    {
+      "english": "He is eating cake on the weekend.",
+      "welsh": "Mae e'n bwyta cacen dros y penwythnos."
+    },
+    {
+      "english": "tables",
+      "welsh": "byrddau"
+    },
+    {
+      "english": "He is not walking to the shop now.",
+      "welsh": "Dydy e ddim yn cerdded i'r siop rŵan."
+    },
+    {
+      "english": "he didn't go to the station.",
+      "welsh": "Aeth e ddim i'r orsaf."
+    },
+    {
+      "english": "safe travels",
+      "welsh": "Teithiau diogel"
+    },
+    {
+      "english": "You (plural) are not waiting in the café every day.",
+      "welsh": "Dydych chi ddim yn aros yn y caffi bob dydd."
+    },
+    {
+      "english": "you (plural) went to the market after work.",
+      "welsh": "Aethoch chi i'r farchnad ar ôl gwaith."
+    },
+    {
+      "english": "He is walking to the shop in the afternoon.",
+      "welsh": "Mae e'n cerdded i'r siop yn y prynhawn."
+    },
+    {
+      "english": "I was busy.",
+      "welsh": "Roeddwn i prysur."
+    },
+    {
+      "english": "she didn't go to school.",
+      "welsh": "Aeth hi ddim i'r ysgol."
+    },
+    {
+      "english": "They are travelling by train often.",
+      "welsh": "Maen nhw'n teithio ar y trên yn aml."
+    },
+    {
+      "english": "We are not watching television in the morning.",
+      "welsh": "Dydyn ni ddim yn gwylio teledu yn y bore."
+    },
+    {
+      "english": "You are not eating cake sometimes.",
+      "welsh": "Dwyt ti ddim yn bwyta cacen weithiau."
+    },
+    {
+      "english": "You (plural) are watching television always.",
+      "welsh": "Rydych chi'n gwylio teledu bob amser."
+    },
+    {
+      "english": "He drank tea yesterday.",
+      "welsh": "Gwnaeth e yfed te ddoe."
+    },
+    {
+      "english": "I am reading the newspaper for a long time.",
+      "welsh": "Dw i'n darllen y papur newydd ers amser hir."
+    },
+    {
+      "english": "You are waiting in the café in the morning.",
+      "welsh": "Rwyt ti'n aros yn y caffi yn y bore."
+    },
+    {
+      "english": "You are working in the office now.",
+      "welsh": "Rwyt ti'n gweithio yn y swyddfa rŵan."
+    },
+    {
+      "english": "house",
+      "welsh": "tŷ"
+    },
+    {
+      "english": "You didn't watch a film.",
+      "welsh": "Wnest ti ddim gwylio ffilm."
+    },
+    {
+      "english": "volcano",
+      "welsh": "llosgfynydd"
+    },
+    {
+      "english": "They are working in the office this evening.",
+      "welsh": "Maen nhw'n gweithio yn y swyddfa heno."
+    },
+    {
+      "english": "We are working at work on the weekend.",
+      "welsh": "Rydyn ni'n gweithio yn y gwaith dros y penwythnos."
+    },
+    {
+      "english": "you went to the village last night.",
+      "welsh": "Aest ti i'r pentref neithiwr."
+    },
+    {
+      "english": "weekend",
+      "welsh": "penwythnos"
+    },
+    {
+      "english": "he went to the museum yesterday.",
+      "welsh": "Aeth e i'r amgueddfa ddoe."
+    },
+    {
+      "english": "chair (singular) / chairs (plural)",
+      "welsh": "cadair / cadeiriau"
+    },
+    {
+      "english": "I went to the village last night.",
+      "welsh": "Es i i'r pentref neithiwr."
+    },
+    {
+      "english": "I am bad.",
+      "welsh": "Dw i'n drwg."
+    },
+    {
+      "english": "I was tired.",
+      "welsh": "Roeddwn i flinedig."
+    },
+    {
+      "english": "We are speaking Welsh early.",
+      "welsh": "Rydyn ni'n siarad Cymraeg yn gynnar."
+    },
+    {
+      "english": "journey",
+      "welsh": "taith"
+    },
+    {
+      "english": "I am big.",
+      "welsh": "Dw i'n mawr."
+    },
+    {
+      "english": "we went to the park last night.",
+      "welsh": "Aethon ni i'r parc neithiwr."
+    },
+    {
+      "english": "she didn't go to the park.",
+      "welsh": "Aeth hi ddim i'r parc."
+    },
+    {
+      "english": "town",
+      "welsh": "tref"
+    },
+    {
+      "english": "We are looking for my keys every morning.",
+      "welsh": "Rydyn ni'n chwilio am fy allweddi bob bore."
+    },
+    {
+      "english": "We are practising Welsh now.",
+      "welsh": "Rydyn ni'n ymarfer Cymraeg rŵan."
+    },
+    {
+      "english": "They are tidying up my bedroom always.",
+      "welsh": "Maen nhw'n tacluso fy ystafell wely bob amser."
+    },
+    {
+      "english": "I am listening to a song always.",
+      "welsh": "Dw i'n gwrando ar cân bob amser."
+    },
+    {
+      "english": "she has a key.",
+      "welsh": "Mae ganddi hi allwedd."
+    },
+    {
+      "english": "They are organising my bag always.",
+      "welsh": "Maen nhw'n trefnu fy mag bob amser."
+    },
+    {
+      "english": "I am waiting in the café late.",
+      "welsh": "Dw i'n aros yn y caffi yn hwyr."
+    },
+    {
+      "english": "I am early.",
+      "welsh": "Dw i'n gynnar."
+    },
+    {
+      "english": "You (plural) are practising Welsh this morning.",
+      "welsh": "Rydych chi'n ymarfer Cymraeg y bore 'ma."
+    },
+    {
+      "english": "you didn't go to the station.",
+      "welsh": "Aest ti ddim i'r orsaf."
+    },
+    {
+      "english": "You don't like coffee.",
+      "welsh": "Dwyt ti ddim yn hoffi coffi."
+    },
+    {
+      "english": "I am quick.",
+      "welsh": "Dw i'n cyflym."
+    },
+    {
+      "english": "He is listening to a song for a short time.",
+      "welsh": "Mae e'n gwrando ar cân am amser byr."
+    },
+    {
+      "english": "quick house",
+      "welsh": "tŷ cyflym"
+    },
+    {
+      "english": "I am sad.",
+      "welsh": "Dw i'n drist."
+    },
+    {
+      "english": "they didn't go to the station.",
+      "welsh": "Aethon nhw ddim i'r orsaf."
+    },
+    {
+      "english": "We are travelling by bus last night.",
+      "welsh": "Rydyn ni'n teithio ar y bws neithiwr."
+    },
+    {
+      "english": "You are new.",
+      "welsh": "Rwyt ti'n newydd."
+    },
+    {
+      "english": "I am writing a letter at the moment.",
+      "welsh": "Dw i'n ysgrifennu llythyr ar yr adeg hon."
+    },
+    {
+      "english": "late book",
+      "welsh": "llyfr hwyr"
+    },
+    {
+      "english": "good song",
+      "welsh": "cân da"
+    },
+    {
+      "english": "He is not tidying up my bedroom for a long time.",
+      "welsh": "Dydy e ddim yn tacluso fy ystafell wely ers amser hir."
+    },
+    {
+      "english": "time",
+      "welsh": "amser"
+    },
+    {
+      "english": "messages",
+      "welsh": "negeseuon"
+    },
+    {
+      "english": "he was tired.",
+      "welsh": "Roedd e flinedig."
+    },
+    {
+      "english": "You ate lunch yesterday.",
+      "welsh": "Gwnest ti bwyta cinio ddoe."
+    },
+    {
+      "english": "You didn't look for the map.",
+      "welsh": "Wnest ti ddim chwilio am y map."
+    },
+    {
+      "english": "I am travelling by train early.",
+      "welsh": "Dw i'n teithio ar y trên yn gynnar."
+    },
+    {
+      "english": "You (plural) watched a film today.",
+      "welsh": "Gwnaethoch chi gwylio ffilm heddiw."
+    },
+    {
+      "english": "they were happy.",
+      "welsh": "Roedden nhw hapus."
+    },
+    {
+      "english": "He is tidying up my bedroom last night.",
+      "welsh": "Mae e'n tacluso fy ystafell wely neithiwr."
+    },
+    {
+      "english": "today",
+      "welsh": "heddiw"
+    },
+    {
+      "english": "I am looking for the map yesterday.",
+      "welsh": "Dw i'n chwilio am y map ddoe."
+    },
+    {
+      "english": "I went to school last night.",
+      "welsh": "Es i i'r ysgol neithiwr."
+    },
+    {
+      "english": "toothbrush",
+      "welsh": "brws dannedd"
+    },
+    {
+      "english": "They are not drinking coffee often.",
+      "welsh": "Dydyn nhw ddim yn yfed coffi yn aml."
+    },
+    {
+      "english": "quick journey",
+      "welsh": "taith cyflym"
+    },
+    {
+      "english": "he went home yesterday.",
+      "welsh": "Aeth e adre ddoe."
+    },
+    {
+      "english": "I am not happy.",
+      "welsh": "Dw i ddim yn hapus."
+    },
+    {
+      "english": "He read the newspaper last night.",
+      "welsh": "Gwnaeth e darllen y papur newydd neithiwr."
+    },
+    {
+      "english": "volcanoes",
+      "welsh": "llosgfynyddoedd"
+    },
+    {
+      "english": "I am not quick.",
+      "welsh": "Dw i ddim yn cyflym."
+    },
+    {
+      "english": "he has time.",
+      "welsh": "Mae ganddo fe amser."
+    },
+    {
+      "english": "They are writing a message in the afternoon.",
+      "welsh": "Maen nhw'n ysgrifennu neges yn y prynhawn."
+    },
+    {
+      "english": "You are writing a letter today.",
+      "welsh": "Rwyt ti'n ysgrifennu llythyr heddiw."
+    },
+    {
+      "english": "She is practising music last night.",
+      "welsh": "Mae hi'n ymarfer cerddoriaeth neithiwr."
+    },
+    {
+      "english": "You (plural) didn't look for my keys.",
+      "welsh": "Wnaethoch chi ddim chwilio am fy allweddi."
+    },
+    {
+      "english": "She is writing a message every morning.",
+      "welsh": "Mae hi'n ysgrifennu neges bob bore."
+    },
+    {
+      "english": "She is not organising my bag after work.",
+      "welsh": "Dydy hi ddim yn trefnu fy mag ar ôl gwaith."
+    },
+    {
+      "english": "office",
+      "welsh": "swyddfa"
+    },
+    {
+      "english": "He watched television last night.",
+      "welsh": "Gwnaeth e gwylio teledu neithiwr."
+    },
+    {
+      "english": "He is organising my wardrobe on the weekend.",
+      "welsh": "Mae e'n trefnu fy nghwpwrdd dillad dros y penwythnos."
+    },
+    {
+      "english": "mountains",
+      "welsh": "mynyddoedd"
+    },
+    {
+      "english": "they didn't go to the market.",
+      "welsh": "Aethon nhw ddim i'r farchnad."
+    },
+    {
+      "english": "He is walking to the shop after work.",
+      "welsh": "Mae e'n cerdded i'r siop ar ôl gwaith."
+    },
+    {
+      "english": "hungry",
+      "welsh": "llwglyd"
+    },
+    {
+      "english": "park",
+      "welsh": "parc"
+    },
+    {
+      "english": "We didn't eat breakfast.",
+      "welsh": "Wnaethon ni ddim bwyta brecwast."
+    },
+    {
+      "english": "She didn't drink tea.",
+      "welsh": "Wnaeth hi ddim yfed te."
+    },
+    {
+      "english": "I am drinking coffee never.",
+      "welsh": "Dw i'n yfed coffi byth."
+    },
+    {
+      "english": "they went to the park last night.",
+      "welsh": "Aethon nhw i'r parc neithiwr."
+    },
+    {
+      "english": "cats",
+      "welsh": "cathod"
+    },
+    {
+      "english": "dog",
+      "welsh": "ci"
+    },
+    {
+      "english": "We are writing a message for a short time.",
+      "welsh": "Rydyn ni'n ysgrifennu neges am amser byr."
+    },
+    {
+      "english": "You are difficult.",
+      "welsh": "Rwyt ti'n anodd."
+    },
+    {
+      "english": "I didn't write a message.",
+      "welsh": "Wnes i ddim ysgrifennu neges."
+    },
+    {
+      "english": "ready dog",
+      "welsh": "ci barod"
+    },
+    {
+      "english": "I am not sad.",
+      "welsh": "Dw i ddim yn drist."
+    },
+    {
+      "english": "She is not looking for my keys late.",
+      "welsh": "Dydy hi ddim yn chwilio am fy allweddi yn hwyr."
+    },
+    {
+      "english": "You (plural) didn't lose my bag.",
+      "welsh": "Wnaethoch chi ddim colli fy mag."
+    },
+    {
+      "english": "He is reading a book yesterday.",
+      "welsh": "Mae e'n darllen llyfr ddoe."
+    },
+    {
+      "english": "You are waiting at the station in the morning.",
+      "welsh": "Rwyt ti'n aros yn yr orsaf yn y bore."
+    },
+    {
+      "english": "streets",
+      "welsh": "strydoedd"
+    },
+    {
+      "english": "they went to the village after work.",
+      "welsh": "Aethon nhw i'r pentref ar ôl gwaith."
+    },
+    {
+      "english": "a lot",
+      "welsh": "llawer"
+    },
+    {
+      "english": "she has a ticket.",
+      "welsh": "Mae ganddi hi docyn."
+    },
+    {
+      "english": "you (plural) were busy.",
+      "welsh": "Roeddech chi prysur."
+    },
+    {
+      "english": "village",
+      "welsh": "pentref"
+    },
+    {
+      "english": "I drank water today.",
+      "welsh": "Gwnes i yfed dŵr heddiw."
+    },
+    {
+      "english": "town (singular) / towns (plural)",
+      "welsh": "tref / trefi"
+    },
+    {
+      "english": "I know how to play the piano.",
+      "welsh": "Dw i'n gwybod sut i chwarae'r piano."
+    },
+    {
+      "english": "what's your name?",
+      "welsh": "beth yw dy enw di?"
+    },
+    {
+      "english": "I went to the museum yesterday.",
+      "welsh": "Es i i'r amgueddfa ddoe."
+    },
+    {
+      "english": "I didn't lose my bag.",
+      "welsh": "Wnes i ddim colli fy mag."
+    },
+    {
+      "english": "I am old.",
+      "welsh": "Dw i'n hen."
+    },
+    {
+      "english": "window (singular) / windows (plural)",
+      "welsh": "ffenestr / ffenestri"
+    },
+    {
+      "english": "You are watching a film for a long time.",
+      "welsh": "Rwyt ti'n gwylio ffilm ers amser hir."
+    },
+    {
+      "english": "cat (singular) / cats (plural)",
+      "welsh": "cath / cathod"
+    },
+    {
+      "english": "They are walking to the shop late.",
+      "welsh": "Maen nhw'n cerdded i'r siop yn hwyr."
+    },
+    {
+      "english": "They are not working in the office never.",
+      "welsh": "Dydyn nhw ddim yn gweithio yn y swyddfa byth."
+    },
+    {
+      "english": "cold dog",
+      "welsh": "ci oer"
+    },
+    {
+      "english": "we went home yesterday.",
+      "welsh": "Aethon ni adre ddoe."
+    },
+    {
+      "english": "She is reading the newspaper this afternoon.",
+      "welsh": "Mae hi'n darllen y papur newydd y prynhawn 'ma."
+    },
+    {
+      "english": "I am organising my bag every morning.",
+      "welsh": "Dw i'n trefnu fy mag bob bore."
+    },
+    {
+      "english": "You (plural) didn't read the newspaper.",
+      "welsh": "Wnaethoch chi ddim darllen y papur newydd."
+    },
+    {
+      "english": "We bought bread last night.",
+      "welsh": "Gwnaethon ni prynu bara neithiwr."
+    },
+    {
+      "english": "They are looking for my phone yesterday.",
+      "welsh": "Maen nhw'n chwilio am fy ffôn ddoe."
+    },
+    {
+      "english": "you went to the park yesterday.",
+      "welsh": "Aest ti i'r parc ddoe."
+    },
+    {
+      "english": "cold day",
+      "welsh": "diwrnod oer"
+    },
+    {
+      "english": "I am watching television last night.",
+      "welsh": "Dw i'n gwylio teledu neithiwr."
+    },
+    {
+      "english": "You (plural) are organising my bag this afternoon.",
+      "welsh": "Rydych chi'n trefnu fy mag y prynhawn 'ma."
+    },
+    {
+      "english": "They are looking for the map for a long time.",
+      "welsh": "Maen nhw'n chwilio am y map ers amser hir."
+    },
+    {
+      "english": "They are waiting in the café every morning.",
+      "welsh": "Maen nhw'n aros yn y caffi bob bore."
+    },
+    {
+      "english": "She is working in the office yesterday.",
+      "welsh": "Mae hi'n gweithio yn y swyddfa ddoe."
+    },
+    {
+      "english": "You (plural) are reading the newspaper early.",
+      "welsh": "Rydych chi'n darllen y papur newydd yn gynnar."
+    },
+    {
+      "english": "We are organising my bag last night.",
+      "welsh": "Rydyn ni'n trefnu fy mag neithiwr."
+    },
+    {
+      "english": "difficult book",
+      "welsh": "llyfr anodd"
+    },
+    {
+      "english": "We ate breakfast today.",
+      "welsh": "Gwnaethon ni bwyta brecwast heddiw."
+    },
+    {
+      "english": "She is not travelling by train now.",
+      "welsh": "Dydy hi ddim yn teithio ar y trên rŵan."
+    },
+    {
+      "english": "I am small.",
+      "welsh": "Dw i'n bach."
+    },
+    {
+      "english": "dog (singular) / dogs (plural)",
+      "welsh": "ci / cŵn"
+    },
+    {
+      "english": "They are reading the newspaper for a short time.",
+      "welsh": "Maen nhw'n darllen y papur newydd am amser byr."
+    },
+    {
+      "english": "cold",
+      "welsh": "oer"
+    },
+    {
+      "english": "key (singular) / keys (plural)",
+      "welsh": "allwedd / allweddi"
+    },
+    {
+      "english": "She is looking for my keys early.",
+      "welsh": "Mae hi'n chwilio am fy allweddi yn gynnar."
+    },
+    {
+      "english": "no worries",
+      "welsh": "dim ots"
+    },
+    {
+      "english": "they went to the shop yesterday.",
+      "welsh": "Aethon nhw i'r siop ddoe."
+    },
+    {
+      "english": "difficult day",
+      "welsh": "diwrnod anodd"
+    },
+    {
+      "english": "You (plural) are writing a letter sometimes.",
+      "welsh": "Rydych chi'n ysgrifennu llythyr weithiau."
+    },
+    {
+      "english": "You didn't read the newspaper.",
+      "welsh": "Wnest ti ddim darllen y papur newydd."
+    },
+    {
+      "english": "you weren't tired.",
+      "welsh": "Doeddet ti ddim flinedig."
+    },
+    {
+      "english": "you (plural) weren't tired.",
+      "welsh": "Doeddech chi ddim flinedig."
+    },
+    {
+      "english": "windows",
+      "welsh": "ffenestri"
+    },
+    {
+      "english": "He didn't drink water.",
+      "welsh": "Wnaeth e ddim yfed dŵr."
+    },
+    {
+      "english": "You (plural) are waiting in the café now.",
+      "welsh": "Rydych chi'n aros yn y caffi rŵan."
+    },
+    {
+      "english": "I am eating lunch yesterday.",
+      "welsh": "Dw i'n bwyta cinio ddoe."
+    },
+    {
+      "english": "You are not busy.",
+      "welsh": "Dwyt ti ddim yn prysur."
+    },
+    {
+      "english": "calm day",
+      "welsh": "diwrnod tawel"
+    },
+    {
+      "english": "He is writing a message early.",
+      "welsh": "Mae e'n ysgrifennu neges yn gynnar."
+    },
+    {
+      "english": "He is drinking water today.",
+      "welsh": "Mae e'n yfed dŵr heddiw."
+    },
+    {
+      "english": "You are small.",
+      "welsh": "Rwyt ti'n bach."
+    },
+    {
+      "english": "I am calm.",
+      "welsh": "Dw i'n tawel."
+    },
+    {
+      "english": "she went to the station last night.",
+      "welsh": "Aeth hi i'r orsaf neithiwr."
+    },
+    {
+      "english": "She wrote a letter today.",
+      "welsh": "Gwnaeth hi ysgrifennu llythyr heddiw."
+    },
+    {
+      "english": "she didn't go home.",
+      "welsh": "Aeth hi ddim adre."
+    },
+    {
+      "english": "I didn't go to the market.",
+      "welsh": "Es i ddim i'r farchnad."
+    },
+    {
+      "english": "ticket (singular) / tickets (plural)",
+      "welsh": "tocyn / tocynnau"
+    },
+    {
+      "english": "They drank water yesterday.",
+      "welsh": "Gwnaethon nhw yfed dŵr ddoe."
+    },
+    {
+      "english": "You (plural) are practising music often.",
+      "welsh": "Rydych chi'n ymarfer cerddoriaeth yn aml."
+    },
+    {
+      "english": "You didn't buy a train ticket.",
+      "welsh": "Wnest ti ddim prynu tocyn trên."
+    },
+    {
+      "english": "I didn't go to the village.",
+      "welsh": "Es i ddim i'r pentref."
+    },
+    {
+      "english": "hungry book",
+      "welsh": "llyfr llwglyd"
+    },
+    {
+      "english": "I am ready.",
+      "welsh": "Dw i'n barod."
+    },
+    {
+      "english": "you (plural) don't have a key.",
+      "welsh": "Does gyda chi ddim allwedd."
+    },
+    {
+      "english": "you went to the station yesterday.",
+      "welsh": "Aest ti i'r orsaf ddoe."
+    },
+    {
+      "english": "She is listening to music after work.",
+      "welsh": "Mae hi'n gwrando ar cerddoriaeth ar ôl gwaith."
+    },
+    {
+      "english": "He is writing a message every morning.",
+      "welsh": "Mae e'n ysgrifennu neges bob bore."
+    },
+    {
+      "english": "She is practising music every day.",
+      "welsh": "Mae hi'n ymarfer cerddoriaeth bob dydd."
+    },
+    {
+      "english": "You are not practising Welsh on the weekend.",
+      "welsh": "Dwyt ti ddim yn ymarfer Cymraeg dros y penwythnos."
+    },
+    {
+      "english": "market",
+      "welsh": "marchnad"
+    },
+    {
+      "english": "bed",
+      "welsh": "gwely"
+    },
+    {
+      "english": "They are tidying up my bedroom in the evening.",
+      "welsh": "Maen nhw'n tacluso fy ystafell wely gyda'r nos."
+    },
+    {
+      "english": "we went to the village yesterday.",
+      "welsh": "Aethon ni i'r pentref ddoe."
+    },
+    {
+      "english": "weather",
+      "welsh": "tywydd"
+    },
+    {
+      "english": "big book",
+      "welsh": "llyfr mawr"
+    },
+    {
+      "english": "parks",
+      "welsh": "parciau"
+    },
+    {
+      "english": "I am not waiting at the station every day.",
+      "welsh": "Dw i ddim yn aros yn yr orsaf bob dydd."
+    },
+    {
+      "english": "You (plural) are not writing a letter last night.",
+      "welsh": "Dydych chi ddim yn ysgrifennu llythyr neithiwr."
+    },
+    {
+      "english": "She is tidying up the house yesterday.",
+      "welsh": "Mae hi'n tacluso y tŷ ddoe."
+    },
+    {
+      "english": "We are looking for the map at the moment.",
+      "welsh": "Rydyn ni'n chwilio am y map ar yr adeg hon."
+    },
+    {
+      "english": "You are tidying up the house in the evening.",
+      "welsh": "Rwyt ti'n tacluso y tŷ gyda'r nos."
+    },
+    {
+      "english": "You (plural) didn't drink tea.",
+      "welsh": "Wnaethoch chi ddim yfed te."
+    },
+    {
+      "english": "I am not good.",
+      "welsh": "Dw i ddim yn da."
+    },
+    {
+      "english": "letters",
+      "welsh": "llythyrau"
+    },
+    {
+      "english": "They didn't buy a coffee.",
+      "welsh": "Wnaethon nhw ddim prynu coffi."
+    },
+    {
+      "english": "she wasn't happy.",
+      "welsh": "Doedd hi ddim hapus."
+    },
+    {
+      "english": "We are not reading a book never.",
+      "welsh": "Dydyn ni ddim yn darllen llyfr byth."
+    },
+    {
+      "english": "She didn't write a message.",
+      "welsh": "Wnaeth hi ddim ysgrifennu neges."
+    },
+    {
+      "english": "you have a ticket.",
+      "welsh": "Mae gen ti docyn."
+    },
+    {
+      "english": "They are not writing a message now.",
+      "welsh": "Dydyn nhw ddim yn ysgrifennu neges rŵan."
+    },
+    {
+      "english": "They are not watching television after work.",
+      "welsh": "Dydyn nhw ddim yn gwylio teledu ar ôl gwaith."
+    },
+    {
+      "english": "They are drinking coffee every evening.",
+      "welsh": "Maen nhw'n yfed coffi bob nos."
+    },
+    {
+      "english": "You (plural) are looking for my phone tomorrow.",
+      "welsh": "Rydych chi'n chwilio am fy ffôn yfory."
+    },
+    {
+      "english": "he went to the shop yesterday.",
+      "welsh": "Aeth e i'r siop ddoe."
+    },
+    {
+      "english": "you (plural) didn't go home.",
+      "welsh": "Aethoch chi ddim adre."
+    },
+    {
+      "english": "fish",
+      "welsh": "pysgod"
+    },
+    {
+      "english": "I am tired.",
+      "welsh": "Dw i'n flinedig."
+    },
+    {
+      "english": "they have a key.",
+      "welsh": "Mae gyda nhw allwedd."
+    },
+    {
+      "english": "He is not writing a message sometimes.",
+      "welsh": "Dydy e ddim yn ysgrifennu neges weithiau."
+    },
+    {
+      "english": "You are not safe.",
+      "welsh": "Dwyt ti ddim yn diogel."
+    },
+    {
+      "english": "You are not waiting in the café always.",
+      "welsh": "Dwyt ti ddim yn aros yn y caffi bob amser."
+    },
+    {
+      "english": "You are listening to music every evening.",
+      "welsh": "Rwyt ti'n gwrando ar cerddoriaeth bob nos."
+    },
+    {
+      "english": "We are tidying up the house last night.",
+      "welsh": "Rydyn ni'n tacluso y tŷ neithiwr."
+    },
+    {
+      "english": "I am not drinking water always.",
+      "welsh": "Dw i ddim yn yfed dŵr bob amser."
+    },
+    {
+      "english": "street",
+      "welsh": "stryd"
+    },
+    {
+      "english": "You are listening to a song on the weekend.",
+      "welsh": "Rwyt ti'n gwrando ar cân dros y penwythnos."
+    },
+    {
+      "english": "You are ready.",
+      "welsh": "Rwyt ti'n barod."
+    },
+    {
+      "english": "You are quick.",
+      "welsh": "Rwyt ti'n cyflym."
+    },
+    {
+      "english": "last night",
+      "welsh": "neithiwr"
+    },
+    {
+      "english": "song",
+      "welsh": "cân"
+    },
+    {
+      "english": "museums",
+      "welsh": "amgueddfeydd"
+    },
+    {
+      "english": "he doesn't have a key.",
+      "welsh": "Does ganddo fe ddim allwedd."
+    },
+    {
+      "english": "new dog",
+      "welsh": "ci newydd"
+    },
+    {
+      "english": "busy song",
+      "welsh": "cân prysur"
+    },
+    {
+      "english": "I am hungry.",
+      "welsh": "Dw i'n llwglyd."
+    },
+    {
+      "english": "new car",
+      "welsh": "car newydd"
+    },
+    {
+      "english": "sometimes",
+      "welsh": "weithiau"
+    },
+    {
+      "english": "We are walking to the village in the morning.",
+      "welsh": "Rydyn ni'n cerdded i'r pentref yn y bore."
+    },
+    {
+      "english": "They are eating lunch last night.",
+      "welsh": "Maen nhw'n bwyta cinio neithiwr."
+    },
+    {
+      "english": "ticket",
+      "welsh": "tocyn"
+    },
+    {
+      "english": "old cat",
+      "welsh": "cath hen"
+    },
+    {
+      "english": "I am not walking in the park sometimes.",
+      "welsh": "Dw i ddim yn cerdded yn y parc weithiau."
+    },
+    {
+      "english": "river (singular) / rivers (plural)",
+      "welsh": "afon / afonydd"
+    },
+    {
+      "english": "tomorrow",
+      "welsh": "yfory"
+    },
+    {
+      "english": "message",
+      "welsh": "neges"
+    },
+    {
+      "english": "map (singular) / maps (plural)",
+      "welsh": "map / mapiau"
+    },
+    {
+      "english": "I wasn't tired.",
+      "welsh": "Doeddwn i ddim flinedig."
+    },
+    {
+      "english": "I bought a train ticket today.",
+      "welsh": "Gwnes i prynu tocyn trên heddiw."
+    },
+    {
+      "english": "He is speaking Welsh in the afternoon.",
+      "welsh": "Mae e'n siarad Cymraeg yn y prynhawn."
+    },
+    {
+      "english": "You (plural) are drinking water now.",
+      "welsh": "Rydych chi'n yfed dŵr rŵan."
+    },
+    {
+      "english": "for a short time",
+      "welsh": "am amser byr"
+    },
+    {
+      "english": "I am not busy.",
+      "welsh": "Dw i ddim yn prysur."
+    },
+    {
+      "english": "You are not organising my bag every day.",
+      "welsh": "Dwyt ti ddim yn trefnu fy mag bob dydd."
+    },
+    {
+      "english": "We are eating breakfast in the evening.",
+      "welsh": "Rydyn ni'n bwyta brecwast gyda'r nos."
+    },
+    {
+      "english": "goodbye",
+      "welsh": "hwyl fawr"
+    },
+    {
+      "english": "we were happy.",
+      "welsh": "Roedden ni hapus."
+    },
+    {
+      "english": "small cat",
+      "welsh": "cath bach"
+    },
+    {
+      "english": "in the evening",
+      "welsh": "gyda'r nos"
+    },
+    {
+      "english": "I am practising music always.",
+      "welsh": "Dw i'n ymarfer cerddoriaeth bob amser."
+    },
+    {
+      "english": "He didn't listen to a song.",
+      "welsh": "Wnaeth e ddim gwrando ar cân."
+    },
+    {
+      "english": "She didn't lose my bag.",
+      "welsh": "Wnaeth hi ddim colli fy mag."
+    },
+    {
+      "english": "They listened to a song yesterday.",
+      "welsh": "Gwnaethon nhw gwrando ar cân ddoe."
+    },
+    {
+      "english": "We are waiting at the station now.",
+      "welsh": "Rydyn ni'n aros yn yr orsaf rŵan."
+    },
+    {
+      "english": "We are not organising my wardrobe in the afternoon.",
+      "welsh": "Dydyn ni ddim yn trefnu fy nghwpwrdd dillad yn y prynhawn."
+    },
+    {
+      "english": "You (plural) are not speaking Welsh yesterday.",
+      "welsh": "Dydych chi ddim yn siarad Cymraeg ddoe."
+    },
+    {
+      "english": "hungry car",
+      "welsh": "car llwglyd"
+    },
+    {
+      "english": "I am not practising Welsh today.",
+      "welsh": "Dw i ddim yn ymarfer Cymraeg heddiw."
+    },
+    {
+      "english": "They are listening to music yesterday.",
+      "welsh": "Maen nhw'n gwrando ar cerddoriaeth ddoe."
+    },
+    {
+      "english": "They found the map last night.",
+      "welsh": "Gwnaethon nhw dod o hyd i y map neithiwr."
+    },
+    {
+      "english": "You are writing a message for a short time.",
+      "welsh": "Rwyt ti'n ysgrifennu neges am amser byr."
+    },
+    {
+      "english": "He didn't look for my keys.",
+      "welsh": "Wnaeth e ddim chwilio am fy allweddi."
+    },
+    {
+      "english": "we didn't go to the station.",
+      "welsh": "Aethon ni ddim i'r orsaf."
+    },
+    {
+      "english": "he has been busy.",
+      "welsh": "Mae e wedi bod yn brysur."
+    },
+    {
+      "english": "You (plural) are walking to the shop today.",
+      "welsh": "Rydych chi'n cerdded i'r siop heddiw."
+    },
+    {
+      "english": "she wasn't tired.",
+      "welsh": "Doedd hi ddim flinedig."
+    },
+    {
+      "english": "They are drinking tea every evening.",
+      "welsh": "Maen nhw'n yfed te bob nos."
+    },
+    {
+      "english": "he wasn't tired.",
+      "welsh": "Doedd e ddim flinedig."
+    },
+    {
+      "english": "You (plural) are walking to the village in the afternoon.",
+      "welsh": "Rydych chi'n cerdded i'r pentref yn y prynhawn."
+    },
+    {
+      "english": "thank you",
+      "welsh": "diolch"
+    },
+    {
+      "english": "You (plural) are looking for my phone now.",
+      "welsh": "Rydych chi'n chwilio am fy ffôn rŵan."
+    },
+    {
+      "english": "She is organising my bag last night.",
+      "welsh": "Mae hi'n trefnu fy mag neithiwr."
+    },
+    {
+      "english": "late song",
+      "welsh": "cân hwyr"
+    },
+    {
+      "english": "bad house",
+      "welsh": "tŷ drwg"
+    },
+    {
+      "english": "late house",
+      "welsh": "tŷ hwyr"
+    },
+    {
+      "english": "child (singular) / children (plural)",
+      "welsh": "plentyn / plant"
+    },
+    {
+      "english": "often",
+      "welsh": "yn aml"
+    },
+    {
+      "english": "she went to the park yesterday.",
+      "welsh": "Aeth hi i'r parc ddoe."
+    },
+    {
+      "english": "song (singular) / songs (plural)",
+      "welsh": "cân / caneuon"
+    },
+    {
+      "english": "bridge (singular) / bridges (plural)",
+      "welsh": "pont / pontydd"
+    },
+    {
+      "english": "this evening",
+      "welsh": "heno"
+    },
+    {
+      "english": "safe song",
+      "welsh": "cân diogel"
+    },
+    {
+      "english": "I didn't watch a film.",
+      "welsh": "Wnes i ddim gwylio ffilm."
+    },
+    {
+      "english": "You read the newspaper last night.",
+      "welsh": "Gwnest ti darllen y papur newydd neithiwr."
+    },
+    {
+      "english": "He is walking to the village after work.",
+      "welsh": "Mae e'n cerdded i'r pentref ar ôl gwaith."
+    },
+    {
+      "english": "old car",
+      "welsh": "car hen"
+    },
+    {
+      "english": "I am practising music in the afternoon.",
+      "welsh": "Dw i'n ymarfer cerddoriaeth yn y prynhawn."
+    },
+    {
+      "english": "she went to the village after work.",
+      "welsh": "Aeth hi i'r pentref ar ôl gwaith."
+    },
+    {
+      "english": "hungry cat",
+      "welsh": "cath llwglyd"
+    },
+    {
+      "english": "she has a phone.",
+      "welsh": "Mae ganddi hi ffôn."
+    },
+    {
+      "english": "you (plural) went to the park yesterday.",
+      "welsh": "Aethoch chi i'r parc ddoe."
+    },
+    {
+      "english": "We didn't find my phone.",
+      "welsh": "Wnaethon ni ddim dod o hyd i fy ffôn."
+    },
+    {
+      "english": "stations",
+      "welsh": "gorsafoedd"
+    },
+    {
+      "english": "We didn't watch a film.",
+      "welsh": "Wnaethon ni ddim gwylio ffilm."
+    },
+    {
+      "english": "They didn't eat breakfast.",
+      "welsh": "Wnaethon nhw ddim bwyta brecwast."
+    },
+    {
+      "english": "weekend (singular) / weekends (plural)",
+      "welsh": "penwythnos / penwythnosau"
+    },
+    {
+      "english": "You are cold.",
+      "welsh": "Rwyt ti'n oer."
+    },
+    {
+      "english": "You are watching television early.",
+      "welsh": "Rwyt ti'n gwylio teledu yn gynnar."
+    },
+    {
+      "english": "You (plural) are organising my wardrobe late.",
+      "welsh": "Rydych chi'n trefnu fy nghwpwrdd dillad yn hwyr."
+    },
+    {
+      "english": "you didn't go to school.",
+      "welsh": "Aest ti ddim i'r ysgol."
+    },
+    {
+      "english": "You are walking to the shop in the afternoon.",
+      "welsh": "Rwyt ti'n cerdded i'r siop yn y prynhawn."
+    },
+    {
+      "english": "bridge",
+      "welsh": "pont"
+    },
+    {
+      "english": "I didn't buy a coffee.",
+      "welsh": "Wnes i ddim prynu coffi."
+    },
+    {
+      "english": "bread",
+      "welsh": "bara"
+    },
+    {
+      "english": "newspaper",
+      "welsh": "papur newydd"
+    },
+    {
+      "english": "She is not eating cake on the weekend.",
+      "welsh": "Dydy hi ddim yn bwyta cacen dros y penwythnos."
+    },
+    {
+      "english": "I hope that everything is okay.",
+      "welsh": "Dw i'n gobeithio bod popeth yn iawn."
+    },
+    {
+      "english": "She is organising my bag every morning.",
+      "welsh": "Mae hi'n trefnu fy mag bob bore."
+    },
+    {
+      "english": "I am not slow.",
+      "welsh": "Dw i ddim yn araf."
+    },
+    {
+      "english": "You (plural) are looking for my keys today.",
+      "welsh": "Rydych chi'n chwilio am fy allweddi heddiw."
+    },
+    {
+      "english": "We watched a film yesterday.",
+      "welsh": "Gwnaethon ni gwylio ffilm ddoe."
+    },
+    {
+      "english": "We didn't write a poem.",
+      "welsh": "Wnaethon ni ddim ysgrifennu cerdd."
+    },
+    {
+      "english": "I am late.",
+      "welsh": "Dw i'n hwyr."
+    },
+    {
+      "english": "I am waiting in the café tomorrow.",
+      "welsh": "Dw i'n aros yn y caffi yfory."
+    },
+    {
+      "english": "slow cat",
+      "welsh": "cath araf"
+    },
+    {
+      "english": "old",
+      "welsh": "hen"
+    },
+    {
+      "english": "you (plural) don't have a bag.",
+      "welsh": "Does gyda chi ddim bag."
+    },
+    {
+      "english": "I am not thirsty.",
+      "welsh": "Dw i ddim yn sychedig."
+    },
+    {
+      "english": "She is waiting at the station today.",
+      "welsh": "Mae hi'n aros yn yr orsaf heddiw."
+    },
+    {
+      "english": "I am organising my bag at the moment.",
+      "welsh": "Dw i'n trefnu fy mag ar yr adeg hon."
+    },
+    {
+      "english": "I didn't look for my keys.",
+      "welsh": "Wnes i ddim chwilio am fy allweddi."
+    },
+    {
+      "english": "I am working in the office after work.",
+      "welsh": "Dw i'n gweithio yn y swyddfa ar ôl gwaith."
+    },
+    {
+      "english": "We are tidying up my bedroom last night.",
+      "welsh": "Rydyn ni'n tacluso fy ystafell wely neithiwr."
+    },
+    {
+      "english": "she went to the village yesterday.",
+      "welsh": "Aeth hi i'r pentref ddoe."
+    },
+    {
+      "english": "I am organising my wardrobe every day.",
+      "welsh": "Dw i'n trefnu fy nghwpwrdd dillad bob dydd."
+    },
+    {
+      "english": "excuse me",
+      "welsh": "esgusodwch fi"
+    },
+    {
+      "english": "ready car",
+      "welsh": "car barod"
+    },
+    {
+      "english": "I didn't read the newspaper.",
+      "welsh": "Wnes i ddim darllen y papur newydd."
+    },
+    {
+      "english": "I am tidying up my bedroom at the moment.",
+      "welsh": "Dw i'n tacluso fy ystafell wely ar yr adeg hon."
+    },
+    {
+      "english": "You watched television today.",
+      "welsh": "Gwnest ti gwylio teledu heddiw."
+    },
+    {
+      "english": "He is eating cake every morning.",
+      "welsh": "Mae e'n bwyta cacen bob bore."
+    },
+    {
+      "english": "He is travelling by bus this morning.",
+      "welsh": "Mae e'n teithio ar y bws y bore 'ma."
+    },
+    {
+      "english": "children",
+      "welsh": "plant"
+    },
+    {
+      "english": "I hope that the weather is good.",
+      "welsh": "Dw i'n gobeithio bod y tywydd yn dda."
+    },
+    {
+      "english": "You didn't listen to music.",
+      "welsh": "Wnest ti ddim gwrando ar cerddoriaeth."
+    },
+    {
+      "english": "I went home yesterday.",
+      "welsh": "Es i adre ddoe."
+    },
+    {
+      "english": "We are looking for my keys today.",
+      "welsh": "Rydyn ni'n chwilio am fy allweddi heddiw."
+    },
+    {
+      "english": "open",
+      "welsh": "ar agor"
+    },
+    {
+      "english": "They are walking to the shop tomorrow.",
+      "welsh": "Maen nhw'n cerdded i'r siop yfory."
+    },
+    {
+      "english": "I am reading a book on the weekend.",
+      "welsh": "Dw i'n darllen llyfr dros y penwythnos."
+    },
+    {
+      "english": "She is looking for the map early.",
+      "welsh": "Mae hi'n chwilio am y map yn gynnar."
+    },
+    {
+      "english": "poem (singular) / poems (plural)",
+      "welsh": "cerdd / cerddi"
+    },
+    {
+      "english": "he doesn't have a bag.",
+      "welsh": "Does ganddo fe ddim bag."
+    },
+    {
+      "english": "I am not early.",
+      "welsh": "Dw i ddim yn gynnar."
+    },
+    {
+      "english": "You (plural) are practising Welsh every morning.",
+      "welsh": "Rydych chi'n ymarfer Cymraeg bob bore."
+    },
+    {
+      "english": "We are travelling by bus every day.",
+      "welsh": "Rydyn ni'n teithio ar y bws bob dydd."
+    },
+    {
+      "english": "see you soon",
+      "welsh": "Welwn ni di cyn bo hir"
+    },
+    {
+      "english": "We are walking to the village always.",
+      "welsh": "Rydyn ni'n cerdded i'r pentref bob amser."
+    },
+    {
+      "english": "I am not ready.",
+      "welsh": "Dw i ddim yn barod."
+    },
+    {
+      "english": "You (plural) are not reading the newspaper always.",
+      "welsh": "Dydych chi ddim yn darllen y papur newydd bob amser."
+    },
+    {
+      "english": "He didn't write a message.",
+      "welsh": "Wnaeth e ddim ysgrifennu neges."
+    },
+    {
+      "english": "I am reading the newspaper often.",
+      "welsh": "Dw i'n darllen y papur newydd yn aml."
+    },
+    {
+      "english": "We are eating lunch at the moment.",
+      "welsh": "Rydyn ni'n bwyta cinio ar yr adeg hon."
+    },
+    {
+      "english": "You are listening to music never.",
+      "welsh": "Rwyt ti'n gwrando ar cerddoriaeth byth."
+    },
+    {
+      "english": "He is reading the newspaper late.",
+      "welsh": "Mae e'n darllen y papur newydd yn hwyr."
+    },
+    {
+      "english": "we have a map.",
+      "welsh": "Mae gyda ni map."
+    },
+    {
+      "english": "She is listening to a song this afternoon.",
+      "welsh": "Mae hi'n gwrando ar cân y prynhawn 'ma."
+    },
+    {
+      "english": "You are not writing a message in the morning.",
+      "welsh": "Dwyt ti ddim yn ysgrifennu neges yn y bore."
+    },
+    {
+      "english": "They are watching television this evening.",
+      "welsh": "Maen nhw'n gwylio teledu heno."
+    },
+    {
+      "english": "You didn't find my phone.",
+      "welsh": "Wnest ti ddim dod o hyd i fy ffôn."
+    },
+    {
+      "english": "You are not listening to a song at the moment.",
+      "welsh": "Dwyt ti ddim yn gwrando ar cân ar yr adeg hon."
+    },
+    {
+      "english": "You are writing a letter this morning.",
+      "welsh": "Rwyt ti'n ysgrifennu llythyr y bore 'ma."
+    },
+    {
+      "english": "warm",
+      "welsh": "cynnes"
+    },
+    {
+      "english": "you went to the market last night.",
+      "welsh": "Aest ti i'r farchnad neithiwr."
+    },
+    {
+      "english": "You are eating lunch at the moment.",
+      "welsh": "Rwyt ti'n bwyta cinio ar yr adeg hon."
+    },
+    {
+      "english": "You are not small.",
+      "welsh": "Dwyt ti ddim yn bach."
+    },
+    {
+      "english": "They are practising Welsh this evening.",
+      "welsh": "Maen nhw'n ymarfer Cymraeg heno."
+    },
+    {
+      "english": "He is listening to a song sometimes.",
+      "welsh": "Mae e'n gwrando ar cân weithiau."
+    },
+    {
+      "english": "they were busy.",
+      "welsh": "Roedden nhw prysur."
+    },
+    {
+      "english": "You (plural) are watching a film every day.",
+      "welsh": "Rydych chi'n gwylio ffilm bob dydd."
+    },
+    {
+      "english": "You (plural) didn't buy a train ticket.",
+      "welsh": "Wnaethoch chi ddim prynu tocyn trên."
+    },
+    {
+      "english": "They didn't listen to a song.",
+      "welsh": "Wnaethon nhw ddim gwrando ar cân."
+    },
+    {
+      "english": "coffee",
+      "welsh": "coffi"
+    },
+    {
+      "english": "big cat",
+      "welsh": "cath mawr"
+    },
+    {
+      "english": "He is travelling by train in the afternoon.",
+      "welsh": "Mae e'n teithio ar y trên yn y prynhawn."
+    },
+    {
+      "english": "We are listening to a song now.",
+      "welsh": "Rydyn ni'n gwrando ar cân rŵan."
+    },
+    {
+      "english": "You are looking for my keys at the moment.",
+      "welsh": "Rwyt ti'n chwilio am fy allweddi ar yr adeg hon."
+    },
+    {
+      "english": "You are practising music every evening.",
+      "welsh": "Rwyt ti'n ymarfer cerddoriaeth bob nos."
+    },
+    {
+      "english": "You (plural) are practising music every morning.",
+      "welsh": "Rydych chi'n ymarfer cerddoriaeth bob bore."
+    },
+    {
+      "english": "I am not calm.",
+      "welsh": "Dw i ddim yn tawel."
+    },
+    {
+      "english": "station (singular) / stations (plural)",
+      "welsh": "gorsaf / gorsafoedd"
+    },
+    {
+      "english": "I am slow.",
+      "welsh": "Dw i'n araf."
+    },
+    {
+      "english": "He didn't find my phone.",
+      "welsh": "Wnaeth e ddim dod o hyd i fy ffôn."
+    },
+    {
+      "english": "I am not speaking Welsh this evening.",
+      "welsh": "Dw i ddim yn siarad Cymraeg heno."
+    },
+    {
+      "english": "He is organising my bag sometimes.",
+      "welsh": "Mae e'n trefnu fy mag weithiau."
+    },
+    {
+      "english": "hat",
+      "welsh": "het"
+    },
+    {
+      "english": "You (plural) are watching television now.",
+      "welsh": "Rydych chi'n gwylio teledu rŵan."
+    },
+    {
+      "english": "They are organising my bag now.",
+      "welsh": "Maen nhw'n trefnu fy mag rŵan."
+    },
+    {
+      "english": "you (plural) don't have time.",
+      "welsh": "Does gyda chi ddim amser."
+    },
+    {
+      "english": "He is reading the newspaper early.",
+      "welsh": "Mae e'n darllen y papur newydd yn gynnar."
+    },
+    {
+      "english": "sad song",
+      "welsh": "cân drist"
+    },
+    {
+      "english": "You are working at work every morning.",
+      "welsh": "Rwyt ti'n gweithio yn y gwaith bob bore."
+    },
+    {
+      "english": "You are not walking to the village for a short time.",
+      "welsh": "Dwyt ti ddim yn cerdded i'r pentref am amser byr."
+    },
+    {
+      "english": "of course",
+      "welsh": "wrth gwrs"
+    },
+    {
+      "english": "in my opinion",
+      "welsh": "fy marn i"
+    },
+    {
+      "english": "You (plural) read a book yesterday.",
+      "welsh": "Gwnaethoch chi darllen llyfr ddoe."
+    },
+    {
+      "english": "I am not new.",
+      "welsh": "Dw i ddim yn newydd."
+    },
+    {
+      "english": "They are working in the office sometimes.",
+      "welsh": "Maen nhw'n gweithio yn y swyddfa weithiau."
+    },
+    {
+      "english": "slow journey",
+      "welsh": "taith araf"
+    },
+    {
+      "english": "closed",
+      "welsh": "ar gau"
+    },
+    {
+      "english": "We are eating lunch tomorrow.",
+      "welsh": "Rydyn ni'n bwyta cinio yfory."
+    },
+    {
+      "english": "She is reading a book on the weekend.",
+      "welsh": "Mae hi'n darllen llyfr dros y penwythnos."
+    },
+    {
+      "english": "You are not bad.",
+      "welsh": "Dwyt ti ddim yn drwg."
+    },
+    {
+      "english": "I am not looking for my phone on the weekend.",
+      "welsh": "Dw i ddim yn chwilio am fy ffôn dros y penwythnos."
+    },
+    {
+      "english": "They didn't find the map.",
+      "welsh": "Wnaethon nhw ddim dod o hyd i y map."
+    },
+    {
+      "english": "You (plural) are not walking to the shop sometimes.",
+      "welsh": "Dydych chi ddim yn cerdded i'r siop weithiau."
+    },
+    {
+      "english": "books",
+      "welsh": "llyfrau"
+    },
+    {
+      "english": "They wrote a message today.",
+      "welsh": "Gwnaethon nhw ysgrifennu neges heddiw."
+    },
+    {
+      "english": "yesterday",
+      "welsh": "ddoe"
+    },
+    {
+      "english": "they went to the shop last night.",
+      "welsh": "Aethon nhw i'r siop neithiwr."
+    },
+    {
+      "english": "we have a key.",
+      "welsh": "Mae gyda ni allwedd."
+    },
+    {
+      "english": "she was late.",
+      "welsh": "Roedd hi yn hwyr."
+    },
+    {
+      "english": "at the moment",
+      "welsh": "ar yr adeg hon"
+    },
+    {
+      "english": "We are speaking Welsh this morning.",
+      "welsh": "Rydyn ni'n siarad Cymraeg y bore 'ma."
+    },
+    {
+      "english": "The door is open.",
+      "welsh": "Mae'r drws ar agor."
+    },
+    {
+      "english": "big song",
+      "welsh": "cân mawr"
+    },
+    {
+      "english": "She is not practising music always.",
+      "welsh": "Dydy hi ddim yn ymarfer cerddoriaeth bob amser."
+    },
+    {
+      "english": "sorry",
+      "welsh": "sori"
+    },
+    {
+      "english": "We are looking for the map this afternoon.",
+      "welsh": "Rydyn ni'n chwilio am y map y prynhawn 'ma."
+    },
+    {
+      "english": "You (plural) are not drinking coffee early.",
+      "welsh": "Dydych chi ddim yn yfed coffi yn gynnar."
+    },
+    {
+      "english": "We are writing a letter for a long time.",
+      "welsh": "Rydyn ni'n ysgrifennu llythyr ers amser hir."
+    },
+    {
+      "english": "you don't have time.",
+      "welsh": "Does gen ti ddim amser."
+    },
+    {
+      "english": "a little",
+      "welsh": "ychydig"
+    },
+    {
+      "english": "I like tea.",
+      "welsh": "Dw i'n hoffi te."
+    },
+    {
+      "english": "I don't have a ticket.",
+      "welsh": "Does gen i ddim docyn."
+    },
+    {
+      "english": "We are walking in the park early.",
+      "welsh": "Rydyn ni'n cerdded yn y parc yn gynnar."
+    },
+    {
+      "english": "I am eating breakfast on the weekend.",
+      "welsh": "Dw i'n bwyta brecwast dros y penwythnos."
+    },
+    {
+      "english": "He is practising music after work.",
+      "welsh": "Mae e'n ymarfer cerddoriaeth ar ôl gwaith."
+    },
+    {
+      "english": "milk",
+      "welsh": "llaeth"
+    },
+    {
+      "english": "You (plural) are reading a book this morning.",
+      "welsh": "Rydych chi'n darllen llyfr y bore 'ma."
+    },
+    {
+      "english": "he went to the village yesterday.",
+      "welsh": "Aeth e i'r pentref ddoe."
+    },
+    {
+      "english": "They are writing a message early.",
+      "welsh": "Maen nhw'n ysgrifennu neges yn gynnar."
+    },
+    {
+      "english": "I am tidying up my bedroom often.",
+      "welsh": "Dw i'n tacluso fy ystafell wely yn aml."
+    },
+    {
+      "english": "we don't have a map.",
+      "welsh": "Does gyda ni ddim map."
+    },
+    {
+      "english": "they went to the station after work.",
+      "welsh": "Aethon nhw i'r orsaf ar ôl gwaith."
+    },
+    {
+      "english": "you went to the museum after work.",
+      "welsh": "Aest ti i'r amgueddfa ar ôl gwaith."
+    },
+    {
+      "english": "They are travelling by bus at the moment.",
+      "welsh": "Maen nhw'n teithio ar y bws ar yr adeg hon."
+    },
+    {
+      "english": "You listened to music yesterday.",
+      "welsh": "Gwnest ti gwrando ar cerddoriaeth ddoe."
+    },
+    {
+      "english": "I am walking to the shop tomorrow.",
+      "welsh": "Dw i'n cerdded i'r siop yfory."
+    },
+    {
+      "english": "he has a ticket.",
+      "welsh": "Mae ganddo fe docyn."
+    },
+    {
+      "english": "They are travelling by train always.",
+      "welsh": "Maen nhw'n teithio ar y trên bob amser."
+    },
+    {
+      "english": "I am not warm.",
+      "welsh": "Dw i ddim yn cynnes."
+    },
+    {
+      "english": "She is not listening to music often.",
+      "welsh": "Dydy hi ddim yn gwrando ar cerddoriaeth yn aml."
+    },
+    {
+      "english": "We are not practising music for a long time.",
+      "welsh": "Dydyn ni ddim yn ymarfer cerddoriaeth ers amser hir."
+    },
+    {
+      "english": "I am writing a message every morning.",
+      "welsh": "Dw i'n ysgrifennu neges bob bore."
+    },
+    {
+      "english": "you know the way.",
+      "welsh": "Rwyt ti'n gwybod y ffordd."
+    },
+    {
+      "english": "rooms",
+      "welsh": "ystafelloedd"
+    },
+    {
+      "english": "You (plural) are reading a book sometimes.",
+      "welsh": "Rydych chi'n darllen llyfr weithiau."
+    },
+    {
+      "english": "you weren't happy.",
+      "welsh": "Doeddet ti ddim hapus."
+    },
+    {
+      "english": "He looked for the map today.",
+      "welsh": "Gwnaeth e chwilio am y map heddiw."
+    },
+    {
+      "english": "He is walking to the village often.",
+      "welsh": "Mae e'n cerdded i'r pentref yn aml."
+    },
+    {
+      "english": "you (plural) didn't go to the museum.",
+      "welsh": "Aethoch chi ddim i'r amgueddfa."
+    },
+    {
+      "english": "She is not tidying up the house in the evening.",
+      "welsh": "Dydy hi ddim yn tacluso y tŷ gyda'r nos."
+    },
+    {
+      "english": "I didn't eat breakfast.",
+      "welsh": "Wnes i ddim bwyta brecwast."
+    },
+    {
+      "english": "She is reading a book after work.",
+      "welsh": "Mae hi'n darllen llyfr ar ôl gwaith."
+    },
+    {
+      "english": "She is drinking water today.",
+      "welsh": "Mae hi'n yfed dŵr heddiw."
+    },
+    {
+      "english": "he went to the station yesterday.",
+      "welsh": "Aeth e i'r orsaf ddoe."
+    },
+    {
+      "english": "They are not walking to the shop in the morning.",
+      "welsh": "Dydyn nhw ddim yn cerdded i'r siop yn y bore."
+    },
+    {
+      "english": "we were at home.",
+      "welsh": "Roedden ni gartref."
+    },
+    {
+      "english": "You are hungry.",
+      "welsh": "Rwyt ti'n llwglyd."
+    },
+    {
+      "english": "sad",
+      "welsh": "drist"
+    },
+    {
+      "english": "every evening",
+      "welsh": "bob nos"
+    },
+    {
+      "english": "She is travelling by bus last night.",
+      "welsh": "Mae hi'n teithio ar y bws neithiwr."
+    },
+    {
+      "english": "I am working at work in the morning.",
+      "welsh": "Dw i'n gweithio yn y gwaith yn y bore."
+    },
+    {
+      "english": "We are writing a letter tomorrow.",
+      "welsh": "Rydyn ni'n ysgrifennu llythyr yfory."
+    },
+    {
+      "english": "You (plural) bought bread today.",
+      "welsh": "Gwnaethoch chi prynu bara heddiw."
+    },
+    {
+      "english": "I am new.",
+      "welsh": "Dw i'n newydd."
+    },
+    {
+      "english": "She is drinking coffee yesterday.",
+      "welsh": "Mae hi'n yfed coffi ddoe."
+    },
+    {
+      "english": "I am working in the office at the moment.",
+      "welsh": "Dw i'n gweithio yn y swyddfa ar yr adeg hon."
+    },
+    {
+      "english": "sad house",
+      "welsh": "tŷ drist"
+    },
+    {
+      "english": "you have a phone.",
+      "welsh": "Mae gen ti ffôn."
+    },
+    {
+      "english": "easy journey",
+      "welsh": "taith hawdd"
+    },
+    {
+      "english": "She is waiting in the café late.",
+      "welsh": "Mae hi'n aros yn y caffi yn hwyr."
+    },
+    {
+      "english": "they went to the park yesterday.",
+      "welsh": "Aethon nhw i'r parc ddoe."
+    },
+    {
+      "english": "they were late.",
+      "welsh": "Roedden nhw yn hwyr."
+    },
+    {
+      "english": "rain",
+      "welsh": "glaw"
+    },
+    {
+      "english": "good morning",
+      "welsh": "bore da"
+    },
+    {
+      "english": "you went to the market after work.",
+      "welsh": "Aest ti i'r farchnad ar ôl gwaith."
+    },
+    {
+      "english": "You are not difficult.",
+      "welsh": "Dwyt ti ddim yn anodd."
+    },
+    {
+      "english": "They are drinking tea in the morning.",
+      "welsh": "Maen nhw'n yfed te yn y bore."
+    },
+    {
+      "english": "I am practising Welsh often.",
+      "welsh": "Dw i'n ymarfer Cymraeg yn aml."
+    },
+    {
+      "english": "ready cat",
+      "welsh": "cath barod"
+    },
+    {
+      "english": "He is not practising music this morning.",
+      "welsh": "Dydy e ddim yn ymarfer cerddoriaeth y bore 'ma."
+    },
+    {
+      "english": "he was busy.",
+      "welsh": "Roedd e prysur."
+    },
+    {
+      "english": "we went to the station yesterday.",
+      "welsh": "Aethon ni i'r orsaf ddoe."
+    },
+    {
+      "english": "She didn't read a book.",
+      "welsh": "Wnaeth hi ddim darllen llyfr."
+    },
+    {
+      "english": "never",
+      "welsh": "byth"
+    },
+    {
+      "english": "I am travelling by train every evening.",
+      "welsh": "Dw i'n teithio ar y trên bob nos."
+    },
+    {
+      "english": "You are not good.",
+      "welsh": "Dwyt ti ddim yn da."
+    },
+    {
+      "english": "letter (singular) / letters (plural)",
+      "welsh": "llythyr / llythyrau"
+    },
+    {
+      "english": "room (singular) / rooms (plural)",
+      "welsh": "ystafell / ystafelloedd"
+    },
+    {
+      "english": "every morning",
+      "welsh": "bob bore"
+    },
+    {
+      "english": "we went to the station after work.",
+      "welsh": "Aethon ni i'r orsaf ar ôl gwaith."
+    },
+    {
+      "english": "She is working in the office every evening.",
+      "welsh": "Mae hi'n gweithio yn y swyddfa bob nos."
+    },
+    {
+      "english": "You (plural) are drinking tea last night.",
+      "welsh": "Rydych chi'n yfed te neithiwr."
+    },
+    {
+      "english": "I am not eating cake now.",
+      "welsh": "Dw i ddim yn bwyta cacen rŵan."
+    },
+    {
+      "english": "I went to school after work.",
+      "welsh": "Es i i'r ysgol ar ôl gwaith."
+    },
+    {
+      "english": "I am not watching television often.",
+      "welsh": "Dw i ddim yn gwylio teledu yn aml."
+    },
+    {
+      "english": "He is working in the office every evening.",
+      "welsh": "Mae e'n gweithio yn y swyddfa bob nos."
+    },
+    {
+      "english": "he went to the museum last night.",
+      "welsh": "Aeth e i'r amgueddfa neithiwr."
+    },
+    {
+      "english": "You are not slow.",
+      "welsh": "Dwyt ti ddim yn araf."
+    },
+    {
+      "english": "you didn't go to the park.",
+      "welsh": "Aest ti ddim i'r parc."
+    },
+    {
+      "english": "You (plural) are eating breakfast at the moment.",
+      "welsh": "Rydych chi'n bwyta brecwast ar yr adeg hon."
+    },
+    {
+      "english": "music",
+      "welsh": "cerddoriaeth"
+    },
+    {
+      "english": "He is watching television in the evening.",
+      "welsh": "Mae e'n gwylio teledu gyda'r nos."
+    },
+    {
+      "english": "busy dog",
+      "welsh": "ci prysur"
+    },
+    {
+      "english": "easy book",
+      "welsh": "llyfr hawdd"
+    },
+    {
+      "english": "shop",
+      "welsh": "siop"
+    },
+    {
+      "english": "street (singular) / streets (plural)",
+      "welsh": "stryd / strydoedd"
+    },
+    {
+      "english": "I know how to get home.",
+      "welsh": "Dw i'n gwybod sut i fynd adre."
+    },
+    {
+      "english": "They are waiting at the station yesterday.",
+      "welsh": "Maen nhw'n aros yn yr orsaf ddoe."
+    },
+    {
+      "english": "You wrote a message yesterday.",
+      "welsh": "Gwnest ti ysgrifennu neges ddoe."
+    },
+    {
+      "english": "He is tidying up the house this evening.",
+      "welsh": "Mae e'n tacluso y tŷ heno."
+    },
+    {
+      "english": "She is watching television in the evening.",
+      "welsh": "Mae hi'n gwylio teledu gyda'r nos."
+    },
+    {
+      "english": "weekends",
+      "welsh": "penwythnosau"
+    },
+    {
+      "english": "You are tidying up my bedroom now.",
+      "welsh": "Rwyt ti'n tacluso fy ystafell wely rŵan."
+    },
+    {
+      "english": "warm song",
+      "welsh": "cân cynnes"
+    },
+    {
+      "english": "bed (singular) / beds (plural)",
+      "welsh": "gwely / gwelyau"
+    },
+    {
+      "english": "She is speaking Welsh tomorrow.",
+      "welsh": "Mae hi'n siarad Cymraeg yfory."
+    },
+    {
+      "english": "We are tidying up the house often.",
+      "welsh": "Rydyn ni'n tacluso y tŷ yn aml."
+    },
+    {
+      "english": "I am looking for my phone for a long time.",
+      "welsh": "Dw i'n chwilio am fy ffôn ers amser hir."
+    },
+    {
+      "english": "thanks a lot",
+      "welsh": "diolch yn fawr"
+    },
+    {
+      "english": "She is eating cake this evening.",
+      "welsh": "Mae hi'n bwyta cacen heno."
+    },
+    {
+      "english": "slow dog",
+      "welsh": "ci araf"
+    },
+    {
+      "english": "I am watching a film this morning.",
+      "welsh": "Dw i'n gwylio ffilm y bore 'ma."
+    },
+    {
+      "english": "You (plural) ate breakfast last night.",
+      "welsh": "Gwnaethoch chi bwyta brecwast neithiwr."
+    },
+    {
+      "english": "I looked for the map today.",
+      "welsh": "Gwnes i chwilio am y map heddiw."
+    },
+    {
+      "english": "in the morning",
+      "welsh": "yn y bore"
+    },
+    {
+      "english": "I am practising Welsh late.",
+      "welsh": "Dw i'n ymarfer Cymraeg yn hwyr."
+    },
+    {
+      "english": "small house",
+      "welsh": "tŷ bach"
+    },
+    {
+      "english": "He is drinking water now.",
+      "welsh": "Mae e'n yfed dŵr rŵan."
+    },
+    {
+      "english": "big",
+      "welsh": "mawr"
+    },
+    {
+      "english": "She is travelling by bus this evening.",
+      "welsh": "Mae hi'n teithio ar y bws heno."
+    },
+    {
+      "english": "He lost my phone last night.",
+      "welsh": "Gwnaeth e colli fy ffôn neithiwr."
+    },
+    {
+      "english": "You are tired.",
+      "welsh": "Rwyt ti'n flinedig."
+    },
+    {
+      "english": "sad cat",
+      "welsh": "cath drist"
+    },
+    {
+      "english": "We lost my phone last night.",
+      "welsh": "Gwnaethon ni colli fy ffôn neithiwr."
+    },
+    {
+      "english": "doors",
+      "welsh": "drysau"
+    },
+    {
+      "english": "good journey",
+      "welsh": "taith da"
+    },
+    {
+      "english": "we went to the shop after work.",
+      "welsh": "Aethon ni i'r siop ar ôl gwaith."
+    },
+    {
+      "english": "She read a book yesterday.",
+      "welsh": "Gwnaeth hi darllen llyfr ddoe."
+    },
+    {
+      "english": "They are listening to a song often.",
+      "welsh": "Maen nhw'n gwrando ar cân yn aml."
+    },
+    {
+      "english": "you don't have a phone.",
+      "welsh": "Does gen ti ddim ffôn."
+    },
+    {
+      "english": "You (plural) are working in the office for a long time.",
+      "welsh": "Rydych chi'n gweithio yn y swyddfa ers amser hir."
+    },
+    {
+      "english": "You are looking for my keys every day.",
+      "welsh": "Rwyt ti'n chwilio am fy allweddi bob dydd."
+    },
+    {
+      "english": "we have a phone.",
+      "welsh": "Mae gyda ni ffôn."
+    },
+    {
+      "english": "He is not organising my wardrobe for a short time.",
+      "welsh": "Dydy e ddim yn trefnu fy nghwpwrdd dillad am amser byr."
+    },
+    {
+      "english": "They didn't write a poem.",
+      "welsh": "Wnaethon nhw ddim ysgrifennu cerdd."
+    },
+    {
+      "english": "We are organising my bag this evening.",
+      "welsh": "Rydyn ni'n trefnu fy mag heno."
+    },
+    {
+      "english": "you (plural) were tired.",
+      "welsh": "Roeddech chi flinedig."
+    },
+    {
+      "english": "warm journey",
+      "welsh": "taith cynnes"
+    },
+    {
+      "english": "they don't have a bag.",
+      "welsh": "Does gyda nhw ddim bag."
+    },
+    {
+      "english": "we don't have a phone.",
+      "welsh": "Does gyda ni ddim ffôn."
+    },
+    {
+      "english": "You looked for my keys last night.",
+      "welsh": "Gwnest ti chwilio am fy allweddi neithiwr."
+    },
+    {
+      "english": "how are you?",
+      "welsh": "sut wyt ti?"
+    },
+    {
+      "english": "you went to the park last night.",
+      "welsh": "Aest ti i'r parc neithiwr."
+    },
+    {
+      "english": "You (plural) are eating breakfast last night.",
+      "welsh": "Rydych chi'n bwyta brecwast neithiwr."
+    },
+    {
+      "english": "you (plural) have a map.",
+      "welsh": "Mae gyda chi map."
+    },
+    {
+      "english": "He is looking for my keys in the evening.",
+      "welsh": "Mae e'n chwilio am fy allweddi gyda'r nos."
+    },
+    {
+      "english": "He didn't buy a coffee.",
+      "welsh": "Wnaeth e ddim prynu coffi."
+    },
+    {
+      "english": "new cat",
+      "welsh": "cath newydd"
+    },
+    {
+      "english": "small journey",
+      "welsh": "taith bach"
+    },
+    {
+      "english": "You (plural) drank tea last night.",
+      "welsh": "Gwnaethoch chi yfed te neithiwr."
+    },
+    {
+      "english": "They are tidying up the house this morning.",
+      "welsh": "Maen nhw'n tacluso y tŷ y bore 'ma."
+    },
+    {
+      "english": "You (plural) are travelling by bus this morning.",
+      "welsh": "Rydych chi'n teithio ar y bws y bore 'ma."
+    },
+    {
+      "english": "I am travelling by bus late.",
+      "welsh": "Dw i'n teithio ar y bws yn hwyr."
+    },
+    {
+      "english": "We are reading a book yesterday.",
+      "welsh": "Rydyn ni'n darllen llyfr ddoe."
+    },
+    {
+      "english": "We are watching television last night.",
+      "welsh": "Rydyn ni'n gwylio teledu neithiwr."
+    },
+    {
+      "english": "book",
+      "welsh": "llyfr"
+    },
+    {
+      "english": "office (singular) / offices (plural)",
+      "welsh": "swyddfa / swyddfeydd"
+    },
+    {
+      "english": "tired car",
+      "welsh": "car flinedig"
+    },
+    {
+      "english": "days",
+      "welsh": "dyddiau"
+    },
+    {
+      "english": "bad car",
+      "welsh": "car drwg"
+    },
+    {
+      "english": "They are writing a letter every evening.",
+      "welsh": "Maen nhw'n ysgrifennu llythyr bob nos."
+    },
+    {
+      "english": "he hasn't sent a message.",
+      "welsh": "Dydy e ddim wedi anfon neges."
+    },
+    {
+      "english": "ready",
+      "welsh": "barod"
+    },
+    {
+      "english": "You are watching a film on the weekend.",
+      "welsh": "Rwyt ti'n gwylio ffilm dros y penwythnos."
+    },
+    {
+      "english": "you (plural) were at home.",
+      "welsh": "Roeddech chi gartref."
+    },
+    {
+      "english": "You (plural) are listening to a song always.",
+      "welsh": "Rydych chi'n gwrando ar cân bob amser."
+    },
+    {
+      "english": "you (plural) went home last night.",
+      "welsh": "Aethoch chi adre neithiwr."
+    },
+    {
+      "english": "You (plural) are writing a message for a long time.",
+      "welsh": "Rydych chi'n ysgrifennu neges ers amser hir."
+    },
+    {
+      "english": "You (plural) are not eating cake on the weekend.",
+      "welsh": "Dydych chi ddim yn bwyta cacen dros y penwythnos."
+    },
+    {
+      "english": "You are walking in the park in the morning.",
+      "welsh": "Rwyt ti'n cerdded yn y parc yn y bore."
+    },
+    {
+      "english": "I am speaking Welsh after work.",
+      "welsh": "Dw i'n siarad Cymraeg ar ôl gwaith."
+    },
+    {
+      "english": "day",
+      "welsh": "diwrnod"
+    },
+    {
+      "english": "She is not drinking tea late.",
+      "welsh": "Dydy hi ddim yn yfed te yn hwyr."
+    },
+    {
+      "english": "you (plural) went to the shop last night.",
+      "welsh": "Aethoch chi i'r siop neithiwr."
+    },
+    {
+      "english": "She didn't look for my keys.",
+      "welsh": "Wnaeth hi ddim chwilio am fy allweddi."
+    },
+    {
+      "english": "you didn't go to the village.",
+      "welsh": "Aest ti ddim i'r pentref."
+    },
+    {
+      "english": "He is practising music every evening.",
+      "welsh": "Mae e'n ymarfer cerddoriaeth bob nos."
+    },
+    {
+      "english": "You are reading a book always.",
+      "welsh": "Rwyt ti'n darllen llyfr bob amser."
+    },
+    {
+      "english": "ready song",
+      "welsh": "cân barod"
+    },
+    {
+      "english": "We are working at work at the moment.",
+      "welsh": "Rydyn ni'n gweithio yn y gwaith ar yr adeg hon."
+    },
+    {
+      "english": "he didn't go to the shop.",
+      "welsh": "Aeth e ddim i'r siop."
+    },
+    {
+      "english": "You are late.",
+      "welsh": "Rwyt ti'n hwyr."
+    },
+    {
+      "english": "window",
+      "welsh": "ffenestr"
+    },
+    {
+      "english": "You are organising my wardrobe after work.",
+      "welsh": "Rwyt ti'n trefnu fy nghwpwrdd dillad ar ôl gwaith."
+    },
+    {
+      "english": "new",
+      "welsh": "newydd"
+    },
+    {
+      "english": "breakfast",
+      "welsh": "brecwast"
+    },
+    {
+      "english": "You are not speaking Welsh yesterday.",
+      "welsh": "Dwyt ti ddim yn siarad Cymraeg ddoe."
+    },
+    {
+      "english": "She drank water yesterday.",
+      "welsh": "Gwnaeth hi yfed dŵr ddoe."
+    },
+    {
+      "english": "message (singular) / messages (plural)",
+      "welsh": "neges / negeseuon"
+    },
+    {
+      "english": "They are waiting at the station always.",
+      "welsh": "Maen nhw'n aros yn yr orsaf bob amser."
+    },
+    {
+      "english": "cars",
+      "welsh": "ceir"
+    },
+    {
+      "english": "I am happy.",
+      "welsh": "Dw i'n hapus."
+    },
+    {
+      "english": "I didn't listen to music.",
+      "welsh": "Wnes i ddim gwrando ar cerddoriaeth."
+    },
+    {
+      "english": "You (plural) are reading the newspaper for a long time.",
+      "welsh": "Rydych chi'n darllen y papur newydd ers amser hir."
+    },
+    {
+      "english": "I am looking for the map often.",
+      "welsh": "Dw i'n chwilio am y map yn aml."
+    },
+    {
+      "english": "The door is not open.",
+      "welsh": "Dydy'r drws ddim ar agor."
+    },
+    {
+      "english": "I didn't drink tea.",
+      "welsh": "Wnes i ddim yfed te."
+    },
+    {
+      "english": "I am drinking tea often.",
+      "welsh": "Dw i'n yfed te yn aml."
+    },
+    {
+      "english": "You (plural) looked for the map yesterday.",
+      "welsh": "Gwnaethoch chi chwilio am y map ddoe."
+    },
+    {
+      "english": "late car",
+      "welsh": "car hwyr"
+    },
+    {
+      "english": "chair",
+      "welsh": "cadair"
+    },
+    {
+      "english": "She is watching a film always.",
+      "welsh": "Mae hi'n gwylio ffilm bob amser."
+    },
+    {
+      "english": "we know the time.",
+      "welsh": "Rydyn ni'n gwybod yr amser."
+    },
+    {
+      "english": "speak soon",
+      "welsh": "Siarad cyn bo hir"
+    },
+    {
+      "english": "car (singular) / cars (plural)",
+      "welsh": "car / ceir"
+    },
+    {
+      "english": "You are not looking for my phone always.",
+      "welsh": "Dwyt ti ddim yn chwilio am fy ffôn bob amser."
+    },
+    {
+      "english": "She is travelling by train every day.",
+      "welsh": "Mae hi'n teithio ar y trên bob dydd."
+    },
+    {
+      "english": "car",
+      "welsh": "car"
+    },
+    {
+      "english": "I am not reading the newspaper last night.",
+      "welsh": "Dw i ddim yn darllen y papur newydd neithiwr."
+    },
+    {
+      "english": "You are old.",
+      "welsh": "Rwyt ti'n hen."
+    },
+    {
+      "english": "name",
+      "welsh": "enw"
+    },
+    {
+      "english": "They ate breakfast yesterday.",
+      "welsh": "Gwnaethon nhw bwyta brecwast ddoe."
+    },
+    {
+      "english": "I am not tired.",
+      "welsh": "Dw i ddim yn flinedig."
+    },
+    {
+      "english": "I am walking to the village now.",
+      "welsh": "Dw i'n cerdded i'r pentref rŵan."
+    },
+    {
+      "english": "they don't have time.",
+      "welsh": "Does gyda nhw ddim amser."
+    },
+    {
+      "english": "every day",
+      "welsh": "bob dydd"
+    },
+    {
+      "english": "bad dog",
+      "welsh": "ci drwg"
+    },
+    {
+      "english": "tea",
+      "welsh": "te"
+    },
+    {
+      "english": "good car",
+      "welsh": "car da"
+    },
+    {
+      "english": "I like coffee.",
+      "welsh": "Dw i'n hoffi coffi."
+    },
+    {
+      "english": "we didn't go to the town.",
+      "welsh": "Aethon ni ddim i'r dref."
+    },
+    {
+      "english": "You are not sad.",
+      "welsh": "Dwyt ti ddim yn drist."
+    },
+    {
+      "english": "You found my phone last night.",
+      "welsh": "Gwnest ti dod o hyd i fy ffôn neithiwr."
+    },
+    {
+      "english": "he wasn't happy.",
+      "welsh": "Doedd e ddim hapus."
+    },
+    {
+      "english": "They are eating cake never.",
+      "welsh": "Maen nhw'n bwyta cacen byth."
+    },
+    {
+      "english": "They are listening to music always.",
+      "welsh": "Maen nhw'n gwrando ar cerddoriaeth bob amser."
+    },
+    {
+      "english": "she went to the shop after work.",
+      "welsh": "Aeth hi i'r siop ar ôl gwaith."
+    },
+    {
+      "english": "He listened to music yesterday.",
+      "welsh": "Gwnaeth e gwrando ar cerddoriaeth ddoe."
+    },
+    {
+      "english": "He is waiting in the café after work.",
+      "welsh": "Mae e'n aros yn y caffi ar ôl gwaith."
+    },
+    {
+      "english": "please",
+      "welsh": "os gwelwch yn dda"
+    },
+    {
+      "english": "You (plural) are eating lunch late.",
+      "welsh": "Rydych chi'n bwyta cinio yn hwyr."
+    },
+    {
+      "english": "They are working at work every morning.",
+      "welsh": "Maen nhw'n gweithio yn y gwaith bob bore."
+    },
+    {
+      "english": "wardrobe",
+      "welsh": "cwpwrdd dillad"
+    },
+    {
+      "english": "songs",
+      "welsh": "caneuon"
+    },
+    {
+      "english": "You are travelling by train after work.",
+      "welsh": "Rwyt ti'n teithio ar y trên ar ôl gwaith."
+    },
+    {
+      "english": "easy",
+      "welsh": "hawdd"
+    },
+    {
+      "english": "You didn't eat breakfast.",
+      "welsh": "Wnest ti ddim bwyta brecwast."
+    },
+    {
+      "english": "You are not tired.",
+      "welsh": "Dwyt ti ddim yn flinedig."
+    },
+    {
+      "english": "You are tidying up my bedroom every evening.",
+      "welsh": "Rwyt ti'n tacluso fy ystafell wely bob nos."
+    },
+    {
+      "english": "phones",
+      "welsh": "ffonau"
+    },
+    {
+      "english": "I am drinking tea early.",
+      "welsh": "Dw i'n yfed te yn gynnar."
+    },
+    {
+      "english": "She is not reading a book for a short time.",
+      "welsh": "Dydy hi ddim yn darllen llyfr am amser byr."
+    },
+    {
+      "english": "She is not waiting in the café this afternoon.",
+      "welsh": "Dydy hi ddim yn aros yn y caffi y prynhawn 'ma."
+    },
+    {
+      "english": "You are not reading the newspaper every morning.",
+      "welsh": "Dwyt ti ddim yn darllen y papur newydd bob bore."
+    },
+    {
+      "english": "You (plural) are travelling by bus every morning.",
+      "welsh": "Rydych chi'n teithio ar y bws bob bore."
+    },
+    {
+      "english": "market (singular) / markets (plural)",
+      "welsh": "marchnad / marchnadoedd"
+    },
+    {
+      "english": "I am drinking coffee every morning.",
+      "welsh": "Dw i'n yfed coffi bob bore."
+    },
+    {
+      "english": "You didn't write a letter.",
+      "welsh": "Wnest ti ddim ysgrifennu llythyr."
+    },
+    {
+      "english": "You (plural) are listening to music often.",
+      "welsh": "Rydych chi'n gwrando ar cerddoriaeth yn aml."
+    },
+    {
+      "english": "difficult",
+      "welsh": "anodd"
+    },
+    {
+      "english": "We are drinking tea after work.",
+      "welsh": "Rydyn ni'n yfed te ar ôl gwaith."
+    },
+    {
+      "english": "They are speaking Welsh often.",
+      "welsh": "Maen nhw'n siarad Cymraeg yn aml."
+    },
+    {
+      "english": "You (plural) found the map last night.",
+      "welsh": "Gwnaethoch chi dod o hyd i y map neithiwr."
+    },
+    {
+      "english": "You (plural) are working in the office in the morning.",
+      "welsh": "Rydych chi'n gweithio yn y swyddfa yn y bore."
+    },
+    {
+      "english": "safe book",
+      "welsh": "llyfr diogel"
+    },
+    {
+      "english": "She is tidying up my bedroom at the moment.",
+      "welsh": "Mae hi'n tacluso fy ystafell wely ar yr adeg hon."
+    },
+    {
+      "english": "I wasn't happy.",
+      "welsh": "Doeddwn i ddim hapus."
+    },
+    {
+      "english": "She looked for my keys last night.",
+      "welsh": "Gwnaeth hi chwilio am fy allweddi neithiwr."
+    },
+    {
+      "english": "small book",
+      "welsh": "llyfr bach"
+    },
+    {
+      "english": "You (plural) are drinking water in the afternoon.",
+      "welsh": "Rydych chi'n yfed dŵr yn y prynhawn."
+    },
+    {
+      "english": "toothbrushes",
+      "welsh": "brwsys dannedd"
+    },
+    {
+      "english": "names",
+      "welsh": "enwau"
+    },
+    {
+      "english": "map",
+      "welsh": "map"
+    },
+    {
+      "english": "You (plural) are not tidying up my bedroom for a long time.",
+      "welsh": "Dydych chi ddim yn tacluso fy ystafell wely ers amser hir."
+    },
+    {
+      "english": "we were tired.",
+      "welsh": "Roedden ni flinedig."
+    },
+    {
+      "english": "houses",
+      "welsh": "tai"
+    },
+    {
+      "english": "You (plural) are listening to music this evening.",
+      "welsh": "Rydych chi'n gwrando ar cerddoriaeth heno."
+    },
+    {
+      "english": "I am not safe.",
+      "welsh": "Dw i ddim yn diogel."
+    },
+    {
+      "english": "I am not working at work this morning.",
+      "welsh": "Dw i ddim yn gweithio yn y gwaith y bore 'ma."
+    },
+    {
+      "english": "you have found my phone.",
+      "welsh": "Rwyt ti wedi dod o hyd i fy ffôn."
+    },
+    {
+      "english": "He is eating lunch for a long time.",
+      "welsh": "Mae e'n bwyta cinio ers amser hir."
+    },
+    {
+      "english": "they have lost my bag.",
+      "welsh": "Maen nhw wedi colli fy mag."
+    },
+    {
+      "english": "He is not drinking water never.",
+      "welsh": "Dydy e ddim yn yfed dŵr byth."
+    },
+    {
+      "english": "He found the map last night.",
+      "welsh": "Gwnaeth e dod o hyd i y map neithiwr."
+    },
+    {
+      "english": "She is watching a film often.",
+      "welsh": "Mae hi'n gwylio ffilm yn aml."
+    },
+    {
+      "english": "you (plural) went to the village yesterday.",
+      "welsh": "Aethoch chi i'r pentref ddoe."
+    },
+    {
+      "english": "cat",
+      "welsh": "cath"
+    },
+    {
+      "english": "You are walking to the shop early.",
+      "welsh": "Rwyt ti'n cerdded i'r siop yn gynnar."
+    },
+    {
+      "english": "I read the newspaper today.",
+      "welsh": "Gwnes i darllen y papur newydd heddiw."
+    },
+    {
+      "english": "They are walking to the village yesterday.",
+      "welsh": "Maen nhw'n cerdded i'r pentref ddoe."
+    },
+    {
+      "english": "You (plural) are writing a message now.",
+      "welsh": "Rydych chi'n ysgrifennu neges rŵan."
+    },
+    {
+      "english": "I am working at work today.",
+      "welsh": "Dw i'n gweithio yn y gwaith heddiw."
+    },
+    {
+      "english": "We are not working in the office never.",
+      "welsh": "Dydyn ni ddim yn gweithio yn y swyddfa byth."
+    },
+    {
+      "english": "She is eating lunch this evening.",
+      "welsh": "Mae hi'n bwyta cinio heno."
+    },
+    {
+      "english": "you (plural) have eaten breakfast.",
+      "welsh": "Rydych chi wedi bwyta brecwast."
+    },
+    {
+      "english": "We are organising my wardrobe yesterday.",
+      "welsh": "Rydyn ni'n trefnu fy nghwpwrdd dillad ddoe."
+    },
+    {
+      "english": "They are practising Welsh in the morning.",
+      "welsh": "Maen nhw'n ymarfer Cymraeg yn y bore."
+    },
+    {
+      "english": "I am not bad.",
+      "welsh": "Dw i ddim yn drwg."
+    },
+    {
+      "english": "He is tidying up my bedroom late.",
+      "welsh": "Mae e'n tacluso fy ystafell wely yn hwyr."
+    },
+    {
+      "english": "He is watching television last night.",
+      "welsh": "Mae e'n gwylio teledu neithiwr."
+    },
+    {
+      "english": "I have a key.",
+      "welsh": "Mae gen i allwedd."
+    },
+    {
+      "english": "You (plural) are working at work late.",
+      "welsh": "Rydych chi'n gweithio yn y gwaith yn hwyr."
+    },
+    {
+      "english": "You (plural) didn't write a letter.",
+      "welsh": "Wnaethoch chi ddim ysgrifennu llythyr."
+    },
+    {
+      "english": "I don't have a key.",
+      "welsh": "Does gen i ddim allwedd."
+    },
+    {
+      "english": "You are calm.",
+      "welsh": "Rwyt ti'n tawel."
+    },
+    {
+      "english": "We are waiting in the café never.",
+      "welsh": "Rydyn ni'n aros yn y caffi byth."
+    },
+    {
+      "english": "They are working at work always.",
+      "welsh": "Maen nhw'n gweithio yn y gwaith bob amser."
+    },
+    {
+      "english": "they went to the museum last night.",
+      "welsh": "Aethon nhw i'r amgueddfa neithiwr."
+    },
+    {
+      "english": "new house",
+      "welsh": "tŷ newydd"
+    },
+    {
+      "english": "they have time.",
+      "welsh": "Mae gyda nhw amser."
+    },
+    {
+      "english": "You are looking for the map often.",
+      "welsh": "Rwyt ti'n chwilio am y map yn aml."
+    },
+    {
+      "english": "you (plural) haven't gone home.",
+      "welsh": "Dydych chi ddim wedi mynd adre."
+    },
+    {
+      "english": "He bought a train ticket today.",
+      "welsh": "Gwnaeth e prynu tocyn trên heddiw."
+    },
+    {
+      "english": "We are not looking for my phone today.",
+      "welsh": "Dydyn ni ddim yn chwilio am fy ffôn heddiw."
+    },
+    {
+      "english": "You didn't drink water.",
+      "welsh": "Wnest ti ddim yfed dŵr."
+    },
+    {
+      "english": "She is writing a letter after work.",
+      "welsh": "Mae hi'n ysgrifennu llythyr ar ôl gwaith."
+    },
+    {
+      "english": "She is organising my wardrobe now.",
+      "welsh": "Mae hi'n trefnu fy nghwpwrdd dillad rŵan."
+    },
+    {
+      "english": "We are watching television early.",
+      "welsh": "Rydyn ni'n gwylio teledu yn gynnar."
+    },
+    {
+      "english": "We are reading the newspaper every day.",
+      "welsh": "Rydyn ni'n darllen y papur newydd bob dydd."
+    },
+    {
+      "english": "tickets",
+      "welsh": "tocynnau"
+    },
+    {
+      "english": "she has been thinking about it for a long time.",
+      "welsh": "Mae hi wedi bod yn meddwl amdano fe ers amser hir."
+    },
+    {
+      "english": "She is not writing a message every day.",
+      "welsh": "Dydy hi ddim yn ysgrifennu neges bob dydd."
+    },
+    {
+      "english": "She is practising Welsh on the weekend.",
+      "welsh": "Mae hi'n ymarfer Cymraeg dros y penwythnos."
+    },
+    {
+      "english": "she went to the park last night.",
+      "welsh": "Aeth hi i'r parc neithiwr."
+    },
+    {
+      "english": "He is drinking coffee yesterday.",
+      "welsh": "Mae e'n yfed coffi ddoe."
+    },
+    {
+      "english": "tired dog",
+      "welsh": "ci flinedig"
+    },
+    {
+      "english": "she was at home.",
+      "welsh": "Roedd hi gartref."
+    },
+    {
+      "english": "we went home after work.",
+      "welsh": "Aethon ni adre ar ôl gwaith."
+    },
+    {
+      "english": "They lost my phone today.",
+      "welsh": "Gwnaethon nhw colli fy ffôn heddiw."
+    },
+    {
+      "english": "He is not working at work in the evening.",
+      "welsh": "Dydy e ddim yn gweithio yn y gwaith gyda'r nos."
+    },
+    {
+      "english": "She found the map yesterday.",
+      "welsh": "Gwnaeth hi dod o hyd i y map ddoe."
+    },
+    {
+      "english": "day (singular) / days (plural)",
+      "welsh": "diwrnod / dyddiau"
+    },
+    {
+      "english": "You are working at work for a long time.",
+      "welsh": "Rwyt ti'n gweithio yn y gwaith ers amser hir."
+    },
+    {
+      "english": "They are not organising my bag early.",
+      "welsh": "Dydyn nhw ddim yn trefnu fy mag yn gynnar."
+    },
+    {
+      "english": "I'm fine",
+      "welsh": "dw i'n iawn"
+    },
+    {
+      "english": "You (plural) are waiting at the station last night.",
+      "welsh": "Rydych chi'n aros yn yr orsaf neithiwr."
+    },
+    {
+      "english": "You are organising my bag late.",
+      "welsh": "Rwyt ti'n trefnu fy mag yn hwyr."
+    },
+    {
+      "english": "you (plural) went to the village after work.",
+      "welsh": "Aethoch chi i'r pentref ar ôl gwaith."
+    },
+    {
+      "english": "We wrote a message yesterday.",
+      "welsh": "Gwnaethon ni ysgrifennu neges ddoe."
+    },
+    {
+      "english": "always",
+      "welsh": "bob amser"
+    },
+    {
+      "english": "he has a phone.",
+      "welsh": "Mae ganddo fe ffôn."
+    },
+    {
+      "english": "She is watching television in the morning.",
+      "welsh": "Mae hi'n gwylio teledu yn y bore."
+    },
+    {
+      "english": "They are tidying up the house often.",
+      "welsh": "Maen nhw'n tacluso y tŷ yn aml."
+    },
+    {
+      "english": "You are not new.",
+      "welsh": "Dwyt ti ddim yn newydd."
+    },
+    {
+      "english": "newspaper (singular) / newspapers (plural)",
+      "welsh": "papur newydd / papurau newydd"
+    },
+    {
+      "english": "I went to the station after work.",
+      "welsh": "Es i i'r orsaf ar ôl gwaith."
+    },
+    {
+      "english": "we went to the village last night.",
+      "welsh": "Aethon ni i'r pentref neithiwr."
+    },
+    {
+      "english": "The window is not closed.",
+      "welsh": "Dydy'r ffenestr ddim ar gau."
+    },
+    {
+      "english": "I am tidying up the house for a short time.",
+      "welsh": "Dw i'n tacluso y tŷ am amser byr."
+    },
+    {
+      "english": "We drank tea last night.",
+      "welsh": "Gwnaethon ni yfed te neithiwr."
+    },
+    {
+      "english": "He wrote a poem last night.",
+      "welsh": "Gwnaeth e ysgrifennu cerdd neithiwr."
+    },
+    {
+      "english": "He didn't read the newspaper.",
+      "welsh": "Wnaeth e ddim darllen y papur newydd."
+    },
+    {
+      "english": "She lost my phone today.",
+      "welsh": "Gwnaeth hi colli fy ffôn heddiw."
+    },
+    {
+      "english": "He is watching a film every morning.",
+      "welsh": "Mae e'n gwylio ffilm bob bore."
+    },
+    {
+      "english": "she went to the station yesterday.",
+      "welsh": "Aeth hi i'r orsaf ddoe."
+    },
+    {
+      "english": "They didn't read a book.",
+      "welsh": "Wnaethon nhw ddim darllen llyfr."
+    },
+    {
+      "english": "I am not old.",
+      "welsh": "Dw i ddim yn hen."
+    },
+    {
+      "english": "I am writing a letter this morning.",
+      "welsh": "Dw i'n ysgrifennu llythyr y bore 'ma."
+    },
+    {
+      "english": "He is waiting in the café never.",
+      "welsh": "Mae e'n aros yn y caffi byth."
+    },
+    {
+      "english": "happy house",
+      "welsh": "tŷ hapus"
+    },
+    {
+      "english": "we haven't eaten lunch.",
+      "welsh": "Dydyn ni ddim wedi bwyta cinio."
+    },
+    {
+      "english": "You are not working at work yesterday.",
+      "welsh": "Dwyt ti ddim yn gweithio yn y gwaith ddoe."
+    },
+    {
+      "english": "You (plural) didn't watch a film.",
+      "welsh": "Wnaethoch chi ddim gwylio ffilm."
+    },
+    {
+      "english": "They are not tidying up my bedroom every day.",
+      "welsh": "Dydyn nhw ddim yn tacluso fy ystafell wely bob dydd."
+    },
+    {
+      "english": "You are organising my wardrobe last night.",
+      "welsh": "Rwyt ti'n trefnu fy nghwpwrdd dillad neithiwr."
+    },
+    {
+      "english": "she doesn't have a map.",
+      "welsh": "Does ganddi hi ddim map."
+    },
+    {
+      "english": "She is eating cake never.",
+      "welsh": "Mae hi'n bwyta cacen byth."
+    },
+    {
+      "english": "We are organising my wardrobe sometimes.",
+      "welsh": "Rydyn ni'n trefnu fy nghwpwrdd dillad weithiau."
+    },
+    {
+      "english": "You are listening to a song in the evening.",
+      "welsh": "Rwyt ti'n gwrando ar cân gyda'r nos."
+    },
+    {
+      "english": "He is speaking Welsh now.",
+      "welsh": "Mae e'n siarad Cymraeg rŵan."
+    },
+    {
+      "english": "early",
+      "welsh": "yn gynnar"
+    },
+    {
+      "english": "early",
+      "welsh": "gynnar"
+    },
+    {
+      "english": "He is practising Welsh never.",
+      "welsh": "Mae e'n ymarfer Cymraeg byth."
+    },
+    {
+      "english": "shops",
+      "welsh": "siopau"
+    },
+    {
+      "english": "I am cold.",
+      "welsh": "Dw i'n oer."
+    },
+    {
+      "english": "table",
+      "welsh": "bwrdd"
+    },
+    {
+      "english": "you (plural) went to the park after work.",
+      "welsh": "Aethoch chi i'r parc ar ôl gwaith."
+    },
+    {
+      "english": "busy book",
+      "welsh": "llyfr prysur"
+    },
+    {
+      "english": "dogs",
+      "welsh": "cŵn"
+    },
+    {
+      "english": "He is practising Welsh for a short time.",
+      "welsh": "Mae e'n ymarfer Cymraeg am amser byr."
+    },
+    {
+      "english": "book (singular) / books (plural)",
+      "welsh": "llyfr / llyfrau"
+    },
+    {
+      "english": "I know the name.",
+      "welsh": "Dw i'n gwybod yr enw."
+    },
+    {
+      "english": "my name is …",
+      "welsh": "fy enw i yw …"
+    },
+    {
+      "english": "bad day",
+      "welsh": "diwrnod drwg"
+    },
+    {
+      "english": "I am not easy.",
+      "welsh": "Dw i ddim yn hawdd."
+    },
+    {
+      "english": "I am not difficult.",
+      "welsh": "Dw i ddim yn anodd."
+    },
+    {
+      "english": "You are not early.",
+      "welsh": "Dwyt ti ddim yn gynnar."
+    },
+    {
+      "english": "in the afternoon",
+      "welsh": "yn y prynhawn"
+    },
+    {
+      "english": "You (plural) lost my phone yesterday.",
+      "welsh": "Gwnaethoch chi colli fy ffôn ddoe."
+    },
+    {
+      "english": "You are speaking Welsh every morning.",
+      "welsh": "Rwyt ti'n siarad Cymraeg bob bore."
+    },
+    {
+      "english": "You are travelling by bus in the morning.",
+      "welsh": "Rwyt ti'n teithio ar y bws yn y bore."
+    },
+    {
+      "english": "newspapers",
+      "welsh": "papurau newydd"
+    },
+    {
+      "english": "he went to the station after work.",
+      "welsh": "Aeth e i'r orsaf ar ôl gwaith."
+    },
+    {
+      "english": "You are slow.",
+      "welsh": "Rwyt ti'n araf."
+    },
+    {
+      "english": "poems",
+      "welsh": "cerddi"
+    },
+    {
+      "english": "He is tidying up the house this morning.",
+      "welsh": "Mae e'n tacluso y tŷ y bore 'ma."
+    },
+    {
+      "english": "You are not warm.",
+      "welsh": "Dwyt ti ddim yn cynnes."
+    },
+    {
+      "english": "They are reading the newspaper this morning.",
+      "welsh": "Maen nhw'n darllen y papur newydd y bore 'ma."
+    },
+    {
+      "english": "She is speaking Welsh every day.",
+      "welsh": "Mae hi'n siarad Cymraeg bob dydd."
+    },
+    {
+      "english": "slow book",
+      "welsh": "llyfr araf"
+    },
+    {
+      "english": "We are waiting in the café tomorrow.",
+      "welsh": "Rydyn ni'n aros yn y caffi yfory."
+    },
+    {
+      "english": "We are not writing a message last night.",
+      "welsh": "Dydyn ni ddim yn ysgrifennu neges neithiwr."
+    },
+    {
+      "english": "you like tea.",
+      "welsh": "Rwyt ti'n hoffi te."
+    },
+    {
+      "english": "offices",
+      "welsh": "swyddfeydd"
+    },
+    {
+      "english": "We are practising Welsh yesterday.",
+      "welsh": "Rydyn ni'n ymarfer Cymraeg ddoe."
+    },
+    {
+      "english": "She is drinking water every morning.",
+      "welsh": "Mae hi'n yfed dŵr bob bore."
+    },
+    {
+      "english": "They are not reading the newspaper every day.",
+      "welsh": "Dydyn nhw ddim yn darllen y papur newydd bob dydd."
+    },
+    {
+      "english": "I ate lunch last night.",
+      "welsh": "Gwnes i bwyta cinio neithiwr."
+    },
+    {
+      "english": "You (plural) are not practising Welsh every day.",
+      "welsh": "Dydych chi ddim yn ymarfer Cymraeg bob dydd."
+    },
+    {
+      "english": "You are not tidying up the house for a short time.",
+      "welsh": "Dwyt ti ddim yn tacluso y tŷ am amser byr."
+    },
+    {
+      "english": "You (plural) are speaking Welsh early.",
+      "welsh": "Rydych chi'n siarad Cymraeg yn gynnar."
+    },
+    {
+      "english": "for a long time",
+      "welsh": "ers amser hir"
+    },
+    {
+      "english": "You (plural) are listening to a song for a short time.",
+      "welsh": "Rydych chi'n gwrando ar cân am amser byr."
+    },
+    {
+      "english": "I like reading.",
+      "welsh": "Dw i'n hoffi darllen."
+    },
+    {
+      "english": "good book",
+      "welsh": "llyfr da"
+    },
+    {
+      "english": "table (singular) / tables (plural)",
+      "welsh": "bwrdd / byrddau"
+    },
+    {
+      "english": "We are watching a film always.",
+      "welsh": "Rydyn ni'n gwylio ffilm bob amser."
+    },
+    {
+      "english": "I am walking to the shop every day.",
+      "welsh": "Dw i'n cerdded i'r siop bob dydd."
+    },
+    {
+      "english": "beds",
+      "welsh": "gwelyau"
+    },
+    {
+      "english": "wardrobe (singular) / wardrobes (plural)",
+      "welsh": "cwpwrdd dillad / cypyrddau dillad"
+    },
+    {
+      "english": "They are not practising Welsh last night.",
+      "welsh": "Dydyn nhw ddim yn ymarfer Cymraeg neithiwr."
+    },
+    {
+      "english": "You (plural) are tidying up the house last night.",
+      "welsh": "Rydych chi'n tacluso y tŷ neithiwr."
+    },
+    {
+      "english": "mountain",
+      "welsh": "mynydd"
+    },
+    {
+      "english": "big day",
+      "welsh": "diwrnod mawr"
+    },
+    {
+      "english": "You are drinking tea every evening.",
+      "welsh": "Rwyt ti'n yfed te bob nos."
+    },
+    {
+      "english": "They are practising music at the moment.",
+      "welsh": "Maen nhw'n ymarfer cerddoriaeth ar yr adeg hon."
+    },
+    {
+      "english": "I am travelling by bus yesterday.",
+      "welsh": "Dw i'n teithio ar y bws ddoe."
+    },
+    {
+      "english": "bad cat",
+      "welsh": "cath drwg"
+    },
+    {
+      "english": "He is looking for the map this afternoon.",
+      "welsh": "Mae e'n chwilio am y map y prynhawn 'ma."
+    },
+    {
+      "english": "safe car",
+      "welsh": "car diogel"
+    },
+    {
+      "english": "She is not speaking Welsh on the weekend.",
+      "welsh": "Dydy hi ddim yn siarad Cymraeg dros y penwythnos."
+    },
+    {
+      "english": "He is organising my bag today.",
+      "welsh": "Mae e'n trefnu fy mag heddiw."
+    },
+    {
+      "english": "We are working in the office today.",
+      "welsh": "Rydyn ni'n gweithio yn y swyddfa heddiw."
+    },
+    {
+      "english": "I am not tidying up the house last night.",
+      "welsh": "Dw i ddim yn tacluso y tŷ neithiwr."
+    },
+    {
+      "english": "The door is closed.",
+      "welsh": "Mae'r drws ar gau."
+    },
+    {
+      "english": "new song",
+      "welsh": "cân newydd"
+    },
+    {
+      "english": "We are drinking water this afternoon.",
+      "welsh": "Rydyn ni'n yfed dŵr y prynhawn 'ma."
+    },
+    {
+      "english": "late dog",
+      "welsh": "ci hwyr"
+    },
+    {
+      "english": "good night",
+      "welsh": "nos da"
+    },
+    {
+      "english": "door (singular) / doors (plural)",
+      "welsh": "drws / drysau"
+    },
+    {
+      "english": "We are drinking water in the morning.",
+      "welsh": "Rydyn ni'n yfed dŵr yn y bore."
+    },
+    {
+      "english": "They didn't lose my phone.",
+      "welsh": "Wnaethon nhw ddim colli fy ffôn."
+    },
+    {
+      "english": "I am not cold.",
+      "welsh": "Dw i ddim yn oer."
+    },
+    {
+      "english": "He didn't watch a film.",
+      "welsh": "Wnaeth e ddim gwylio ffilm."
+    },
+    {
+      "english": "happy cat",
+      "welsh": "cath hapus"
+    },
+    {
+      "english": "you're welcome",
+      "welsh": "croeso"
+    },
+    {
+      "english": "school",
+      "welsh": "ysgol"
+    },
+    {
+      "english": "I don't have a map.",
+      "welsh": "Does gen i ddim map."
+    },
+    {
+      "english": "She listened to music today.",
+      "welsh": "Gwnaeth hi gwrando ar cerddoriaeth heddiw."
+    },
+    {
+      "english": "We are listening to music every morning.",
+      "welsh": "Rydyn ni'n gwrando ar cerddoriaeth bob bore."
+    },
+    {
+      "english": "You (plural) are travelling by train at the moment.",
+      "welsh": "Rydych chi'n teithio ar y trên ar yr adeg hon."
+    },
+    {
+      "english": "They didn't look for the map.",
+      "welsh": "Wnaethon nhw ddim chwilio am y map."
+    },
+    {
+      "english": "They are reading a book this evening.",
+      "welsh": "Maen nhw'n darllen llyfr heno."
+    },
+    {
+      "english": "I am difficult.",
+      "welsh": "Dw i'n anodd."
+    },
+    {
+      "english": "I am reading a book for a short time.",
+      "welsh": "Dw i'n darllen llyfr am amser byr."
+    },
+    {
+      "english": "They looked for my keys yesterday.",
+      "welsh": "Gwnaethon nhw chwilio am fy allweddi ddoe."
+    },
+    {
+      "english": "I went to the village yesterday.",
+      "welsh": "Es i i'r pentref ddoe."
+    },
+    {
+      "english": "I didn't find the map.",
+      "welsh": "Wnes i ddim dod o hyd i y map."
+    },
+    {
+      "english": "you went to the museum yesterday.",
+      "welsh": "Aest ti i'r amgueddfa ddoe."
+    },
+    {
+      "english": "He is writing a letter last night.",
+      "welsh": "Mae e'n ysgrifennu llythyr neithiwr."
+    },
+    {
+      "english": "They are waiting in the café this afternoon.",
+      "welsh": "Maen nhw'n aros yn y caffi y prynhawn 'ma."
+    },
+    {
+      "english": "I am not writing a message never.",
+      "welsh": "Dw i ddim yn ysgrifennu neges byth."
+    },
+    {
+      "english": "I have written a letter.",
+      "welsh": "Dw i wedi ysgrifennu llythyr."
+    },
+    {
+      "english": "We are reading the newspaper for a short time.",
+      "welsh": "Rydyn ni'n darllen y papur newydd am amser byr."
+    },
+    {
+      "english": "You are not drinking tea now.",
+      "welsh": "Dwyt ti ddim yn yfed te rŵan."
+    },
+    {
+      "english": "She bought bread yesterday.",
+      "welsh": "Gwnaeth hi prynu bara ddoe."
+    },
+    {
+      "english": "He is reading a book early.",
+      "welsh": "Mae e'n darllen llyfr yn gynnar."
+    },
+    {
+      "english": "he was at home.",
+      "welsh": "Roedd e gartref."
+    },
+    {
+      "english": "we went to the shop yesterday.",
+      "welsh": "Aethon ni i'r siop ddoe."
+    },
+    {
+      "english": "good",
+      "welsh": "da"
+    },
+    {
+      "english": "She didn't find the map.",
+      "welsh": "Wnaeth hi ddim dod o hyd i y map."
+    },
+    {
+      "english": "We are practising music at the moment.",
+      "welsh": "Rydyn ni'n ymarfer cerddoriaeth ar yr adeg hon."
+    },
+    {
+      "english": "schools",
+      "welsh": "ysgolion"
+    },
+    {
+      "english": "thirsty car",
+      "welsh": "car sychedig"
+    },
+    {
+      "english": "hungry journey",
+      "welsh": "taith llwglyd"
+    },
+    {
+      "english": "She is waiting at the station early.",
+      "welsh": "Mae hi'n aros yn yr orsaf yn gynnar."
+    },
+    {
+      "english": "He is drinking coffee this morning.",
+      "welsh": "Mae e'n yfed coffi y bore 'ma."
+    },
+    {
+      "english": "He is looking for the map early.",
+      "welsh": "Mae e'n chwilio am y map yn gynnar."
+    },
+    {
+      "english": "letter",
+      "welsh": "llythyr"
+    },
+    {
+      "english": "happy day",
+      "welsh": "diwrnod hapus"
+    },
+    {
+      "english": "She is not working in the office in the afternoon.",
+      "welsh": "Dydy hi ddim yn gweithio yn y swyddfa yn y prynhawn."
+    },
+    {
+      "english": "thirsty",
+      "welsh": "sychedig"
+    },
+    {
+      "english": "You are good.",
+      "welsh": "Rwyt ti'n da."
+    },
+    {
+      "english": "I am looking for my phone tomorrow.",
+      "welsh": "Dw i'n chwilio am fy ffôn yfory."
+    },
+    {
+      "english": "She didn't buy a train ticket.",
+      "welsh": "Wnaeth hi ddim prynu tocyn trên."
+    },
+    {
+      "english": "They are reading a book early.",
+      "welsh": "Maen nhw'n darllen llyfr yn gynnar."
+    },
+    {
+      "english": "I am not listening to music often.",
+      "welsh": "Dw i ddim yn gwrando ar cerddoriaeth yn aml."
+    },
+    {
+      "english": "She is practising Welsh at the moment.",
+      "welsh": "Mae hi'n ymarfer Cymraeg ar yr adeg hon."
+    },
+    {
+      "english": "They are not listening to music late.",
+      "welsh": "Dydyn nhw ddim yn gwrando ar cerddoriaeth yn hwyr."
+    },
+    {
+      "english": "I am not organising my bag for a short time.",
+      "welsh": "Dw i ddim yn trefnu fy mag am amser byr."
+    },
+    {
+      "english": "You (plural) are working at work last night.",
+      "welsh": "Rydych chi'n gweithio yn y gwaith neithiwr."
+    },
+    {
+      "english": "They are writing a letter now.",
+      "welsh": "Maen nhw'n ysgrifennu llythyr rŵan."
+    },
+    {
+      "english": "they didn't go to the museum.",
+      "welsh": "Aethon nhw ddim i'r amgueddfa."
+    },
+    {
+      "english": "They are practising music always.",
+      "welsh": "Maen nhw'n ymarfer cerddoriaeth bob amser."
+    },
+    {
+      "english": "now",
+      "welsh": "rŵan"
+    },
+    {
+      "english": "The window is closed.",
+      "welsh": "Mae'r ffenestr ar gau."
+    },
+    {
+      "english": "We are waiting at the station after work.",
+      "welsh": "Rydyn ni'n aros yn yr orsaf ar ôl gwaith."
+    },
+    {
+      "english": "I went to the station last night.",
+      "welsh": "Es i i'r orsaf neithiwr."
+    },
+    {
+      "english": "You are not late.",
+      "welsh": "Dwyt ti ddim yn hwyr."
+    },
+    {
+      "english": "busy",
+      "welsh": "prysur"
+    },
+    {
+      "english": "later",
+      "welsh": "yn hwyrach"
+    },
+    {
+      "english": "You (plural) are drinking tea tomorrow.",
+      "welsh": "Rydych chi'n yfed te yfory."
+    },
+    {
+      "english": "she hasn't found my phone.",
+      "welsh": "Dydy hi ddim wedi dod o hyd i fy ffôn."
+    },
+    {
+      "english": "late journey",
+      "welsh": "taith hwyr"
+    },
+    {
+      "english": "calm",
+      "welsh": "tawel"
+    },
+    {
+      "english": "You (plural) are not watching a film in the morning.",
+      "welsh": "Dydych chi ddim yn gwylio ffilm yn y bore."
+    },
+    {
+      "english": "village (singular) / villages (plural)",
+      "welsh": "pentref / pentrefi"
+    },
+    {
+      "english": "We are not travelling by bus every morning.",
+      "welsh": "Dydyn ni ddim yn teithio ar y bws bob bore."
+    },
+    {
+      "english": "difficult dog",
+      "welsh": "ci anodd"
+    },
+    {
+      "english": "You (plural) didn't eat lunch.",
+      "welsh": "Wnaethoch chi ddim bwyta cinio."
+    },
+    {
+      "english": "they didn't go to school.",
+      "welsh": "Aethon nhw ddim i'r ysgol."
+    },
+    {
+      "english": "She is reading the newspaper this evening.",
+      "welsh": "Mae hi'n darllen y papur newydd heno."
+    },
+    {
+      "english": "he doesn't have a map.",
+      "welsh": "Does ganddo fe ddim map."
+    },
+    {
+      "english": "You are bad.",
+      "welsh": "Rwyt ti'n drwg."
+    },
+    {
+      "english": "They are walking to the village on the weekend.",
+      "welsh": "Maen nhw'n cerdded i'r pentref dros y penwythnos."
+    },
+    {
+      "english": "you (plural) went home yesterday.",
+      "welsh": "Aethoch chi adre ddoe."
+    },
+    {
+      "english": "They are organising my wardrobe tomorrow.",
+      "welsh": "Maen nhw'n trefnu fy nghwpwrdd dillad yfory."
+    },
+    {
+      "english": "we didn't go to the shop.",
+      "welsh": "Aethon ni ddim i'r siop."
+    },
+    {
+      "english": "He is not reading the newspaper in the evening.",
+      "welsh": "Dydy e ddim yn darllen y papur newydd gyda'r nos."
+    },
+    {
+      "english": "I am easy.",
+      "welsh": "Dw i'n hawdd."
+    },
+    {
+      "english": "You (plural) are waiting in the café at the moment.",
+      "welsh": "Rydych chi'n aros yn y caffi ar yr adeg hon."
+    },
+    {
+      "english": "I am tidying up the house this evening.",
+      "welsh": "Dw i'n tacluso y tŷ heno."
+    },
+    {
+      "english": "He is working in the office early.",
+      "welsh": "Mae e'n gweithio yn y swyddfa yn gynnar."
+    },
+    {
+      "english": "You (plural) are not travelling by bus tomorrow.",
+      "welsh": "Dydych chi ddim yn teithio ar y bws yfory."
+    },
+    {
+      "english": "They are watching a film after work.",
+      "welsh": "Maen nhw'n gwylio ffilm ar ôl gwaith."
+    },
+    {
+      "english": "She ate cake last night.",
+      "welsh": "Gwnaeth hi bwyta cacen neithiwr."
+    },
+    {
+      "english": "She is drinking coffee this afternoon.",
+      "welsh": "Mae hi'n yfed coffi y prynhawn 'ma."
+    },
+    {
+      "english": "quick cat",
+      "welsh": "cath cyflym"
+    },
+    {
+      "english": "times",
+      "welsh": "amseroedd"
+    },
+    {
+      "english": "He is not looking for the map always.",
+      "welsh": "Dydy e ddim yn chwilio am y map bob amser."
+    },
+    {
+      "english": "quick song",
+      "welsh": "cân cyflym"
+    },
+    {
+      "english": "you went to the village after work.",
+      "welsh": "Aest ti i'r pentref ar ôl gwaith."
+    },
+    {
+      "english": "You are eating lunch every morning.",
+      "welsh": "Rwyt ti'n bwyta cinio bob bore."
+    },
+    {
+      "english": "toothbrush (singular) / toothbrushes (plural)",
+      "welsh": "brws dannedd / brwsys dannedd"
+    },
+    {
+      "english": "They are watching a film yesterday.",
+      "welsh": "Maen nhw'n gwylio ffilm ddoe."
+    },
+    {
+      "english": "You are safe.",
+      "welsh": "Rwyt ti'n diogel."
+    },
+    {
+      "english": "They are not eating cake after work.",
+      "welsh": "Dydyn nhw ddim yn bwyta cacen ar ôl gwaith."
+    },
+    {
+      "english": "happy",
+      "welsh": "hapus"
+    },
+    {
+      "english": "phone",
+      "welsh": "ffôn"
+    },
+    {
+      "english": "water",
+      "welsh": "dŵr"
+    },
+    {
+      "english": "He is working at work yesterday.",
+      "welsh": "Mae e'n gweithio yn y gwaith ddoe."
+    },
+    {
+      "english": "I miss you",
+      "welsh": "Dw i'n gweld dy eisiau"
+    },
+    {
+      "english": "He is organising my wardrobe always.",
+      "welsh": "Mae e'n trefnu fy nghwpwrdd dillad bob amser."
+    },
+    {
+      "english": "You are watching television for a short time.",
+      "welsh": "Rwyt ti'n gwylio teledu am amser byr."
+    },
+    {
+      "english": "You (plural) are organising my wardrobe today.",
+      "welsh": "Rydych chi'n trefnu fy nghwpwrdd dillad heddiw."
+    },
+    {
+      "english": "early house",
+      "welsh": "tŷ gynnar"
+    },
+    {
+      "english": "I watched a film yesterday.",
+      "welsh": "Gwnes i gwylio ffilm ddoe."
+    },
+    {
+      "english": "She is walking to the shop this afternoon.",
+      "welsh": "Mae hi'n cerdded i'r siop y prynhawn 'ma."
+    },
+    {
+      "english": "hungry day",
+      "welsh": "diwrnod llwglyd"
+    },
+    {
+      "english": "She is travelling by train last night.",
+      "welsh": "Mae hi'n teithio ar y trên neithiwr."
+    },
+    {
+      "english": "You (plural) are not looking for the map in the evening.",
+      "welsh": "Dydych chi ddim yn chwilio am y map gyda'r nos."
+    },
+    {
+      "english": "small",
+      "welsh": "bach"
+    },
+    {
+      "english": "You are thirsty.",
+      "welsh": "Rwyt ti'n sychedig."
+    },
+    {
+      "english": "They watched television today.",
+      "welsh": "Gwnaethon nhw gwylio teledu heddiw."
+    },
+    {
+      "english": "he went to the shop last night.",
+      "welsh": "Aeth e i'r siop neithiwr."
+    },
+    {
+      "english": "I went home after work.",
+      "welsh": "Es i adre ar ôl gwaith."
+    },
+    {
+      "english": "We are travelling by train for a short time.",
+      "welsh": "Rydyn ni'n teithio ar y trên am amser byr."
+    },
+    {
+      "english": "You (plural) didn't find my phone.",
+      "welsh": "Wnaethoch chi ddim dod o hyd i fy ffôn."
+    },
+    {
+      "english": "not yet",
+      "welsh": "ddim eto"
+    },
+    {
+      "english": "room",
+      "welsh": "ystafell"
+    },
+    {
+      "english": "You are walking in the park in the evening.",
+      "welsh": "Rwyt ti'n cerdded yn y parc gyda'r nos."
+    },
+    {
+      "english": "We are not waiting in the café always.",
+      "welsh": "Dydyn ni ddim yn aros yn y caffi bob amser."
+    },
+    {
+      "english": "He is not waiting at the station never.",
+      "welsh": "Dydy e ddim yn aros yn yr orsaf byth."
+    },
+    {
+      "english": "new book",
+      "welsh": "llyfr newydd"
+    },
+    {
+      "english": "You (plural) are waiting at the station this morning.",
+      "welsh": "Rydych chi'n aros yn yr orsaf y bore 'ma."
+    },
+    {
+      "english": "she doesn't have time.",
+      "welsh": "Does ganddi hi ddim amser."
+    },
+    {
+      "english": "I have a bag.",
+      "welsh": "Mae gen i bag."
+    },
+    {
+      "english": "You are practising Welsh in the afternoon.",
+      "welsh": "Rwyt ti'n ymarfer Cymraeg yn y prynhawn."
+    },
+    {
+      "english": "They bought bread today.",
+      "welsh": "Gwnaethon nhw prynu bara heddiw."
+    },
+    {
+      "english": "maps",
+      "welsh": "mapiau"
+    },
+    {
+      "english": "good evening",
+      "welsh": "noswaith dda"
+    },
+    {
+      "english": "difficult car",
+      "welsh": "car anodd"
+    },
+    {
+      "english": "I am safe.",
+      "welsh": "Dw i'n diogel."
+    },
+    {
+      "english": "You (plural) wrote a letter last night.",
+      "welsh": "Gwnaethoch chi ysgrifennu llythyr neithiwr."
+    },
+    {
+      "english": "I am not late.",
+      "welsh": "Dw i ddim yn hwyr."
+    },
+    {
+      "english": "late",
+      "welsh": "yn hwyr"
+    },
+    {
+      "english": "good house",
+      "welsh": "tŷ da"
+    },
+    {
+      "english": "I like music.",
+      "welsh": "Dw i'n hoffi cerddoriaeth."
+    },
+    {
+      "english": "new day",
+      "welsh": "diwrnod newydd"
+    },
+    {
+      "english": "friend (singular) / friends (plural)",
+      "welsh": "ffrind / ffrindiau"
+    },
+    {
+      "english": "He is not watching a film at the moment.",
+      "welsh": "Dydy e ddim yn gwylio ffilm ar yr adeg hon."
+    },
+    {
+      "english": "You are easy.",
+      "welsh": "Rwyt ti'n hawdd."
+    },
+    {
+      "english": "She is writing a letter sometimes.",
+      "welsh": "Mae hi'n ysgrifennu llythyr weithiau."
+    },
+    {
+      "english": "You (plural) are watching a film every morning.",
+      "welsh": "Rydych chi'n gwylio ffilm bob bore."
+    },
+    {
+      "english": "door",
+      "welsh": "drws"
+    },
+    {
+      "english": "hello",
+      "welsh": "helo"
+    },
+    {
+      "english": "I am listening to music last night.",
+      "welsh": "Dw i'n gwrando ar cerddoriaeth neithiwr."
+    },
+    {
+      "english": "we have lost my bag.",
+      "welsh": "Rydyn ni wedi colli fy mag."
+    },
+    {
+      "english": "You are writing a message late.",
+      "welsh": "Rwyt ti'n ysgrifennu neges yn hwyr."
+    },
+    {
+      "english": "museum",
+      "welsh": "amgueddfa"
+    },
+    {
+      "english": "She is walking to the shop in the morning.",
+      "welsh": "Mae hi'n cerdded i'r siop yn y bore."
+    },
+    {
+      "english": "She is looking for my keys in the morning.",
+      "welsh": "Mae hi'n chwilio am fy allweddi yn y bore."
+    },
+    {
+      "english": "She is working at work now.",
+      "welsh": "Mae hi'n gweithio yn y gwaith rŵan."
+    },
+    {
+      "english": "safe house",
+      "welsh": "tŷ diogel"
+    },
+    {
+      "english": "We are not walking in the park never.",
+      "welsh": "Dydyn ni ddim yn cerdded yn y parc byth."
+    },
+    {
+      "english": "We are not listening to a song late.",
+      "welsh": "Dydyn ni ddim yn gwrando ar cân yn hwyr."
+    },
+    {
+      "english": "I am eating lunch for a short time.",
+      "welsh": "Dw i'n bwyta cinio am amser byr."
+    },
+    {
+      "english": "they went to the station yesterday.",
+      "welsh": "Aethon nhw i'r orsaf ddoe."
+    },
+    {
+      "english": "she went to the shop last night.",
+      "welsh": "Aeth hi i'r siop neithiwr."
+    },
+    {
+      "english": "He is travelling by bus every day.",
+      "welsh": "Mae e'n teithio ar y bws bob dydd."
+    },
+    {
+      "english": "happy Christmas",
+      "welsh": "Nadolig Llawen"
+    },
+    {
+      "english": "safe cat",
+      "welsh": "cath diogel"
+    },
+    {
+      "english": "They are not speaking Welsh in the afternoon.",
+      "welsh": "Dydyn nhw ddim yn siarad Cymraeg yn y prynhawn."
+    },
+    {
+      "english": "You are not travelling by train often.",
+      "welsh": "Dwyt ti ddim yn teithio ar y trên yn aml."
+    },
+    {
+      "english": "You are reading the newspaper after work.",
+      "welsh": "Rwyt ti'n darllen y papur newydd ar ôl gwaith."
+    },
+    {
+      "english": "You (plural) are walking to the village for a long time.",
+      "welsh": "Rydych chi'n cerdded i'r pentref ers amser hir."
+    },
+    {
+      "english": "They are travelling by bus never.",
+      "welsh": "Maen nhw'n teithio ar y bws byth."
+    },
+    {
+      "english": "poem",
+      "welsh": "cerdd"
+    },
+    {
+      "english": "He is looking for my keys for a long time.",
+      "welsh": "Mae e'n chwilio am fy allweddi ers amser hir."
+    },
+    {
+      "english": "old journey",
+      "welsh": "taith hen"
+    },
+    {
+      "english": "She is tidying up the house this evening.",
+      "welsh": "Mae hi'n tacluso y tŷ heno."
+    },
+    {
+      "english": "I am warm.",
+      "welsh": "Dw i'n cynnes."
+    },
+    {
+      "english": "She is walking in the park yesterday.",
+      "welsh": "Mae hi'n cerdded yn y parc ddoe."
+    },
+    {
+      "english": "you (plural) went to the shop yesterday.",
+      "welsh": "Aethoch chi i'r siop ddoe."
+    },
+    {
+      "english": "cold house",
+      "welsh": "tŷ oer"
+    },
+    {
+      "english": "I am waiting at the station every morning.",
+      "welsh": "Dw i'n aros yn yr orsaf bob bore."
+    },
+    {
+      "english": "I am speaking Welsh for a short time.",
+      "welsh": "Dw i'n siarad Cymraeg am amser byr."
+    },
+    {
+      "english": "journeys",
+      "welsh": "teithiau"
+    },
+    {
+      "english": "you know the name.",
+      "welsh": "Rwyt ti'n gwybod yr enw."
+    },
+    {
+      "english": "I am walking to the village sometimes.",
+      "welsh": "Dw i'n cerdded i'r pentref weithiau."
+    },
+    {
+      "english": "you like the park.",
+      "welsh": "Rwyt ti'n hoffi y parc."
+    },
+    {
+      "english": "She is writing a message in the afternoon.",
+      "welsh": "Mae hi'n ysgrifennu neges yn y prynhawn."
+    },
+    {
+      "english": "I am watching a film often.",
+      "welsh": "Dw i'n gwylio ffilm yn aml."
+    },
+    {
+      "english": "You (plural) listened to music yesterday.",
+      "welsh": "Gwnaethoch chi gwrando ar cerddoriaeth ddoe."
+    },
+    {
+      "english": "house (singular) / houses (plural)",
+      "welsh": "tŷ / tai"
+    },
+    {
+      "english": "He is not travelling by train every day.",
+      "welsh": "Dydy e ddim yn teithio ar y trên bob dydd."
+    },
+    {
+      "english": "You (plural) are tidying up my bedroom always.",
+      "welsh": "Rydych chi'n tacluso fy ystafell wely bob amser."
+    },
+    {
+      "english": "They are watching television every morning.",
+      "welsh": "Maen nhw'n gwylio teledu bob bore."
+    },
+    {
+      "english": "she didn't go to the market.",
+      "welsh": "Aeth hi ddim i'r farchnad."
+    },
+    {
+      "english": "they weren't at home.",
+      "welsh": "Doedden nhw ddim gartref."
+    },
+    {
+      "english": "they weren't tired.",
+      "welsh": "Doedden nhw ddim flinedig."
+    },
+    {
+      "english": "He didn't eat lunch.",
+      "welsh": "Wnaeth e ddim bwyta cinio."
+    },
+    {
+      "english": "She is working at work after work.",
+      "welsh": "Mae hi'n gweithio yn y gwaith ar ôl gwaith."
+    },
+    {
+      "english": "she was busy.",
+      "welsh": "Roedd hi prysur."
+    },
+    {
+      "english": "She is organising my wardrobe after work.",
+      "welsh": "Mae hi'n trefnu fy nghwpwrdd dillad ar ôl gwaith."
+    },
+    {
+      "english": "You are not old.",
+      "welsh": "Dwyt ti ddim yn hen."
+    },
+    {
+      "english": "we weren't at home.",
+      "welsh": "Doedden ni ddim gartref."
+    },
+    {
+      "english": "He is listening to music every day.",
+      "welsh": "Mae e'n gwrando ar cerddoriaeth bob dydd."
+    },
+    {
+      "english": "bad",
+      "welsh": "drwg"
+    },
+    {
+      "english": "We didn't read the newspaper.",
+      "welsh": "Wnaethon ni ddim darllen y papur newydd."
+    },
+    {
+      "english": "You are drinking water this afternoon.",
+      "welsh": "Rwyt ti'n yfed dŵr y prynhawn 'ma."
+    },
+    {
+      "english": "We didn't listen to music.",
+      "welsh": "Wnaethon ni ddim gwrando ar cerddoriaeth."
+    },
+    {
+      "english": "He is waiting at the station every day.",
+      "welsh": "Mae e'n aros yn yr orsaf bob dydd."
+    },
+    {
+      "english": "You are not ready.",
+      "welsh": "Dwyt ti ddim yn barod."
+    },
+    {
+      "english": "You (plural) didn't listen to a song.",
+      "welsh": "Wnaethoch chi ddim gwrando ar cân."
+    },
+    {
+      "english": "You lost my phone last night.",
+      "welsh": "Gwnest ti colli fy ffôn neithiwr."
+    },
+    {
+      "english": "She is not walking in the park often.",
+      "welsh": "Dydy hi ddim yn cerdded yn y parc yn aml."
+    },
+    {
+      "english": "we don't have a key.",
+      "welsh": "Does gyda ni ddim allwedd."
+    },
+    {
+      "english": "You are not big.",
+      "welsh": "Dwyt ti ddim yn mawr."
+    },
+    {
+      "english": "You are not hungry.",
+      "welsh": "Dwyt ti ddim yn llwglyd."
+    },
+    {
+      "english": "We are not tidying up my bedroom often.",
+      "welsh": "Dydyn ni ddim yn tacluso fy ystafell wely yn aml."
+    },
+    {
+      "english": "safe",
+      "welsh": "diogel"
+    },
+    {
+      "english": "we didn't go to school.",
+      "welsh": "Aethon ni ddim i'r ysgol."
+    },
+    {
+      "english": "this afternoon",
+      "welsh": "y prynhawn 'ma"
+    },
+    {
+      "english": "He is listening to music after work.",
+      "welsh": "Mae e'n gwrando ar cerddoriaeth ar ôl gwaith."
+    },
+    {
+      "english": "We listened to a song last night.",
+      "welsh": "Gwnaethon ni gwrando ar cân neithiwr."
+    },
+    {
+      "english": "I found my phone last night.",
+      "welsh": "Gwnes i dod o hyd i fy ffôn neithiwr."
+    },
+    {
+      "english": "We are writing a message always.",
+      "welsh": "Rydyn ni'n ysgrifennu neges bob amser."
+    },
+    {
+      "english": "We looked for my keys today.",
+      "welsh": "Gwnaethon ni chwilio am fy allweddi heddiw."
+    },
+    {
+      "english": "They are drinking coffee early.",
+      "welsh": "Maen nhw'n yfed coffi yn gynnar."
+    },
+    {
+      "english": "You are reading a book today.",
+      "welsh": "Rwyt ti'n darllen llyfr heddiw."
+    },
+    {
+      "english": "They are listening to a song at the moment.",
+      "welsh": "Maen nhw'n gwrando ar cân ar yr adeg hon."
+    },
+    {
+      "english": "You (plural) are not listening to music last night.",
+      "welsh": "Dydych chi ddim yn gwrando ar cerddoriaeth neithiwr."
+    },
+    {
+      "english": "You are drinking water tomorrow.",
+      "welsh": "Rwyt ti'n yfed dŵr yfory."
+    },
+    {
+      "english": "you (plural) have a bag.",
+      "welsh": "Mae gyda chi bag."
+    },
+    {
+      "english": "cake",
+      "welsh": "cacen"
+    },
+    {
+      "english": "river",
+      "welsh": "afon"
+    },
+    {
+      "english": "She is tidying up my bedroom on the weekend.",
+      "welsh": "Mae hi'n tacluso fy ystafell wely dros y penwythnos."
+    },
+    {
+      "english": "They are not travelling by bus last night.",
+      "welsh": "Dydyn nhw ddim yn teithio ar y bws neithiwr."
+    },
+    {
+      "english": "I am listening to a song never.",
+      "welsh": "Dw i'n gwrando ar cân byth."
+    },
+    {
+      "english": "happy song",
+      "welsh": "cân hapus"
+    },
+    {
+      "english": "big house",
+      "welsh": "tŷ mawr"
+    },
+    {
+      "english": "He is travelling by train yesterday.",
+      "welsh": "Mae e'n teithio ar y trên ddoe."
+    },
+    {
+      "english": "They didn't drink water.",
+      "welsh": "Wnaethon nhw ddim yfed dŵr."
+    },
+    {
+      "english": "We are working in the office this morning.",
+      "welsh": "Rydyn ni'n gweithio yn y swyddfa y bore 'ma."
+    },
+    {
+      "english": "We didn't lose my phone.",
+      "welsh": "Wnaethon ni ddim colli fy ffôn."
+    },
+    {
+      "english": "She is listening to music at the moment.",
+      "welsh": "Mae hi'n gwrando ar cerddoriaeth ar yr adeg hon."
+    },
+    {
+      "english": "I lost my phone last night.",
+      "welsh": "Gwnes i colli fy ffôn neithiwr."
+    },
+    {
+      "english": "They didn't watch television.",
+      "welsh": "Wnaethon nhw ddim gwylio teledu."
+    },
+    {
+      "english": "I have a ticket.",
+      "welsh": "Mae gen i docyn."
+    },
+    {
+      "english": "I am not hungry.",
+      "welsh": "Dw i ddim yn llwglyd."
+    },
+    {
+      "english": "You are busy.",
+      "welsh": "Rwyt ti'n prysur."
+    },
+    {
+      "english": "We are listening to a song tomorrow.",
+      "welsh": "Rydyn ni'n gwrando ar cân yfory."
+    },
+    {
+      "english": "I don't know the name.",
+      "welsh": "Dw i ddim yn gwybod yr enw."
+    },
+    {
+      "english": "I am not travelling by bus last night.",
+      "welsh": "Dw i ddim yn teithio ar y bws neithiwr."
+    },
+    {
+      "english": "You are travelling by train in the evening.",
+      "welsh": "Rwyt ti'n teithio ar y trên gyda'r nos."
+    },
+    {
+      "english": "mountain (singular) / mountains (plural)",
+      "welsh": "mynydd / mynyddoedd"
+    },
+    {
+      "english": "she went to the town after work.",
+      "welsh": "Aeth hi i'r dref ar ôl gwaith."
+    },
+    {
+      "english": "He is waiting at the station every evening.",
+      "welsh": "Mae e'n aros yn yr orsaf bob nos."
+    },
+    {
+      "english": "wardrobes",
+      "welsh": "cypyrddau dillad"
+    },
+    {
+      "english": "you were happy.",
+      "welsh": "Roeddet ti hapus."
+    },
+    {
+      "english": "You (plural) are not organising my bag now.",
+      "welsh": "Dydych chi ddim yn trefnu fy mag rŵan."
+    },
+    {
+      "english": "I was at home.",
+      "welsh": "Roeddwn i gartref."
+    },
+    {
+      "english": "You are organising my bag always.",
+      "welsh": "Rwyt ti'n trefnu fy mag bob amser."
+    },
+    {
+      "english": "She is waiting in the café today.",
+      "welsh": "Mae hi'n aros yn y caffi heddiw."
+    },
+    {
+      "english": "they haven't written a letter.",
+      "welsh": "Dydyn nhw ddim wedi ysgrifennu llythyr."
+    },
+    {
+      "english": "You are not thirsty.",
+      "welsh": "Dwyt ti ddim yn sychedig."
+    },
+    {
+      "english": "You are not quick.",
+      "welsh": "Dwyt ti ddim yn cyflym."
+    },
+    {
+      "english": "We are travelling by train today.",
+      "welsh": "Rydyn ni'n teithio ar y trên heddiw."
+    },
+    {
+      "english": "we weren't tired.",
+      "welsh": "Doedden ni ddim flinedig."
+    },
+    {
+      "english": "She watched a film today.",
+      "welsh": "Gwnaeth hi gwylio ffilm heddiw."
+    },
+    {
+      "english": "as usual",
+      "welsh": "fel arfer"
+    },
+    {
+      "english": "you (plural) didn't go to school.",
+      "welsh": "Aethoch chi ddim i'r ysgol."
+    },
+    {
+      "english": "he didn't go to the village.",
+      "welsh": "Aeth e ddim i'r pentref."
+    },
+    {
+      "english": "cold song",
+      "welsh": "cân oer"
+    },
+    {
+      "english": "They are eating cake every morning.",
+      "welsh": "Maen nhw'n bwyta cacen bob bore."
+    },
+    {
+      "english": "they have a phone.",
+      "welsh": "Mae gyda nhw ffôn."
+    },
+    {
+      "english": "tired",
+      "welsh": "flinedig"
+    },
+    {
+      "english": "late",
+      "welsh": "hwyr"
+    },
+    {
+      "english": "markets",
+      "welsh": "marchnadoedd"
+    },
+    {
+      "english": "bridges",
+      "welsh": "pontydd"
+    },
+    {
+      "english": "towns",
+      "welsh": "trefi"
+    },
+    {
+      "english": "I went to the museum last night.",
+      "welsh": "Es i i'r amgueddfa neithiwr."
+    },
+    {
+      "english": "We are not drinking tea yesterday.",
+      "welsh": "Dydyn ni ddim yn yfed te ddoe."
+    },
+    {
+      "english": "We didn't look for my keys.",
+      "welsh": "Wnaethon ni ddim chwilio am fy allweddi."
+    },
+    {
+      "english": "I am writing a message after work.",
+      "welsh": "Dw i'n ysgrifennu neges ar ôl gwaith."
+    },
+    {
+      "english": "you have a map.",
+      "welsh": "Mae gen ti map."
+    },
+    {
+      "english": "We are eating breakfast always.",
+      "welsh": "Rydyn ni'n bwyta brecwast bob amser."
+    },
+    {
+      "english": "You (plural) are looking for my keys this afternoon.",
+      "welsh": "Rydych chi'n chwilio am fy allweddi y prynhawn 'ma."
+    },
+    {
+      "english": "We didn't drink tea.",
+      "welsh": "Wnaethon ni ddim yfed te."
+    },
+    {
+      "english": "They are looking for my phone never.",
+      "welsh": "Maen nhw'n chwilio am fy ffôn byth."
+    },
+    {
+      "english": "they went to the museum after work.",
+      "welsh": "Aethon nhw i'r amgueddfa ar ôl gwaith."
+    },
+    {
+      "english": "I didn't go to school.",
+      "welsh": "Es i ddim i'r ysgol."
+    },
+    {
+      "english": "volcano (singular) / volcanoes (plural)",
+      "welsh": "llosgfynydd / llosgfynyddoedd"
+    },
+    {
+      "english": "He is watching a film at the moment.",
+      "welsh": "Mae e'n gwylio ffilm ar yr adeg hon."
+    },
+    {
+      "english": "friend",
+      "welsh": "ffrind"
+    },
+    {
+      "english": "there are good reasons",
+      "welsh": "Mae rhesymau da"
+    },
+    {
+      "english": "She is looking for the map every morning.",
+      "welsh": "Mae hi'n chwilio am y map bob bore."
+    },
+    {
+      "english": "they went to the village last night.",
+      "welsh": "Aethon nhw i'r pentref neithiwr."
+    },
+    {
+      "english": "You are working in the office every day.",
+      "welsh": "Rwyt ti'n gweithio yn y swyddfa bob dydd."
+    },
+    {
+      "english": "You are not happy.",
+      "welsh": "Dwyt ti ddim yn hapus."
+    },
+    {
+      "english": "You (plural) are eating lunch in the afternoon.",
+      "welsh": "Rydych chi'n bwyta cinio yn y prynhawn."
+    },
+    {
+      "english": "You (plural) are organising my bag in the morning.",
+      "welsh": "Rydych chi'n trefnu fy mag yn y bore."
+    },
+    {
+      "english": "You are tidying up the house never.",
+      "welsh": "Rwyt ti'n tacluso y tŷ byth."
+    },
+    {
+      "english": "fair enough",
+      "welsh": "digon teg"
+    },
+    {
+      "english": "You are reading the newspaper last night.",
+      "welsh": "Rwyt ti'n darllen y papur newydd neithiwr."
+    },
+    {
+      "english": "I haven't written a letter.",
+      "welsh": "Dw i ddim wedi ysgrifennu llythyr."
+    },
+    {
+      "english": "lunch",
+      "welsh": "cinio"
+    },
+    {
+      "english": "She is eating lunch this morning.",
+      "welsh": "Mae hi'n bwyta cinio y bore 'ma."
+    },
+    {
+      "english": "He is writing a letter tomorrow.",
+      "welsh": "Mae e'n ysgrifennu llythyr yfory."
+    },
+    {
+      "english": "key",
+      "welsh": "allwedd"
+    },
+    {
+      "english": "quick dog",
+      "welsh": "ci cyflym"
+    },
+    {
+      "english": "You are waiting at the station every day.",
+      "welsh": "Rwyt ti'n aros yn yr orsaf bob dydd."
+    },
+    {
+      "english": "I am watching television today.",
+      "welsh": "Dw i'n gwylio teledu heddiw."
+    },
+    {
+      "english": "You are eating cake in the evening.",
+      "welsh": "Rwyt ti'n bwyta cacen gyda'r nos."
+    },
+    {
+      "english": "I am not small.",
+      "welsh": "Dw i ddim yn bach."
+    },
+    {
+      "english": "We found my phone today.",
+      "welsh": "Gwnaethon ni dod o hyd i fy ffôn heddiw."
+    },
+    {
+      "english": "I am organising my wardrobe in the evening.",
+      "welsh": "Dw i'n trefnu fy nghwpwrdd dillad gyda'r nos."
+    },
+    {
+      "english": "I wrote a letter last night.",
+      "welsh": "Gwnes i ysgrifennu llythyr neithiwr."
+    },
+    {
+      "english": "She didn't listen to a song.",
+      "welsh": "Wnaeth hi ddim gwrando ar cân."
+    },
+    {
+      "english": "They are not waiting at the station tomorrow.",
+      "welsh": "Dydyn nhw ddim yn aros yn yr orsaf yfory."
+    },
+    {
+      "english": "You are not easy.",
+      "welsh": "Dwyt ti ddim yn hawdd."
+    },
+    {
+      "english": "rivers",
+      "welsh": "afonydd"
+    },
+    {
+      "english": "You (plural) are writing a letter for a long time.",
+      "welsh": "Rydych chi'n ysgrifennu llythyr ers amser hir."
+    },
+    {
+      "english": "friends",
+      "welsh": "ffrindiau"
+    },
+    {
+      "english": "you like the village.",
+      "welsh": "Rwyt ti'n hoffi y pentref."
+    },
+    {
+      "english": "quick",
+      "welsh": "cyflym"
+    },
+    {
+      "english": "He is not eating breakfast last night.",
+      "welsh": "Dydy e ddim yn bwyta brecwast neithiwr."
+    },
+    {
+      "english": "You are happy.",
+      "welsh": "Rwyt ti'n hapus."
+    },
+    {
+      "english": "You are speaking Welsh every day.",
+      "welsh": "Rwyt ti'n siarad Cymraeg bob dydd."
+    },
+    {
+      "english": "He didn't lose my bag.",
+      "welsh": "Wnaeth e ddim colli fy mag."
+    },
+    {
+      "english": "she doesn't have a bag.",
+      "welsh": "Does ganddi hi ddim bag."
+    },
+    {
+      "english": "you were late.",
+      "welsh": "Roeddet ti yn hwyr."
+    },
+    {
+      "english": "good dog",
+      "welsh": "ci da"
+    },
+    {
+      "english": "I am not big.",
+      "welsh": "Dw i ddim yn mawr."
+    },
+    {
+      "english": "We read the newspaper today.",
+      "welsh": "Gwnaethon ni darllen y papur newydd heddiw."
+    },
+    {
+      "english": "We are walking in the park yesterday.",
+      "welsh": "Rydyn ni'n cerdded yn y parc ddoe."
+    },
+    {
+      "english": "you don't have a map.",
+      "welsh": "Does gen ti ddim map."
+    },
+    {
+      "english": "I am waiting at the station today.",
+      "welsh": "Dw i'n aros yn yr orsaf heddiw."
+    },
+    {
+      "english": "we went to the park yesterday.",
+      "welsh": "Aethon ni i'r parc ddoe."
+    },
+    {
+      "english": "time (singular) / times (plural)",
+      "welsh": "amser / amseroedd"
+    },
+    {
+      "english": "shop (singular) / shops (plural)",
+      "welsh": "siop / siopau"
+    },
+    {
+      "english": "on the weekend",
+      "welsh": "dros y penwythnos"
+    },
+    {
+      "english": "You (plural) are not working in the office every morning.",
+      "welsh": "Dydych chi ddim yn gweithio yn y swyddfa bob bore."
+    },
+    {
+      "english": "You are waiting in the café for a short time.",
+      "welsh": "Rwyt ti'n aros yn y caffi am amser byr."
+    },
+    {
+      "english": "cold journey",
+      "welsh": "taith oer"
+    },
+    {
+      "english": "You are practising Welsh tomorrow.",
+      "welsh": "Rwyt ti'n ymarfer Cymraeg yfory."
+    },
+    {
+      "english": "You are looking for the map sometimes.",
+      "welsh": "Rwyt ti'n chwilio am y map weithiau."
+    },
+    {
+      "english": "ready day",
+      "welsh": "diwrnod barod"
+    },
+    {
+      "english": "We are watching a film in the evening.",
+      "welsh": "Rydyn ni'n gwylio ffilm gyda'r nos."
+    },
+    {
+      "english": "You are warm.",
+      "welsh": "Rwyt ti'n cynnes."
+    },
+    {
+      "english": "dinner",
+      "welsh": "swper"
+    },
+    {
+      "english": "calm dog",
+      "welsh": "ci tawel"
+    },
+    {
+      "english": "name (singular) / names (plural)",
+      "welsh": "enw / enwau"
+    },
+    {
+      "english": "They are organising my wardrobe yesterday.",
+      "welsh": "Maen nhw'n trefnu fy nghwpwrdd dillad ddoe."
+    },
+    {
+      "english": "museum (singular) / museums (plural)",
+      "welsh": "amgueddfa / amgueddfeydd"
+    },
+    {
+      "english": "you were busy.",
+      "welsh": "Roeddet ti prysur."
+    },
+    {
+      "english": "he went home last night.",
+      "welsh": "Aeth e adre neithiwr."
+    },
+    {
+      "english": "this morning",
+      "welsh": "y bore 'ma"
+    },
+    {
+      "english": "slow",
+      "welsh": "araf"
+    },
+    {
+      "english": "we know the name.",
+      "welsh": "Rydyn ni'n gwybod yr enw."
+    },
+    {
+      "english": "you (plural) weren't at home.",
+      "welsh": "Doeddech chi ddim gartref."
+    },
+    {
+      "english": "We are not eating breakfast at the moment.",
+      "welsh": "Dydyn ni ddim yn bwyta brecwast ar yr adeg hon."
+    },
+    {
+      "english": "difficult journey",
+      "welsh": "taith anodd"
+    },
+    {
+      "english": "villages",
+      "welsh": "pentrefi"
+    },
+    {
+      "english": "She didn't eat cake.",
+      "welsh": "Wnaeth hi ddim bwyta cacen."
+    },
+    {
+      "english": "She didn't watch television.",
+      "welsh": "Wnaeth hi ddim gwylio teledu."
+    },
+    {
+      "english": "I listened to music yesterday.",
+      "welsh": "Gwnes i gwrando ar cerddoriaeth ddoe."
+    },
+    {
+      "english": "You (plural) are walking to the shop for a short time.",
+      "welsh": "Rydych chi'n cerdded i'r siop am amser byr."
+    },
+    {
+      "english": "I am listening to music at the moment.",
+      "welsh": "Dw i'n gwrando ar cerddoriaeth ar yr adeg hon."
+    },
+    {
+      "english": "We are practising music this afternoon.",
+      "welsh": "Rydyn ni'n ymarfer cerddoriaeth y prynhawn 'ma."
+    },
+    {
+      "english": "small car",
+      "welsh": "car bach"
+    },
+    {
+      "english": "He is not listening to music often.",
+      "welsh": "Dydy e ddim yn gwrando ar cerddoriaeth yn aml."
+    },
+    {
+      "english": "You didn't lose my bag.",
+      "welsh": "Wnest ti ddim colli fy mag."
+    },
+    {
+      "english": "cold book",
+      "welsh": "llyfr oer"
+    },
+    {
+      "english": "They are speaking Welsh always.",
+      "welsh": "Maen nhw'n siarad Cymraeg bob amser."
+    },
+    {
+      "english": "She is listening to a song late.",
+      "welsh": "Mae hi'n gwrando ar cân yn hwyr."
+    },
+    {
+      "english": "You bought a train ticket yesterday.",
+      "welsh": "Gwnest ti prynu tocyn trên ddoe."
+    },
+    {
+      "english": "child",
+      "welsh": "plentyn"
+    },
+    {
+      "english": "They read the newspaper last night.",
+      "welsh": "Gwnaethon nhw darllen y papur newydd neithiwr."
+    },
+    {
+      "english": "They are looking for the map late.",
+      "welsh": "Maen nhw'n chwilio am y map yn hwyr."
+    },
+    {
+      "english": "They are eating lunch tomorrow.",
+      "welsh": "Maen nhw'n bwyta cinio yfory."
+    },
+    {
+      "english": "The window is open.",
+      "welsh": "Mae'r ffenestr ar agor."
+    },
+    {
+      "english": "We are listening to music yesterday.",
+      "welsh": "Rydyn ni'n gwrando ar cerddoriaeth ddoe."
+    },
+    {
+      "english": "We are tidying up my bedroom every morning.",
+      "welsh": "Rydyn ni'n tacluso fy ystafell wely bob bore."
+    },
+    {
+      "english": "he went to the village last night.",
+      "welsh": "Aeth e i'r pentref neithiwr."
+    },
+    {
+      "english": "park (singular) / parks (plural)",
+      "welsh": "parc / parciau"
+    },
+    {
+      "english": "You are drinking tea in the afternoon.",
+      "welsh": "Rwyt ti'n yfed te yn y prynhawn."
+    },
+    {
+      "english": "He is eating breakfast today.",
+      "welsh": "Mae e'n bwyta brecwast heddiw."
+    },
+    {
+      "english": "They ate cake yesterday.",
+      "welsh": "Gwnaethon nhw bwyta cacen ddoe."
+    },
+    {
+      "english": "We are writing a letter in the morning.",
+      "welsh": "Rydyn ni'n ysgrifennu llythyr yn y bore."
+    },
+    {
+      "english": "They are not travelling by bus at the moment.",
+      "welsh": "Dydyn nhw ddim yn teithio ar y bws ar yr adeg hon."
+    },
+    {
+      "english": "you have sent a message.",
+      "welsh": "Rwyt ti wedi anfon neges."
+    },
+    {
+      "english": "he has been thinking about it for a long time.",
+      "welsh": "Mae e wedi bod yn meddwl amdano fe ers amser hir."
+    },
+    {
+      "english": "They are organising my wardrobe this morning.",
+      "welsh": "Maen nhw'n trefnu fy nghwpwrdd dillad y bore 'ma."
+    },
+    {
+      "english": "They are waiting at the station at the moment.",
+      "welsh": "Maen nhw'n aros yn yr orsaf ar yr adeg hon."
+    },
+    {
+      "english": "I am not organising my bag this morning.",
+      "welsh": "Dw i ddim yn trefnu fy mag y bore 'ma."
+    },
+    {
+      "english": "We are not speaking Welsh this evening.",
+      "welsh": "Dydyn ni ddim yn siarad Cymraeg heno."
+    },
+    {
+      "english": "we have been thinking about it for a long time.",
+      "welsh": "Rydyn ni wedi bod yn meddwl amdano fe ers amser hir."
+    },
+    {
+      "english": "You (plural) found my phone last night.",
+      "welsh": "Gwnaethoch chi dod o hyd i fy ffôn neithiwr."
+    },
+    {
+      "english": "they have eaten lunch.",
+      "welsh": "Maen nhw wedi bwyta cinio."
+    },
+    {
+      "english": "She is writing a message today.",
+      "welsh": "Mae hi'n ysgrifennu neges heddiw."
+    },
+    {
+      "english": "You (plural) are not travelling by bus in the afternoon.",
+      "welsh": "Dydych chi ddim yn teithio ar y bws yn y prynhawn."
+    },
+    {
+      "english": "I am not tidying up my bedroom this afternoon.",
+      "welsh": "Dw i ddim yn tacluso fy ystafell wely y prynhawn 'ma."
+    },
+    {
+      "english": "they went to school last night.",
+      "welsh": "Aethon nhw i'r ysgol neithiwr."
+    },
+    {
+      "english": "you (plural) went to the village last night.",
+      "welsh": "Aethoch chi i'r pentref neithiwr."
+    },
+    {
+      "english": "you went home last night.",
+      "welsh": "Aest ti adre neithiwr."
+    },
+    {
+      "english": "I drank water yesterday.",
+      "welsh": "Gwnes i yfed dŵr ddoe."
+    },
+    {
+      "english": "You (plural) are tidying up my bedroom in the afternoon.",
+      "welsh": "Rydych chi'n tacluso fy ystafell wely yn y prynhawn."
+    },
+    {
+      "english": "she went to the market yesterday.",
+      "welsh": "Aeth hi i'r farchnad ddoe."
+    },
+    {
+      "english": "I have lost my bag.",
+      "welsh": "Dw i wedi colli fy mag."
+    },
+    {
+      "english": "They are not working at work tomorrow.",
+      "welsh": "Dydyn nhw ddim yn gweithio yn y gwaith yfory."
+    },
+    {
+      "english": "We are travelling by train now.",
+      "welsh": "Rydyn ni'n teithio ar y trên rŵan."
+    },
+    {
+      "english": "You are not watching television now.",
+      "welsh": "Dwyt ti ddim yn gwylio teledu rŵan."
+    },
+    {
+      "english": "We are not travelling by train in the afternoon.",
+      "welsh": "Dydyn ni ddim yn teithio ar y trên yn y prynhawn."
+    },
+    {
+      "english": "You (plural) read the newspaper yesterday.",
+      "welsh": "Gwnaethoch chi darllen y papur newydd ddoe."
+    },
+    {
+      "english": "He is not speaking Welsh this afternoon.",
+      "welsh": "Dydy e ddim yn siarad Cymraeg y prynhawn 'ma."
+    },
+    {
+      "english": "She drank tea yesterday.",
+      "welsh": "Gwnaeth hi yfed te ddoe."
+    },
+    {
+      "english": "You (plural) watched television yesterday.",
+      "welsh": "Gwnaethoch chi gwylio teledu ddoe."
+    },
+    {
+      "english": "He is tidying up the house in the morning.",
+      "welsh": "Mae e'n tacluso y tŷ yn y bore."
+    },
+    {
+      "english": "You are not working in the office yesterday.",
+      "welsh": "Dwyt ti ddim yn gweithio yn y swyddfa ddoe."
+    },
+    {
+      "english": "you have been thinking about it for a long time.",
+      "welsh": "Rwyt ti wedi bod yn meddwl amdano fe ers amser hir."
+    },
+    {
+      "english": "We ate lunch yesterday.",
+      "welsh": "Gwnaethon ni bwyta cinio ddoe."
+    },
+    {
+      "english": "We are walking to the village yesterday.",
+      "welsh": "Rydyn ni'n cerdded i'r pentref ddoe."
+    },
+    {
+      "english": "He is not walking to the shop tomorrow.",
+      "welsh": "Dydy e ddim yn cerdded i'r siop yfory."
+    },
+    {
+      "english": "I have been thinking about it for a long time.",
+      "welsh": "Dw i wedi bod yn meddwl amdano fe ers amser hir."
+    },
+    {
+      "english": "you (plural) have been thinking about it for a long time.",
+      "welsh": "Rydych chi wedi bod yn meddwl amdano fe ers amser hir."
+    },
+    {
+      "english": "she went to the market after work.",
+      "welsh": "Aeth hi i'r farchnad ar ôl gwaith."
+    },
+    {
+      "english": "I have arrived.",
+      "welsh": "Dw i wedi cyrraedd."
+    },
+    {
+      "english": "You wrote a message today.",
+      "welsh": "Gwnest ti ysgrifennu neges heddiw."
+    },
+    {
+      "english": "They read the newspaper yesterday.",
+      "welsh": "Gwnaethon nhw darllen y papur newydd ddoe."
+    },
+    {
+      "english": "I drank tea today.",
+      "welsh": "Gwnes i yfed te heddiw."
+    },
+    {
+      "english": "We are looking for my keys yesterday.",
+      "welsh": "Rydyn ni'n chwilio am fy allweddi ddoe."
+    },
+    {
+      "english": "You lost my phone yesterday.",
+      "welsh": "Gwnest ti colli fy ffôn ddoe."
+    },
+    {
+      "english": "You are not walking in the park now.",
+      "welsh": "Dwyt ti ddim yn cerdded yn y parc rŵan."
+    },
+    {
+      "english": "We ate cake last night.",
+      "welsh": "Gwnaethon ni bwyta cacen neithiwr."
+    },
+    {
+      "english": "I am not speaking Welsh now.",
+      "welsh": "Dw i ddim yn siarad Cymraeg rŵan."
+    },
+    {
+      "english": "You are not writing a letter today.",
+      "welsh": "Dwyt ti ddim yn ysgrifennu llythyr heddiw."
+    },
+    {
+      "english": "You (plural) wrote a message yesterday.",
+      "welsh": "Gwnaethoch chi ysgrifennu neges ddoe."
+    },
+    {
+      "english": "she has been busy.",
+      "welsh": "Mae hi wedi bod yn brysur."
+    },
+    {
+      "english": "I am reading a book this morning.",
+      "welsh": "Dw i'n darllen llyfr y bore 'ma."
+    },
+    {
+      "english": "You (plural) are not tidying up the house in the morning.",
+      "welsh": "Dydych chi ddim yn tacluso y tŷ yn y bore."
+    },
+    {
+      "english": "We are walking to the shop in the afternoon.",
+      "welsh": "Rydyn ni'n cerdded i'r siop yn y prynhawn."
+    },
+    {
+      "english": "She is not waiting in the café this morning.",
+      "welsh": "Dydy hi ddim yn aros yn y caffi y bore 'ma."
+    },
+    {
+      "english": "they have become tired.",
+      "welsh": "Maen nhw wedi blino."
+    },
+    {
+      "english": "We are eating cake in the afternoon.",
+      "welsh": "Rydyn ni'n bwyta cacen yn y prynhawn."
+    },
+    {
+      "english": "they have finished.",
+      "welsh": "Maen nhw wedi gorffen."
+    },
+    {
+      "english": "He ate breakfast today.",
+      "welsh": "Gwnaeth e bwyta brecwast heddiw."
+    },
+    {
+      "english": "they went home last night.",
+      "welsh": "Aethon nhw adre neithiwr."
+    },
+    {
+      "english": "He is not organising my bag at the moment.",
+      "welsh": "Dydy e ddim yn trefnu fy mag ar yr adeg hon."
+    },
+    {
+      "english": "they went to the town after work.",
+      "welsh": "Aethon nhw i'r dref ar ôl gwaith."
+    },
+    {
+      "english": "You (plural) are reading a book this evening.",
+      "welsh": "Rydych chi'n darllen llyfr heno."
+    },
+    {
+      "english": "They are listening to music in the morning.",
+      "welsh": "Maen nhw'n gwrando ar cerddoriaeth yn y bore."
+    },
+    {
+      "english": "he has arrived.",
+      "welsh": "Mae e wedi cyrraedd."
+    },
+    {
+      "english": "You are walking to the village today.",
+      "welsh": "Rwyt ti'n cerdded i'r pentref heddiw."
+    },
+    {
+      "english": "We are not organising my bag this afternoon.",
+      "welsh": "Dydyn ni ddim yn trefnu fy mag y prynhawn 'ma."
+    },
+    {
+      "english": "You (plural) are drinking coffee this afternoon.",
+      "welsh": "Rydych chi'n yfed coffi y prynhawn 'ma."
+    },
+    {
+      "english": "I am not speaking Welsh yesterday.",
+      "welsh": "Dw i ddim yn siarad Cymraeg ddoe."
+    },
+    {
+      "english": "They are not listening to a song this morning.",
+      "welsh": "Dydyn nhw ddim yn gwrando ar cân y bore 'ma."
+    },
+    {
+      "english": "We are travelling by bus at the moment.",
+      "welsh": "Rydyn ni'n teithio ar y bws ar yr adeg hon."
+    },
+    {
+      "english": "You wrote a poem today.",
+      "welsh": "Gwnest ti ysgrifennu cerdd heddiw."
+    },
+    {
+      "english": "I am practising music in the morning.",
+      "welsh": "Dw i'n ymarfer cerddoriaeth yn y bore."
+    },
+    {
+      "english": "they went to the museum yesterday.",
+      "welsh": "Aethon nhw i'r amgueddfa ddoe."
+    },
+    {
+      "english": "you have lost my bag.",
+      "welsh": "Rwyt ti wedi colli fy mag."
+    },
+    {
+      "english": "I am not reading a book this morning.",
+      "welsh": "Dw i ddim yn darllen llyfr y bore 'ma."
+    },
+    {
+      "english": "I am not travelling by bus this afternoon.",
+      "welsh": "Dw i ddim yn teithio ar y bws y prynhawn 'ma."
+    },
+    {
+      "english": "she went to school after work.",
+      "welsh": "Aeth hi i'r ysgol ar ôl gwaith."
+    },
+    {
+      "english": "You (plural) found the map yesterday.",
+      "welsh": "Gwnaethoch chi dod o hyd i y map ddoe."
+    },
+    {
+      "english": "you have gone home.",
+      "welsh": "Rwyt ti wedi mynd adre."
+    },
+    {
+      "english": "she has sent a message.",
+      "welsh": "Mae hi wedi anfon neges."
+    },
+    {
+      "english": "I am speaking Welsh in the afternoon.",
+      "welsh": "Dw i'n siarad Cymraeg yn y prynhawn."
+    },
+    {
+      "english": "You (plural) ate breakfast yesterday.",
+      "welsh": "Gwnaethoch chi bwyta brecwast ddoe."
+    },
+    {
+      "english": "They are not eating cake this evening.",
+      "welsh": "Dydyn nhw ddim yn bwyta cacen heno."
+    },
+    {
+      "english": "she has read a book.",
+      "welsh": "Mae hi wedi darllen llyfr."
+    },
+    {
+      "english": "we went to the town yesterday.",
+      "welsh": "Aethon ni i'r dref ddoe."
+    },
+    {
+      "english": "You (plural) are walking in the park now.",
+      "welsh": "Rydych chi'n cerdded yn y parc rŵan."
+    },
+    {
+      "english": "I found the map yesterday.",
+      "welsh": "Gwnes i dod o hyd i y map ddoe."
+    },
+    {
+      "english": "They are travelling by bus this morning.",
+      "welsh": "Maen nhw'n teithio ar y bws y bore 'ma."
+    },
+    {
+      "english": "You are tidying up my bedroom at the moment.",
+      "welsh": "Rwyt ti'n tacluso fy ystafell wely ar yr adeg hon."
+    },
+    {
+      "english": "I ate lunch today.",
+      "welsh": "Gwnes i bwyta cinio heddiw."
+    },
+    {
+      "english": "We read a book last night.",
+      "welsh": "Gwnaethon ni darllen llyfr neithiwr."
+    },
+    {
+      "english": "you (plural) have gone home.",
+      "welsh": "Rydych chi wedi mynd adre."
+    },
+    {
+      "english": "I am working at work yesterday.",
+      "welsh": "Dw i'n gweithio yn y gwaith ddoe."
+    },
+    {
+      "english": "She is travelling by train this afternoon.",
+      "welsh": "Mae hi'n teithio ar y trên y prynhawn 'ma."
+    },
+    {
+      "english": "You are not organising my wardrobe tomorrow.",
+      "welsh": "Dwyt ti ddim yn trefnu fy nghwpwrdd dillad yfory."
+    },
+    {
+      "english": "I have read a book.",
+      "welsh": "Dw i wedi darllen llyfr."
+    },
+    {
+      "english": "They are travelling by train yesterday.",
+      "welsh": "Maen nhw'n teithio ar y trên ddoe."
+    },
+    {
+      "english": "I went to the shop yesterday.",
+      "welsh": "Es i i'r siop ddoe."
+    },
+    {
+      "english": "we went to the station last night.",
+      "welsh": "Aethon ni i'r orsaf neithiwr."
+    },
+    {
+      "english": "you (plural) have eaten lunch.",
+      "welsh": "Rydych chi wedi bwyta cinio."
+    },
+    {
+      "english": "We are not working at work in the morning.",
+      "welsh": "Dydyn ni ddim yn gweithio yn y gwaith yn y bore."
+    },
+    {
+      "english": "She is eating lunch in the afternoon.",
+      "welsh": "Mae hi'n bwyta cinio yn y prynhawn."
+    },
+    {
+      "english": "You (plural) are looking for the map this evening.",
+      "welsh": "Rydych chi'n chwilio am y map heno."
+    },
+    {
+      "english": "I am writing a message in the morning.",
+      "welsh": "Dw i'n ysgrifennu neges yn y bore."
+    },
+    {
+      "english": "They are speaking Welsh tomorrow.",
+      "welsh": "Maen nhw'n siarad Cymraeg yfory."
+    },
+    {
+      "english": "I have become tired.",
+      "welsh": "Dw i wedi blino."
+    },
+    {
+      "english": "She is writing a message at the moment.",
+      "welsh": "Mae hi'n ysgrifennu neges ar yr adeg hon."
+    },
+    {
+      "english": "They listened to music today.",
+      "welsh": "Gwnaethon nhw gwrando ar cerddoriaeth heddiw."
+    },
+    {
+      "english": "You (plural) are not writing a message at the moment.",
+      "welsh": "Dydych chi ddim yn ysgrifennu neges ar yr adeg hon."
+    },
+    {
+      "english": "We are not walking to the village now.",
+      "welsh": "Dydyn ni ddim yn cerdded i'r pentref rŵan."
+    },
+    {
+      "english": "They watched a film yesterday.",
+      "welsh": "Gwnaethon nhw gwylio ffilm ddoe."
+    },
+    {
+      "english": "I am waiting at the station this evening.",
+      "welsh": "Dw i'n aros yn yr orsaf heno."
+    },
+    {
+      "english": "I have sent a message.",
+      "welsh": "Dw i wedi anfon neges."
+    },
+    {
+      "english": "She is reading the newspaper tomorrow.",
+      "welsh": "Mae hi'n darllen y papur newydd yfory."
+    },
+    {
+      "english": "she has become tired.",
+      "welsh": "Mae hi wedi blino."
+    },
+    {
+      "english": "I drank tea yesterday.",
+      "welsh": "Gwnes i yfed te ddoe."
+    },
+    {
+      "english": "You (plural) ate lunch today.",
+      "welsh": "Gwnaethoch chi bwyta cinio heddiw."
+    },
+    {
+      "english": "you (plural) have lost my bag.",
+      "welsh": "Rydych chi wedi colli fy mag."
+    },
+    {
+      "english": "We are not waiting in the café in the morning.",
+      "welsh": "Dydyn ni ddim yn aros yn y caffi yn y bore."
+    },
+    {
+      "english": "She lost my phone yesterday.",
+      "welsh": "Gwnaeth hi colli fy ffôn ddoe."
+    },
+    {
+      "english": "She is not speaking Welsh at the moment.",
+      "welsh": "Dydy hi ddim yn siarad Cymraeg ar yr adeg hon."
+    },
+    {
+      "english": "I am not listening to music yesterday.",
+      "welsh": "Dw i ddim yn gwrando ar cerddoriaeth ddoe."
+    },
+    {
+      "english": "he went to the market yesterday.",
+      "welsh": "Aeth e i'r farchnad ddoe."
+    },
+    {
+      "english": "He read the newspaper yesterday.",
+      "welsh": "Gwnaeth e darllen y papur newydd ddoe."
+    },
+    {
+      "english": "They lost my bag today.",
+      "welsh": "Gwnaethon nhw colli fy mag heddiw."
+    },
+    {
+      "english": "You are not speaking Welsh now.",
+      "welsh": "Dwyt ti ddim yn siarad Cymraeg rŵan."
+    },
+    {
+      "english": "She is not watching television this evening.",
+      "welsh": "Dydy hi ddim yn gwylio teledu heno."
+    },
+    {
+      "english": "you (plural) have written a letter.",
+      "welsh": "Rydych chi wedi ysgrifennu llythyr."
+    },
+    {
+      "english": "You are watching television in the afternoon.",
+      "welsh": "Rwyt ti'n gwylio teledu yn y prynhawn."
+    },
+    {
+      "english": "she went home after work.",
+      "welsh": "Aeth hi adre ar ôl gwaith."
+    },
+    {
+      "english": "He is not drinking coffee tomorrow.",
+      "welsh": "Dydy e ddim yn yfed coffi yfory."
+    },
+    {
+      "english": "We are not reading the newspaper at the moment.",
+      "welsh": "Dydyn ni ddim yn darllen y papur newydd ar yr adeg hon."
+    },
+    {
+      "english": "They ate lunch today.",
+      "welsh": "Gwnaethon nhw bwyta cinio heddiw."
+    },
+    {
+      "english": "I bought a train ticket last night.",
+      "welsh": "Gwnes i prynu tocyn trên neithiwr."
+    },
+    {
+      "english": "You are tidying up my bedroom tomorrow.",
+      "welsh": "Rwyt ti'n tacluso fy ystafell wely yfory."
+    },
+    {
+      "english": "I have eaten lunch.",
+      "welsh": "Dw i wedi bwyta cinio."
+    },
+    {
+      "english": "we went to school last night.",
+      "welsh": "Aethon ni i'r ysgol neithiwr."
+    },
+    {
+      "english": "They are not reading the newspaper in the morning.",
+      "welsh": "Dydyn nhw ddim yn darllen y papur newydd yn y bore."
+    },
+    {
+      "english": "I wrote a message today.",
+      "welsh": "Gwnes i ysgrifennu neges heddiw."
+    },
+    {
+      "english": "You are not tidying up the house this morning.",
+      "welsh": "Dwyt ti ddim yn tacluso y tŷ y bore 'ma."
+    },
+    {
+      "english": "She is waiting in the café yesterday.",
+      "welsh": "Mae hi'n aros yn y caffi ddoe."
+    },
+    {
+      "english": "They are not working in the office this morning.",
+      "welsh": "Dydyn nhw ddim yn gweithio yn y swyddfa y bore 'ma."
+    },
+    {
+      "english": "you went to the market yesterday.",
+      "welsh": "Aest ti i'r farchnad ddoe."
+    },
+    {
+      "english": "I have gone home.",
+      "welsh": "Dw i wedi mynd adre."
+    },
+    {
+      "english": "She is not writing a message tomorrow.",
+      "welsh": "Dydy hi ddim yn ysgrifennu neges yfory."
+    },
+    {
+      "english": "I lost my phone today.",
+      "welsh": "Gwnes i colli fy ffôn heddiw."
+    },
+    {
+      "english": "You (plural) are watching television today.",
+      "welsh": "Rydych chi'n gwylio teledu heddiw."
+    },
+    {
+      "english": "she has finished.",
+      "welsh": "Mae hi wedi gorffen."
+    },
+    {
+      "english": "he went to the station last night.",
+      "welsh": "Aeth e i'r orsaf neithiwr."
+    },
+    {
+      "english": "they have sent a message.",
+      "welsh": "Maen nhw wedi anfon neges."
+    },
+    {
+      "english": "She is not practising Welsh tomorrow.",
+      "welsh": "Dydy hi ddim yn ymarfer Cymraeg yfory."
+    },
+    {
+      "english": "You lost my phone today.",
+      "welsh": "Gwnest ti colli fy ffôn heddiw."
+    },
+    {
+      "english": "He is not waiting in the café this morning.",
+      "welsh": "Dydy e ddim yn aros yn y caffi y bore 'ma."
+    },
+    {
+      "english": "We are not practising music yesterday.",
+      "welsh": "Dydyn ni ddim yn ymarfer cerddoriaeth ddoe."
+    },
+    {
+      "english": "He read the newspaper today.",
+      "welsh": "Gwnaeth e darllen y papur newydd heddiw."
+    },
+    {
+      "english": "You are practising Welsh at the moment.",
+      "welsh": "Rwyt ti'n ymarfer Cymraeg ar yr adeg hon."
+    },
+    {
+      "english": "You (plural) drank water last night.",
+      "welsh": "Gwnaethoch chi yfed dŵr neithiwr."
+    },
+    {
+      "english": "You are eating breakfast tomorrow.",
+      "welsh": "Rwyt ti'n bwyta brecwast yfory."
+    },
+    {
+      "english": "I am looking for my keys this evening.",
+      "welsh": "Dw i'n chwilio am fy allweddi heno."
+    },
+    {
+      "english": "She is not speaking Welsh today.",
+      "welsh": "Dydy hi ddim yn siarad Cymraeg heddiw."
+    },
+    {
+      "english": "You lost my bag today.",
+      "welsh": "Gwnest ti colli fy mag heddiw."
+    },
+    {
+      "english": "She is drinking tea in the morning.",
+      "welsh": "Mae hi'n yfed te yn y bore."
+    },
+    {
+      "english": "They are waiting in the café this evening.",
+      "welsh": "Maen nhw'n aros yn y caffi heno."
+    },
+    {
+      "english": "He ate cake today.",
+      "welsh": "Gwnaeth e bwyta cacen heddiw."
+    },
+    {
+      "english": "She is not travelling by bus today.",
+      "welsh": "Dydy hi ddim yn teithio ar y bws heddiw."
+    },
+    {
+      "english": "you (plural) have arrived.",
+      "welsh": "Rydych chi wedi cyrraedd."
+    },
+    {
+      "english": "I went home last night.",
+      "welsh": "Es i adre neithiwr."
+    },
+    {
+      "english": "He is not watching television this evening.",
+      "welsh": "Dydy e ddim yn gwylio teledu heno."
+    },
+    {
+      "english": "you (plural) have found my phone.",
+      "welsh": "Rydych chi wedi dod o hyd i fy ffôn."
+    },
+    {
+      "english": "We are drinking water at the moment.",
+      "welsh": "Rydyn ni'n yfed dŵr ar yr adeg hon."
+    },
+    {
+      "english": "They are not watching television yesterday.",
+      "welsh": "Dydyn nhw ddim yn gwylio teledu ddoe."
+    },
+    {
+      "english": "He bought a train ticket last night.",
+      "welsh": "Gwnaeth e prynu tocyn trên neithiwr."
+    },
+    {
+      "english": "You are drinking tea today.",
+      "welsh": "Rwyt ti'n yfed te heddiw."
+    },
+    {
+      "english": "he went to school after work.",
+      "welsh": "Aeth e i'r ysgol ar ôl gwaith."
+    },
+    {
+      "english": "they have been busy.",
+      "welsh": "Maen nhw wedi bod yn brysur."
+    },
+    {
+      "english": "We looked for the map yesterday.",
+      "welsh": "Gwnaethon ni chwilio am y map ddoe."
+    },
+    {
+      "english": "We are not tidying up my bedroom in the morning.",
+      "welsh": "Dydyn ni ddim yn tacluso fy ystafell wely yn y bore."
+    },
+    {
+      "english": "We are waiting in the café at the moment.",
+      "welsh": "Rydyn ni'n aros yn y caffi ar yr adeg hon."
+    },
+    {
+      "english": "They are not speaking Welsh in the morning.",
+      "welsh": "Dydyn nhw ddim yn siarad Cymraeg yn y bore."
+    },
+    {
+      "english": "you have written a letter.",
+      "welsh": "Rwyt ti wedi ysgrifennu llythyr."
+    },
+    {
+      "english": "You (plural) are organising my bag this evening.",
+      "welsh": "Rydych chi'n trefnu fy mag heno."
+    },
+    {
+      "english": "she has written a letter.",
+      "welsh": "Mae hi wedi ysgrifennu llythyr."
+    },
+    {
+      "english": "You (plural) are looking for my phone in the morning.",
+      "welsh": "Rydych chi'n chwilio am fy ffôn yn y bore."
+    },
+    {
+      "english": "I am drinking coffee yesterday.",
+      "welsh": "Dw i'n yfed coffi ddoe."
+    },
+    {
+      "english": "I am not practising Welsh now.",
+      "welsh": "Dw i ddim yn ymarfer Cymraeg rŵan."
+    },
+    {
+      "english": "I bought a train ticket yesterday.",
+      "welsh": "Gwnes i prynu tocyn trên ddoe."
+    },
+    {
+      "english": "She is listening to a song now.",
+      "welsh": "Mae hi'n gwrando ar cân rŵan."
+    },
+    {
+      "english": "We are tidying up the house this morning.",
+      "welsh": "Rydyn ni'n tacluso y tŷ y bore 'ma."
+    },
+    {
+      "english": "we have become tired.",
+      "welsh": "Rydyn ni wedi blino."
+    },
+    {
+      "english": "You (plural) are tidying up the house this afternoon.",
+      "welsh": "Rydych chi'n tacluso y tŷ y prynhawn 'ma."
+    },
+    {
+      "english": "You are not eating breakfast this evening.",
+      "welsh": "Dwyt ti ddim yn bwyta brecwast heno."
+    },
+    {
+      "english": "He is reading the newspaper now.",
+      "welsh": "Mae e'n darllen y papur newydd rŵan."
+    },
+    {
+      "english": "You are practising Welsh this afternoon.",
+      "welsh": "Rwyt ti'n ymarfer Cymraeg y prynhawn 'ma."
+    },
+    {
+      "english": "I went to the market last night.",
+      "welsh": "Es i i'r farchnad neithiwr."
+    },
+    {
+      "english": "They are organising my bag today.",
+      "welsh": "Maen nhw'n trefnu fy mag heddiw."
+    },
+    {
+      "english": "I am working in the office this morning.",
+      "welsh": "Dw i'n gweithio yn y swyddfa y bore 'ma."
+    },
+    {
+      "english": "you have finished.",
+      "welsh": "Rwyt ti wedi gorffen."
+    },
+    {
+      "english": "He is not writing a letter now.",
+      "welsh": "Dydy e ddim yn ysgrifennu llythyr rŵan."
+    },
+    {
+      "english": "you (plural) have finished.",
+      "welsh": "Rydych chi wedi gorffen."
+    },
+    {
+      "english": "they have arrived.",
+      "welsh": "Maen nhw wedi cyrraedd."
+    },
+    {
+      "english": "We are eating breakfast in the afternoon.",
+      "welsh": "Rydyn ni'n bwyta brecwast yn y prynhawn."
+    },
+    {
+      "english": "You are drinking water in the afternoon.",
+      "welsh": "Rwyt ti'n yfed dŵr yn y prynhawn."
+    },
+    {
+      "english": "You (plural) are waiting at the station this afternoon.",
+      "welsh": "Rydych chi'n aros yn yr orsaf y prynhawn 'ma."
+    },
+    {
+      "english": "I am looking for my keys this afternoon.",
+      "welsh": "Dw i'n chwilio am fy allweddi y prynhawn 'ma."
+    },
+    {
+      "english": "we have gone home.",
+      "welsh": "Rydyn ni wedi mynd adre."
+    },
+    {
+      "english": "She is not walking to the village today.",
+      "welsh": "Dydy hi ddim yn cerdded i'r pentref heddiw."
+    },
+    {
+      "english": "you (plural) went to school after work.",
+      "welsh": "Aethoch chi i'r ysgol ar ôl gwaith."
+    },
+    {
+      "english": "We are tidying up the house this afternoon.",
+      "welsh": "Rydyn ni'n tacluso y tŷ y prynhawn 'ma."
+    },
+    {
+      "english": "I looked for the map yesterday.",
+      "welsh": "Gwnes i chwilio am y map ddoe."
+    },
+    {
+      "english": "She drank tea today.",
+      "welsh": "Gwnaeth hi yfed te heddiw."
+    },
+    {
+      "english": "She is not writing a letter at the moment.",
+      "welsh": "Dydy hi ddim yn ysgrifennu llythyr ar yr adeg hon."
+    },
+    {
+      "english": "They are not speaking Welsh this evening.",
+      "welsh": "Dydyn nhw ddim yn siarad Cymraeg heno."
+    },
+    {
+      "english": "You listened to a song yesterday.",
+      "welsh": "Gwnest ti gwrando ar cân ddoe."
+    },
+    {
+      "english": "He is not tidying up my bedroom at the moment.",
+      "welsh": "Dydy e ddim yn tacluso fy ystafell wely ar yr adeg hon."
+    },
+    {
+      "english": "You wrote a poem last night.",
+      "welsh": "Gwnest ti ysgrifennu cerdd neithiwr."
+    },
+    {
+      "english": "You ate cake last night.",
+      "welsh": "Gwnest ti bwyta cacen neithiwr."
+    },
+    {
+      "english": "you (plural) went home after work.",
+      "welsh": "Aethoch chi adre ar ôl gwaith."
+    },
+    {
+      "english": "You (plural) lost my bag last night.",
+      "welsh": "Gwnaethoch chi colli fy mag neithiwr."
+    },
+    {
+      "english": "She is not speaking Welsh tomorrow.",
+      "welsh": "Dydy hi ddim yn siarad Cymraeg yfory."
+    }
+  ]
+}
