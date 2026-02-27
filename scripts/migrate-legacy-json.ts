@@ -1,5 +1,6 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+import { createSupabaseAdminClient } from '@/server/supabase-admin';
 
 type LegacyWord = {
   english: string;
@@ -22,6 +23,8 @@ const ROOT = process.cwd();
 const INPUT_PATH = path.join(ROOT, 'data.json');
 const OUTPUT_JSON_PATH = path.join(ROOT, 'supabase/seed/legacy-words.json');
 const OUTPUT_SQL_PATH = path.join(ROOT, 'supabase/seed/legacy-seed.sql');
+const APPLY_FLAG = '--apply';
+const WIPE_FLAG = '--wipe';
 
 const PART_OF_SPEECH_MAP: Record<string, string> = {
   nouns: 'noun',
@@ -37,19 +40,21 @@ function escapeSql(value: string): string {
   return value.replaceAll("'", "''");
 }
 
-async function main() {
+async function buildWords() {
   const raw = await fs.readFile(INPUT_PATH, 'utf-8');
   const payload = JSON.parse(raw) as LegacyPayload;
 
-  const words: WordInsert[] = payload.words.map((word) => ({
+  return payload.words.map((word) => ({
     english: word.english.trim(),
     welsh: word.welsh.trim(),
     legacy_type: word.type,
     part_of_speech: PART_OF_SPEECH_MAP[word.type] ?? 'phrase',
     frequency_rank: null,
     notes: null,
-  }));
+  })) satisfies WordInsert[];
+}
 
+async function writeSeedFiles(words: WordInsert[]) {
   const categorySet = new Set(words.map((word) => word.legacy_type));
 
   const seedSqlLines = [
@@ -76,10 +81,107 @@ async function main() {
 
   await fs.writeFile(OUTPUT_JSON_PATH, JSON.stringify({ words }, null, 2));
   await fs.writeFile(OUTPUT_SQL_PATH, seedSqlLines.join('\n'));
+}
+
+async function seedSupabase(words: WordInsert[], shouldWipe: boolean) {
+  if (!shouldWipe) {
+    throw new Error(
+      'Direct imports require --wipe so the legacy dataset can be reseeded safely without duplicates.',
+    );
+  }
+
+  const categoryNames = Array.from(new Set(words.map((word) => word.legacy_type))).sort();
+  const supabaseAdmin = createSupabaseAdminClient();
+
+  const { error: deleteWordCategoriesError } = await supabaseAdmin
+    .from('word_categories')
+    .delete()
+    .not('word_id', 'is', null);
+
+  if (deleteWordCategoriesError) {
+    throw deleteWordCategoriesError;
+  }
+
+  const { error: deleteWordsError } = await supabaseAdmin.from('words').delete().not('id', 'is', null);
+
+  if (deleteWordsError) {
+    throw deleteWordsError;
+  }
+
+  const { error: deleteCategoriesError } = await supabaseAdmin
+    .from('categories')
+    .delete()
+    .not('id', 'is', null);
+
+  if (deleteCategoriesError) {
+    throw deleteCategoriesError;
+  }
+
+  const { data: insertedCategories, error: insertCategoriesError } = await supabaseAdmin
+    .from('categories')
+    .insert(categoryNames.map((name) => ({ name })))
+    .select('id, name');
+
+  if (insertCategoriesError) {
+    throw insertCategoriesError;
+  }
+
+  const categoryIdByName = new Map(insertedCategories.map((category) => [category.name, category.id]));
+  let insertedWordCount = 0;
+
+  for (const word of words) {
+    const { data: insertedWord, error: insertWordError } = await supabaseAdmin
+      .from('words')
+      .insert(word)
+      .select('id')
+      .single();
+
+    if (insertWordError) {
+      throw insertWordError;
+    }
+
+    const categoryId = categoryIdByName.get(word.legacy_type);
+
+    if (!categoryId) {
+      throw new Error(`Missing category mapping for legacy type: ${word.legacy_type}`);
+    }
+
+    const { error: insertWordCategoryError } = await supabaseAdmin.from('word_categories').insert({
+      word_id: insertedWord.id,
+      category_id: categoryId,
+    });
+
+    if (insertWordCategoryError) {
+      throw insertWordCategoryError;
+    }
+
+    insertedWordCount += 1;
+  }
+
+  console.log('Applied legacy import to Supabase with wipe-and-reseed mode.');
+  console.log(`Inserted ${insertedWordCount} words across ${categoryNames.length} categories.`);
+}
+
+function hasFlag(flag: string) {
+  return process.argv.includes(flag);
+}
+
+async function main() {
+  const words = await buildWords();
+  const shouldApply = hasFlag(APPLY_FLAG);
+  const shouldWipe = hasFlag(WIPE_FLAG);
+
+  await writeSeedFiles(words);
 
   console.log(`Converted ${words.length} words from legacy JSON.`);
   console.log(`Wrote: ${path.relative(ROOT, OUTPUT_JSON_PATH)}`);
   console.log(`Wrote: ${path.relative(ROOT, OUTPUT_SQL_PATH)}`);
+
+  if (shouldApply) {
+    await seedSupabase(words, shouldWipe);
+  } else if (shouldWipe) {
+    console.log(`Skipped Supabase import because ${APPLY_FLAG} was not provided.`);
+  }
 }
 
 main().catch((error) => {

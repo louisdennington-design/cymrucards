@@ -5,10 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:web": "next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "db:migrate": "node --import tsx scripts/migrate-legacy-json.ts"
+    "db:migrate": "node --import tsx scripts/migrate-legacy-json.ts",
+    "db:legacy:generate": "node --import tsx scripts/migrate-legacy-json.ts",
+    "db:legacy:apply": "node --import tsx scripts/migrate-legacy-json.ts --apply --wipe",
+    "cap:sync:android": "npx cap sync android",
+    "cap:open:android": "npx cap open android"
   },
   "dependencies": {
     "@capacitor/android": "^6.1.2",
