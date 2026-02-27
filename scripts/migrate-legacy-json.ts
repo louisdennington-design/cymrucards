@@ -5,6 +5,7 @@ type LegacyWord = {
   english: string;
   welsh: string;
   type: string;
+  audio_url?: string;
 };
 
 type LegacyPayload = { words: LegacyWord[] };
@@ -16,6 +17,7 @@ type WordInsert = {
   part_of_speech: string;
   frequency_rank: number | null;
   notes: string | null;
+  audio_url: string | null;
 };
 
 const ROOT = process.cwd();
@@ -48,6 +50,7 @@ async function main() {
     part_of_speech: PART_OF_SPEECH_MAP[word.type] ?? 'phrase',
     frequency_rank: null,
     notes: null,
+    audio_url: word.audio_url?.trim() || null,
   }));
 
   const categorySet = new Set(words.map((word) => word.legacy_type));
@@ -62,8 +65,8 @@ async function main() {
     ...words.map(
       (word) =>
         `with inserted as (\n` +
-        `  insert into public.words (welsh, english, part_of_speech, frequency_rank, legacy_type, notes)\n` +
-        `  values ('${escapeSql(word.welsh)}', '${escapeSql(word.english)}', '${escapeSql(word.part_of_speech)}', null, '${escapeSql(word.legacy_type)}', null)\n` +
+        `  insert into public.words (welsh, english, part_of_speech, frequency_rank, legacy_type, notes, audio_url)\n` +
+        `  values ('${escapeSql(word.welsh)}', '${escapeSql(word.english)}', '${escapeSql(word.part_of_speech)}', null, '${escapeSql(word.legacy_type)}', null, ${word.audio_url ? `'${escapeSql(word.audio_url)}'` : 'null'})\n` +
         `  returning id, legacy_type\n` +
         `)\n` +
         `insert into public.word_categories (word_id, category_id)\n` +

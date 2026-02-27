@@ -163,6 +163,7 @@ export interface Database {
       };
       words: {
         Row: {
+          audio_url: string | null;
           created_at: string;
           english: string;
           frequency_rank: number | null;
@@ -173,6 +174,7 @@ export interface Database {
           welsh: string;
         };
         Insert: {
+          audio_url?: string | null;
           created_at?: string;
           english: string;
           frequency_rank?: number | null;
@@ -183,6 +185,7 @@ export interface Database {
           welsh: string;
         };
         Update: {
+          audio_url?: string | null;
           created_at?: string;
           english?: string;
           frequency_rank?: number | null;
