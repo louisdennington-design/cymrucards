@@ -4,4 +4,17 @@ __pycache__
 .venv
 env
 .env
+.env.local
+.env.*
+!.env.example
 .DS_Store
+node_modules
+.next
+out
+android/.gradle
+android/app/build
+legacy
+requirements.txt
+data.json
+supabase
+docs

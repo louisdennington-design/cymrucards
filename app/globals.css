@@ -150,10 +150,13 @@ body::before {
 
 .flashcard-card {
   height: 100%;
+  overflow: hidden;
+  position: relative;
   width: 100%;
 }
 
 .flashcard-inner {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(247, 250, 241, 0.92) 100%);
   position: relative;
   transform-style: preserve-3d;
   transition: transform 320ms ease;
@@ -173,11 +176,16 @@ body::before {
 }
 
 .flashcard-face-welsh {
-  background: linear-gradient(180deg, #f7faef 0%, #eef5de 100%);
+  background: linear-gradient(180deg, #eef4de 0%, #e3eccb 100%);
 }
 
 .flashcard-face-back {
   transform: rotateY(180deg);
+}
+
+.fact-card-face {
+  background: linear-gradient(180deg, #234812 0%, #1b3a14 100%);
+  color: white;
 }
 
 .revision-stack-button {

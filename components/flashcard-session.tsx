@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import type { User } from '@supabase/supabase-js';
@@ -11,7 +12,8 @@ import {
 } from '@/lib/active-flashcard-session';
 import { isWordInLocalStack, removeLocalStackWord, upsertLocalStackWord } from '@/lib/card-stack';
 import type { CoreLinguisticTypeOption, FrontLanguage, SessionHistoryPoint, ThemeOption } from '@/lib/flashcards';
-import { recordLocalAnswer, recordLocalSessionCompletion } from '@/lib/local-session-stats';
+import { readLocalSessionStats, recordLocalAnswer, recordLocalSessionCompletion } from '@/lib/local-session-stats';
+import { getCurrentLevel } from '@/lib/progression';
 import { getRotatingFacts } from '@/lib/welsh-facts';
 import { createSupabaseBrowserClient } from '@/server/supabase-browser';
 import type { Database } from '@/types/database';
@@ -244,7 +246,7 @@ function renderStaticCard(card: DisplayCard, frontLanguage: FrontLanguage, isFli
   if (card.kind === 'fact') {
     return (
       <div className="flashcard-card rounded-[2rem] border border-white/60 bg-[#234812] p-7 text-white shadow-[0_34px_70px_rgba(16,24,18,0.3)]">
-        <div className="flashcard-face">
+        <div className="fact-card-face flashcard-face">
           <p className="text-xs uppercase tracking-[0.24em] text-[#e8efcd]">Did you know...?</p>
           <p className="mt-6 text-center text-[0.93rem] font-semibold leading-tight hyphens-auto [overflow-wrap:anywhere]">{card.fact}</p>
         </div>
@@ -296,6 +298,7 @@ export function FlashcardSession({
   const [showFeedbackPrompt, setShowFeedbackPrompt] = useState(false);
   const [feedbackStatus, setFeedbackStatus] = useState<string | null>(null);
   const [isInStack, setIsInStack] = useState(false);
+  const [completionHistory, setCompletionHistory] = useState<SessionHistoryPoint[]>([]);
   const [user, setUser] = useState<Pick<User, 'id'> | null>(initialUser);
   const [pendingSwipeDirection, setPendingSwipeDirection] = useState<SwipeDirection | null>(null);
   const completionTriggeredRef = useRef(false);
@@ -332,6 +335,7 @@ export function FlashcardSession({
     setShowPhoneticAid(false);
     setShowFeedbackPrompt(false);
     setFeedbackStatus(null);
+    setCompletionHistory([]);
     completionTriggeredRef.current = false;
   }, [initialFrontLanguage, sessionKey, words]);
 
@@ -430,6 +434,7 @@ export function FlashcardSession({
 
       if (!activeUser) {
         recordLocalSessionCompletion(reviewedCount);
+        setCompletionHistory(readLocalSessionStats().sessionHistory);
         return;
       }
 
@@ -456,6 +461,7 @@ export function FlashcardSession({
           wordsShown: reviewedCount,
         },
       ];
+      setCompletionHistory(nextHistory);
 
       const { error } = await supabase.schema('public').from('user_stats').upsert(
         {
@@ -621,7 +627,7 @@ export function FlashcardSession({
   }
 
   function getRepeatInsertionOffset() {
-    return Math.max(3, Math.round(words.length / 6));
+    return Math.max(3, Math.floor(words.length * 0.8));
   }
 
   function queueRepeatForWord(word: SessionWord) {
@@ -637,7 +643,7 @@ export function FlashcardSession({
     }));
     setDisplayCards((currentCards) => {
       const nextCards = [...currentCards];
-      const insertionIndex = Math.min(currentIndex + getRepeatInsertionOffset(), nextCards.length);
+      const insertionIndex = Math.min(Math.max(currentIndex + 3, getRepeatInsertionOffset()), nextCards.length);
 
       nextCards.splice(insertionIndex, 0, {
         kind: 'word',
@@ -991,24 +997,30 @@ export function FlashcardSession({
   }
 
   if (isComplete) {
+    const completionLevel = getCurrentLevel(completionHistory);
+
     return (
       <section className="rounded-[2rem] border border-white/50 bg-white/82 p-6 shadow-[0_28px_80px_rgba(26,67,46,0.16)] backdrop-blur">
         <div className="celebration-burst">
-          <div className="celebration-icon celebration-icon-dragon">🐉</div>
+          <div className="celebration-icon">
+            <div className="relative h-20 w-20">
+              <Image alt={completionLevel.name} className="object-contain" fill sizes="80px" src={completionLevel.glyph} />
+            </div>
+          </div>
         </div>
         <h2 className="mt-4 text-center text-3xl font-semibold text-slate-900">Session complete!</h2>
         <div className="mt-5 grid grid-cols-3 gap-3 text-sm">
           <div className="rounded-2xl bg-[#eef4de] p-4">
-            <p className="text-slate-500">Learned</p>
-            <p className="mt-2 text-2xl font-semibold text-slate-900">{learnedCount}</p>
+            <p className="text-slate-500">Cards seen</p>
+            <p className="mt-2 text-2xl font-semibold text-slate-900">{reviewedCount}</p>
           </div>
           <div className="rounded-2xl bg-[#edf1da] p-4">
-            <p className="text-slate-500">Seen again</p>
+            <p className="text-slate-500">Cards re-seen</p>
             <p className="mt-2 text-2xl font-semibold text-slate-900">{repeatCount}</p>
           </div>
           <div className="rounded-2xl bg-[#f7f1df] p-4">
-            <p className="text-slate-500">Hidden this session</p>
-            <p className="mt-2 text-2xl font-semibold text-slate-900">{dismissedCount}</p>
+            <p className="text-slate-500">Removed from stack</p>
+            <p className="mt-2 text-2xl font-semibold text-slate-900">{learnedCount}</p>
           </div>
         </div>
         {saveError ? <p className="mt-4 text-sm text-amber-700">{saveError}</p> : null}

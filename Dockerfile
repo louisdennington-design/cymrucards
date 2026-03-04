@@ -1,19 +1,29 @@
 # syntax=docker/dockerfile:1
 
-ARG PYTHON_VERSION=3.12.12
+FROM node:20-bookworm-slim AS base
+WORKDIR /app
+ENV NEXT_TELEMETRY_DISABLED=1
 
-FROM python:${PYTHON_VERSION}-slim
+FROM base AS deps
+COPY package.json package-lock.json ./
+RUN npm ci
 
-LABEL fly_launch_runtime="flask"
-
-WORKDIR /code
-
-COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
-
-COPY data.json /code/data.json
+FROM base AS builder
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+RUN npm run build
+
+FROM node:20-bookworm-slim AS runner
+WORKDIR /app
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV PORT=8080
+ENV HOSTNAME=0.0.0.0
+
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
 
 EXPOSE 8080
 
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=8080"]
+CMD ["node", "server.js"]
