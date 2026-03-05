@@ -180,6 +180,18 @@ function isInteractiveCardControl(target: EventTarget | null) {
   return target instanceof HTMLElement && target.closest('[data-card-control="true"]') !== null;
 }
 
+function getErrorMessage(error: unknown, fallback: string) {
+  if (error instanceof Error) {
+    return error.message;
+  }
+
+  if (error && typeof error === 'object' && 'message' in error && typeof (error as { message?: unknown }).message === 'string') {
+    return (error as { message: string }).message;
+  }
+
+  return fallback;
+}
+
 function renderWordCard(
   word: SessionWord,
   frontLanguage: FrontLanguage,
@@ -540,8 +552,8 @@ export function FlashcardSession({
     }
 
     void finalizeSession().catch((error) => {
-      const message = error instanceof Error ? error.message : 'Unable to save progress.';
-      setSaveError(message);
+      const message = getErrorMessage(error, 'Unable to save progress.');
+      setSaveError(`Cloud sync is unavailable (${message}). Progress will stay on this device.`);
     });
   }, [isComplete, learnedCount, reviewedCount, supabase, user]);
 
@@ -742,8 +754,8 @@ export function FlashcardSession({
           setRepeatCount((count) => count + 1);
         }
         void persistStatsDelta(currentCard.word, 1, 0).catch((error) => {
-          const message = error instanceof Error ? error.message : 'Unable to save progress.';
-          setSaveError(message);
+          const message = getErrorMessage(error, 'Unable to save progress.');
+          setSaveError(`Cloud sync is unavailable (${message}). Progress will stay on this device.`);
         });
       });
       return;
@@ -753,8 +765,8 @@ export function FlashcardSession({
       setReviewedCount((count) => count + 1);
       setDismissedCount((count) => count + 1);
       void persistStatsDelta(currentCard.word, 1, 0).catch((error) => {
-        const message = error instanceof Error ? error.message : 'Unable to save progress.';
-        setSaveError(message);
+        const message = getErrorMessage(error, 'Unable to save progress.');
+        setSaveError(`Cloud sync is unavailable (${message}). Progress will stay on this device.`);
       });
     });
   }
@@ -850,8 +862,8 @@ export function FlashcardSession({
       await persistCardState(currentCard.word, 'removed', false);
       await persistStatsDelta(currentCard.word, 1, 1);
     } catch (error) {
-      const message = error instanceof Error ? error.message : 'Unable to save progress.';
-      setSaveError(message);
+      const message = getErrorMessage(error, 'Unable to save progress.');
+      setSaveError(`Cloud sync is unavailable (${message}). Progress will stay on this device.`);
     } finally {
       setIsSaving(false);
     }
@@ -914,8 +926,8 @@ export function FlashcardSession({
       await persistCardState(currentCard.word, 'active', nextInStack);
       setIsInStack(nextInStack);
     } catch (error) {
-      const message = error instanceof Error ? error.message : 'Unable to update your stack.';
-      setSaveError(message);
+      const message = getErrorMessage(error, 'Unable to update your stack.');
+      setSaveError(`Cloud sync is unavailable (${message}). Progress will stay on this device.`);
     } finally {
       setIsSaving(false);
     }
@@ -967,7 +979,7 @@ export function FlashcardSession({
       setFeedbackStatus('Translation query sent.');
       setShowFeedbackPrompt(false);
     } catch (error) {
-      const message = error instanceof Error ? error.message : 'Unable to send feedback.';
+      const message = getErrorMessage(error, 'Unable to send feedback.');
       setSaveError(message);
     } finally {
       setIsSaving(false);

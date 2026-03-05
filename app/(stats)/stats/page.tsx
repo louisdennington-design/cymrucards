@@ -60,6 +60,7 @@ export default async function StatsPage() {
   }
 
   let signedInPanel = <LocalStatsPanel totalsByFrequency={totalsByFrequency} />;
+  let signedInWarning: string | null = null;
 
   if (user) {
     const [{ data: statsRow, error: statsError }, { data: cardStateRows, error: cardStateError }] = await Promise.all([
@@ -72,58 +73,58 @@ export default async function StatsPage() {
       supabaseServer.schema('public').from('user_card_state').select('word_id, in_stack, status').eq('user_id', user.id),
     ]);
 
-    if (statsError) {
-      throw new Error(`Unable to load stats: ${statsError.message}`);
+    if (statsError || cardStateError) {
+      signedInWarning = `Cloud stats are temporarily unavailable (${statsError?.message ?? cardStateError?.message ?? 'unknown error'}). Showing local stats for now.`;
+      console.error('Unable to load signed-in stats', {
+        cardStateError: cardStateError?.message,
+        statsError: statsError?.message,
+      });
+    } else {
+      const removedIds = new Set((cardStateRows ?? []).filter((row) => row.status === 'removed').map((row) => row.word_id));
+      const stackedIds = new Set((cardStateRows ?? []).filter((row) => row.in_stack && row.status !== 'removed').map((row) => row.word_id));
+      const learnedWords = lexiconRows
+        .filter((row) => removedIds.has(row.id) && Object.hasOwn(CATEGORY_TOTALS, row.spacy_pos_1 as CoreLinguisticTypeOption))
+        .map((row) => ({
+          english: row.english_1 ?? '',
+          english_2: row.english_2,
+          english_3: row.english_3,
+          frequencyRank: row.welsh_frequency,
+          id: row.id,
+          linguisticType: row.spacy_pos_1 as CoreLinguisticTypeOption,
+          welsh: row.welsh_lc ?? '',
+        }))
+        .sort((left, right) => left.welsh.localeCompare(right.welsh));
+      const stackWords = lexiconRows
+        .filter((row) => stackedIds.has(row.id) && Object.hasOwn(CATEGORY_TOTALS, row.spacy_pos_1 as CoreLinguisticTypeOption))
+        .map((row) => ({
+          english: row.english_1 ?? '',
+          english_2: row.english_2,
+          english_3: row.english_3,
+          frequencyRank: row.welsh_frequency,
+          id: row.id,
+          linguisticType: row.spacy_pos_1 as CoreLinguisticTypeOption,
+          welsh: row.welsh_lc ?? '',
+        }))
+        .sort((left, right) => left.welsh.localeCompare(right.welsh));
+      const categoryProgress =
+        statsRow?.category_progress && typeof statsRow.category_progress === 'object' && !Array.isArray(statsRow.category_progress)
+          ? { ...createEmptyCategoryProgress(), ...(statsRow.category_progress as Record<string, { learned: number; reviewed: number }>) }
+          : createEmptyCategoryProgress();
+
+      signedInPanel = (
+        <SignedInStatsPanel
+          categoryProgress={categoryProgress}
+          currentStreak={statsRow?.current_streak ?? 0}
+          learnedWords={learnedWords}
+          longestStreak={statsRow?.longest_streak ?? 0}
+          sessionHistory={Array.isArray(statsRow?.session_history) ? (statsRow.session_history as SessionHistoryPoint[]) : []}
+          stackWords={stackWords}
+          totalReviewed={statsRow?.total_reviewed ?? 0}
+          totalsByFrequency={totalsByFrequency}
+          userId={user.id}
+        />
+      );
     }
-
-    if (cardStateError) {
-      throw new Error(`Unable to load removed cards: ${cardStateError.message}`);
-    }
-
-    const removedIds = new Set((cardStateRows ?? []).filter((row) => row.status === 'removed').map((row) => row.word_id));
-    const stackedIds = new Set((cardStateRows ?? []).filter((row) => row.in_stack && row.status !== 'removed').map((row) => row.word_id));
-    const learnedWords = lexiconRows
-      .filter((row) => removedIds.has(row.id) && Object.hasOwn(CATEGORY_TOTALS, row.spacy_pos_1 as CoreLinguisticTypeOption))
-      .map((row) => ({
-        english: row.english_1 ?? '',
-        english_2: row.english_2,
-        english_3: row.english_3,
-        frequencyRank: row.welsh_frequency,
-        id: row.id,
-        linguisticType: row.spacy_pos_1 as CoreLinguisticTypeOption,
-        welsh: row.welsh_lc ?? '',
-      }))
-      .sort((left, right) => left.welsh.localeCompare(right.welsh));
-    const stackWords = lexiconRows
-      .filter((row) => stackedIds.has(row.id) && Object.hasOwn(CATEGORY_TOTALS, row.spacy_pos_1 as CoreLinguisticTypeOption))
-      .map((row) => ({
-        english: row.english_1 ?? '',
-        english_2: row.english_2,
-        english_3: row.english_3,
-        frequencyRank: row.welsh_frequency,
-        id: row.id,
-        linguisticType: row.spacy_pos_1 as CoreLinguisticTypeOption,
-        welsh: row.welsh_lc ?? '',
-      }))
-      .sort((left, right) => left.welsh.localeCompare(right.welsh));
-    const categoryProgress =
-      statsRow?.category_progress && typeof statsRow.category_progress === 'object' && !Array.isArray(statsRow.category_progress)
-        ? { ...createEmptyCategoryProgress(), ...(statsRow.category_progress as Record<string, { learned: number; reviewed: number }>) }
-        : createEmptyCategoryProgress();
-
-    signedInPanel = (
-      <SignedInStatsPanel
-        categoryProgress={categoryProgress}
-        currentStreak={statsRow?.current_streak ?? 0}
-        learnedWords={learnedWords}
-        longestStreak={statsRow?.longest_streak ?? 0}
-        sessionHistory={Array.isArray(statsRow?.session_history) ? (statsRow.session_history as SessionHistoryPoint[]) : []}
-        stackWords={stackWords}
-        totalReviewed={statsRow?.total_reviewed ?? 0}
-        totalsByFrequency={totalsByFrequency}
-        userId={user.id}
-      />
-    );
   }
 
   return (
@@ -134,6 +135,9 @@ export default async function StatsPage() {
       >
         <h1 className="text-lg font-semibold tracking-tight text-white">Stats</h1>
       </section>
+      {signedInWarning ? (
+        <section className="rounded-2xl border border-amber-200 bg-amber-50/90 p-4 text-sm text-amber-800 shadow-sm">{signedInWarning}</section>
+      ) : null}
       {signedInPanel}
     </main>
   );
