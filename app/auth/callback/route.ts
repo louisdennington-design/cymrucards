@@ -6,8 +6,11 @@ import type { Database } from '@/types/database';
 
 export async function GET(request: NextRequest) {
   const code = request.nextUrl.searchParams.get('code');
-  const next = request.nextUrl.searchParams.get('next') ?? '/';
-  let response = NextResponse.redirect(new URL(next, request.url));
+  const type = request.nextUrl.searchParams.get('type');
+  const rawNext = request.nextUrl.searchParams.get('next');
+  const next = rawNext?.startsWith('/') ? rawNext : '/flashcards';
+  const redirectPath = type === 'recovery' ? `/auth/reset-password?next=${encodeURIComponent(next)}` : next;
+  let response = NextResponse.redirect(new URL(redirectPath, request.url));
 
   if (!code) {
     return response;
@@ -19,7 +22,7 @@ export async function GET(request: NextRequest) {
         return request.cookies.getAll();
       },
       setAll(cookiesToSet: Parameters<SetAllCookies>[0]) {
-        response = NextResponse.redirect(new URL(next, request.url));
+        response = NextResponse.redirect(new URL(redirectPath, request.url));
         cookiesToSet.forEach(({ name, options, value }) => {
           response.cookies.set(name, value, options);
         });
@@ -27,7 +30,7 @@ export async function GET(request: NextRequest) {
     },
   });
 
-  await supabase.auth.exchangeCodeForSession(code);
+  await supabase.auth.exchangeCodeForSession(code).catch(() => null);
 
   return response;
 }

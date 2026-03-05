@@ -243,7 +243,7 @@ export function AuthPanel({ initialUserEmail, redirectPath }: AuthPanelProps) {
 
         <button
           className="rounded-md px-4 py-2 text-sm font-medium text-white disabled:opacity-60"
-          disabled={isLoading || !supabase || email.trim() === '' || (mode !== 'reset' && password.trim() === '')}
+          disabled={isLoading || email.trim() === '' || (mode !== 'reset' && password.trim() === '')}
           style={{ backgroundColor: isLoading ? '#91a488' : '#234812' }}
           type="submit"
         >

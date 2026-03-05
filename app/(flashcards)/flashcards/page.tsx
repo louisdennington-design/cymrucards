@@ -100,13 +100,17 @@ export default async function FlashcardsPage({ searchParams }: { searchParams?: 
 
   if (!sessionKey) {
     if (user) {
-      const { data: stackedRows } = await supabaseServer
+      const { data: stackedRows, error: stackedRowsError } = await supabaseServer
         .schema('public')
         .from('user_card_state')
         .select('word_id')
         .eq('user_id', user.id)
         .eq('in_stack', true)
         .eq('status', 'active');
+
+      if (stackedRowsError) {
+        console.error('Unable to load initial stack words:', stackedRowsError.message);
+      }
 
       const stackIds = new Set((stackedRows ?? []).map((row) => row.word_id));
       initialStackWords = allLexiconRows
@@ -157,9 +161,8 @@ export default async function FlashcardsPage({ searchParams }: { searchParams?: 
       .from('user_card_state')
       .select('word_id, status, in_stack')
       .eq('user_id', user.id);
-
     if (cardStateError) {
-      throw new Error(`Unable to load card state: ${cardStateError.message}`);
+      console.error('Unable to load card state:', cardStateError.message);
     }
 
     const removedWordIds = new Set((cardStateRows ?? []).filter((row) => row.status === 'removed').map((row) => row.word_id));

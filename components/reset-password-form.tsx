@@ -30,15 +30,22 @@ export function ResetPasswordForm({ nextPath }: ResetPasswordFormProps) {
     const refreshToken = hashParams.get('refresh_token');
 
     async function prepareRecoverySession() {
-      if (!accessToken || !refreshToken) {
-        setErrorMessage('This password reset link is incomplete or has expired.');
-        return;
-      }
+      let error: { message: string } | null = null;
 
-      const { error } = await client.auth.setSession({
-        access_token: accessToken,
-        refresh_token: refreshToken,
-      });
+      if (accessToken && refreshToken) {
+        ({ error } = await client.auth.setSession({
+          access_token: accessToken,
+          refresh_token: refreshToken,
+        }));
+      } else {
+        const sessionResult = await client.auth.getSession();
+        if (sessionResult.error) {
+          error = { message: sessionResult.error.message };
+        } else if (!sessionResult.data.session) {
+          setErrorMessage('This password reset link is incomplete or has expired.');
+          return;
+        }
+      }
 
       if (error) {
         setErrorMessage(error.message);
