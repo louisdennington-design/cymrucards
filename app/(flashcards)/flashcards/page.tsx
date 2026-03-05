@@ -22,7 +22,6 @@ import {
   type RarityOption,
   type ThemeOption,
 } from '@/lib/flashcards';
-import { createSupabaseAdminClient } from '@/server/supabase-admin';
 import { createSupabaseServerClient } from '@/server/supabase-server';
 import type { Database } from '@/types/database';
 
@@ -76,7 +75,6 @@ function applyWordFilters(words: FilterableLexiconWord[], rarity: RarityOption, 
 }
 
 export default async function FlashcardsPage({ searchParams }: { searchParams?: SearchParams }) {
-  const supabaseAdmin = createSupabaseAdminClient();
   const supabaseServer = createSupabaseServerClient();
   const {
     data: { user },
@@ -102,7 +100,8 @@ export default async function FlashcardsPage({ searchParams }: { searchParams?: 
 
   if (!sessionKey) {
     if (user) {
-      const { data: stackedRows } = await supabaseAdmin
+      const { data: stackedRows } = await supabaseServer
+        .schema('public')
         .from('user_card_state')
         .select('word_id')
         .eq('user_id', user.id)
@@ -153,7 +152,8 @@ export default async function FlashcardsPage({ searchParams }: { searchParams?: 
   let stackIds = new Set<number>(requestedStackIds);
 
   if (user) {
-    const { data: cardStateRows, error: cardStateError } = await supabaseAdmin
+    const { data: cardStateRows, error: cardStateError } = await supabaseServer
+      .schema('public')
       .from('user_card_state')
       .select('word_id, status, in_stack')
       .eq('user_id', user.id);

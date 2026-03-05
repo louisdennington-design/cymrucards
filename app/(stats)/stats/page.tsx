@@ -8,7 +8,6 @@ import {
   type SessionHistoryPoint,
 } from '@/lib/flashcards';
 import { fetchAllEligibleLexiconRows } from '@/lib/lexicon-server';
-import { createSupabaseAdminClient } from '@/server/supabase-admin';
 import { createSupabaseServerClient } from '@/server/supabase-server';
 import type { Database } from '@/types/database';
 
@@ -37,7 +36,6 @@ function createEmptyCategoryProgress() {
 }
 
 export default async function StatsPage() {
-  const supabaseAdmin = createSupabaseAdminClient();
   const supabaseServer = createSupabaseServerClient();
   const {
     data: { user },
@@ -65,12 +63,13 @@ export default async function StatsPage() {
 
   if (user) {
     const [{ data: statsRow, error: statsError }, { data: cardStateRows, error: cardStateError }] = await Promise.all([
-      supabaseAdmin
+      supabaseServer
+        .schema('public')
         .from('user_stats')
         .select('category_progress, current_streak, longest_streak, total_reviewed, session_history')
         .eq('user_id', user.id)
         .maybeSingle(),
-      supabaseAdmin.from('user_card_state').select('word_id, in_stack, status').eq('user_id', user.id),
+      supabaseServer.schema('public').from('user_card_state').select('word_id, in_stack, status').eq('user_id', user.id),
     ]);
 
     if (statsError) {

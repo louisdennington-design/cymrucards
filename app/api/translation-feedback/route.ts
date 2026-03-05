@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { createSupabaseAdminClient } from '@/server/supabase-admin';
 import { createSupabaseServerClient } from '@/server/supabase-server';
 
 type FeedbackBody = {
@@ -20,9 +19,8 @@ export async function POST(request: Request) {
   const {
     data: { user },
   } = await supabaseServer.auth.getUser();
-  const supabaseAdmin = createSupabaseAdminClient();
 
-  const { error } = await supabaseAdmin.from('translation_feedback').insert({
+  const { error } = await supabaseServer.schema('public').from('translation_feedback').insert({
     english_1: body.english_1,
     theme: body.theme ?? null,
     user_id: user?.id ?? null,
