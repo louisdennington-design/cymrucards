@@ -83,21 +83,26 @@ export default async function AboutPage() {
       </section>
       <section className="rounded-[2rem] border border-white/50 bg-white/84 p-5 shadow-[0_22px_50px_rgba(26,67,46,0.12)] backdrop-blur">
         <p className="text-sm leading-6 text-slate-700">
-          CymruCards stores your learning activity so your progress can be saved and synced when you sign in. This includes things like which cards
-          you viewed, which ones you removed, your session totals, and your selected settings.
+          CymruCards is - and will remain - a free app. The aim is to support your learning experience while collecting the minimal amount of data
+          needed to provide you with a user account, and to keep improving the app.
         </p>
         <p className="mt-3 text-sm leading-6 text-slate-700">
-          If you send a translation report using the question-mark button, that report is sent to the developer by email and includes the Welsh word,
-          the English translation shown, and related card metadata. It may also include your account ID if you are signed in, so issues can be traced.
+          The app stores some basic learning activity so your progress can be saved and restored when you sign in. This includes things like which cards
+          you have viewed, which ones you removed, your session totals, and your chosen settings.
         </p>
         <p className="mt-3 text-sm leading-6 text-slate-700">
-          We also use analytics to understand overall usage patterns, such as which screens are visited and which features are used. This helps improve
-          the app. Raw IP addresses are not collected by the app itself.
+          If you send a translation report using the question-mark button, the report is emailed to the developer - Louis - so potential errors can be
+          corrected. The message includes the Welsh word, the English translation shown, and related card metadata. If you are signed in, it may also
+          include your account ID so the issue can be traced and resolved.
         </p>
         <p className="mt-3 text-sm leading-6 text-slate-700">
-          We do not ask for payment details, and we do not intentionally collect sensitive personal information through normal app use. Your sign-in,
-          stored progress, and data transfer rely on industry-standard encrypted HTTPS connections and managed cloud services (including Supabase and
-          Google Analytics), but no online system can be guaranteed to be 100% risk-free.
+          The app uses analytics to understand general usage patterns, such as which screens people visit and which features are used. This helps improve
+          the app. The app itself does not collect raw IP addresses for individual users.
+        </p>
+        <p className="mt-3 text-sm leading-6 text-slate-700">
+          Your sign-in and data transfers use encrypted HTTPS connections and established cloud services (including Supabase and Google Analytics), which
+          are widely used to securely operate modern web applications. As with any internet service, no system can guarantee absolute security, but the
+          app is designed to use standard safeguards and to minimise the amount of personal information collected.
         </p>
       </section>
 
