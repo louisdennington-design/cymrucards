@@ -83,9 +83,21 @@ export default async function AboutPage() {
       </section>
       <section className="rounded-[2rem] border border-white/50 bg-white/84 p-5 shadow-[0_22px_50px_rgba(26,67,46,0.12)] backdrop-blur">
         <p className="text-sm leading-6 text-slate-700">
-          CymruCards uses Supabase for authentication and syncing learning progress, and uses analytics to understand overall app usage patterns
-          and improve the learning experience. Analytics is configured without collecting raw IP addresses in the app layer, and translation feedback
-          can be sent to the developer when you choose to report an entry.
+          CymruCards stores your learning activity so your progress can be saved and synced when you sign in. This includes things like which cards
+          you viewed, which ones you removed, your session totals, and your selected settings.
+        </p>
+        <p className="mt-3 text-sm leading-6 text-slate-700">
+          If you send a translation report using the question-mark button, that report is sent to the developer by email and includes the Welsh word,
+          the English translation shown, and related card metadata. It may also include your account ID if you are signed in, so issues can be traced.
+        </p>
+        <p className="mt-3 text-sm leading-6 text-slate-700">
+          We also use analytics to understand overall usage patterns, such as which screens are visited and which features are used. This helps improve
+          the app. Raw IP addresses are not collected by the app itself.
+        </p>
+        <p className="mt-3 text-sm leading-6 text-slate-700">
+          We do not ask for payment details, and we do not intentionally collect sensitive personal information through normal app use. Your sign-in,
+          stored progress, and data transfer rely on industry-standard encrypted HTTPS connections and managed cloud services (including Supabase and
+          Google Analytics), but no online system can be guaranteed to be 100% risk-free.
         </p>
       </section>
 

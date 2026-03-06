@@ -684,6 +684,10 @@ export function FlashcardSession({
     setShowIntroOverlay(false);
   }
 
+  function openIntroOverlay() {
+    setShowIntroOverlay(true);
+  }
+
   function togglePhoneticAid() {
     setShowPhoneticAid((currentValue) => !currentValue);
   }
@@ -1170,15 +1174,24 @@ export function FlashcardSession({
     <>
       <section className="space-y-4">
         <div className="relative flex items-center justify-between rounded-[1.75rem] border border-white/45 bg-white/66 px-4 py-3 shadow-[0_16px_40px_rgba(26,67,46,0.1)] backdrop-blur">
-          <Link
-            aria-label="Back to settings"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#c7d3a7] bg-white/90 shadow-sm"
-            href="/flashcards"
-          >
-            <svg aria-hidden="true" className="h-5 w-5" fill="none" viewBox="0 0 24 24">
-              <path d="M15 5 8 12l7 7" stroke="#2C5439" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3.2" />
-            </svg>
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              aria-label="Back to settings"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#c7d3a7] bg-white/90 shadow-sm"
+              href="/flashcards"
+            >
+              <svg aria-hidden="true" className="h-5 w-5" fill="none" viewBox="0 0 24 24">
+                <path d="M15 5 8 12l7 7" stroke="#2C5439" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3.2" />
+              </svg>
+            </Link>
+            <button
+              className="rounded-full border border-[#c7d3a7] bg-white/90 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm"
+              onClick={openIntroOverlay}
+              type="button"
+            >
+              How this works
+            </button>
+          </div>
           <p className="pointer-events-none absolute left-1/2 -translate-x-1/2 text-center text-sm font-medium text-slate-700">
             {counterProgress} of {words.length}
           </p>

@@ -13,7 +13,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     supabaseAnonKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? '',
     supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL ?? '',
   };
-  const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() ?? '';
+  const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || 'G-MTT3Q5TMES';
 
   return (
     <html lang="en">
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             __html: `window.__CYMRUCARDS_RUNTIME_ENV__ = ${JSON.stringify(runtimeClientEnv)};`,
           }}
         />
-        {gaMeasurementId ? <GoogleAnalytics measurementId={gaMeasurementId} /> : null}
+        <GoogleAnalytics measurementId={gaMeasurementId} />
         <AppShell>{children}</AppShell>
       </body>
     </html>
