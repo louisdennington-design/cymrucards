@@ -50,12 +50,12 @@ export function SessionHistoryGraph({ history, requiresLogin = false }: SessionH
             y1={graphHeight - padding}
             y2={graphHeight - padding}
           />
-          <polyline fill="none" points={points} stroke="#234812" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
+          <polyline fill="none" points={points} stroke="#2C5439" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
           {history.map((point, index) => {
             const x = padding + xStep * index;
             const y = graphHeight - padding - ((graphHeight - padding * 2) * point.totalLearned) / maxValue;
 
-            return <circle cx={x} cy={y} fill="#769036" key={`${point.session}-${point.totalLearned}`} r="5" />;
+            return <circle cx={x} cy={y} fill="#2C5439" key={`${point.session}-${point.totalLearned}`} r="5" />;
           })}
         </svg>
       </div>

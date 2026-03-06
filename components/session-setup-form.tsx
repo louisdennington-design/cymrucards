@@ -196,20 +196,20 @@ export function SessionSetupForm({
           className="w-full rounded-full px-4 py-[1.125rem] text-sm font-semibold text-white shadow-[0_14px_34px_rgba(20,40,22,0.28)] disabled:cursor-wait"
           disabled={pendingNavigation !== null}
           form="session-options-form"
-          style={{ backgroundColor: pendingNavigation === 'start' ? '#91a488' : '#234812' }}
+          style={{ backgroundColor: pendingNavigation === 'start' ? '#96A99C' : '#2C5439' }}
           type="submit"
         >
           Start new session
         </button>
         <button
           className={`inline-flex items-center justify-center gap-2 rounded-full border px-4 py-[1.125rem] text-sm font-semibold shadow-sm ${
-            activeSession ? 'bg-white text-[#234812]' : 'cursor-not-allowed bg-slate-100 text-slate-400'
+            activeSession ? 'bg-white text-[#2C5439]' : 'cursor-not-allowed bg-slate-100 text-slate-400'
           }`}
           disabled={!activeSession || pendingNavigation !== null}
           onClick={handleResume}
           style={
             activeSession
-              ? { borderColor: '#c7d3a7', color: pendingNavigation === 'resume' ? '#94a3b8' : '#234812' }
+              ? { borderColor: '#c7d3a7', color: pendingNavigation === 'resume' ? '#94a3b8' : '#2C5439' }
               : { borderColor: '#e2e8f0' }
           }
           type="button"
@@ -244,7 +244,7 @@ export function SessionSetupForm({
                       frontLanguage === option.value ? 'text-white' : 'text-slate-700'
                     }`}
                     key={option.value}
-                    style={frontLanguage === option.value ? { backgroundColor: '#769036' } : undefined}
+                    style={frontLanguage === option.value ? { backgroundColor: '#2C5439' } : undefined}
                   >
                     <input
                       checked={frontLanguage === option.value}
@@ -271,7 +271,7 @@ export function SessionSetupForm({
               min="1"
               onChange={(event) => setDuration(getDurationFromSliderValue(Number(event.target.value)))}
               step="1"
-              style={{ accentColor: '#769036' }}
+              style={{ accentColor: '#2C5439' }}
               type="range"
               value={getDurationSliderValue(duration)}
             />
@@ -288,7 +288,7 @@ export function SessionSetupForm({
               min="10"
               onChange={(event) => setRarity(String(event.target.value) as RarityOption)}
               step="10"
-              style={{ accentColor: '#769036' }}
+              style={{ accentColor: '#2C5439' }}
               type="range"
               value={Number(rarity)}
             />
@@ -311,7 +311,7 @@ export function SessionSetupForm({
                           : 'border-[#d5dfbb] bg-white text-slate-900'
                     }`}
                     key={option.value}
-                    style={isSelected && !isDisabled ? { backgroundColor: '#769036', borderColor: '#769036' } : undefined}
+                    style={isSelected && !isDisabled ? { backgroundColor: '#2C5439', borderColor: '#2C5439' } : undefined}
                   >
                     <span>{option.label}</span>
                     <input
@@ -340,7 +340,7 @@ export function SessionSetupForm({
                     themes.includes(option.value) ? 'text-white' : 'border-[#d5dfbb] bg-white text-slate-900'
                   }`}
                   key={option.value}
-                  style={themes.includes(option.value) ? { backgroundColor: '#769036', borderColor: '#769036' } : undefined}
+                  style={themes.includes(option.value) ? { backgroundColor: '#2C5439', borderColor: '#2C5439' } : undefined}
                 >
                   <span>{option.label}</span>
                   <input

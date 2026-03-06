@@ -115,7 +115,7 @@ export function ResetPasswordForm({ nextPath }: ResetPasswordFormProps) {
           <button
             className="rounded-md px-4 py-2 text-sm font-medium text-white disabled:opacity-60"
             disabled={isLoading || password.trim() === ''}
-            style={{ backgroundColor: isLoading ? '#91a488' : '#234812' }}
+            style={{ backgroundColor: isLoading ? '#96A99C' : '#2C5439' }}
             type="submit"
           >
             Save new password

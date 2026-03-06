@@ -23,6 +23,7 @@ Copy `.env.example` to `.env.local` and set:
 - `SENDGRID_API_KEY`: SendGrid API key used by `/api/translation-feedback` to email flagged translations
 - `FEEDBACK_EMAIL_FROM`: verified sender email in SendGrid
 - `FEEDBACK_EMAIL_TO`: destination inbox for translation reports (defaults to `cymru.cards.app@gmail.com` if unset)
+- `FEEDBACK_EMAIL_REPLY_TO`: optional reply-to inbox for translation reports (defaults to `FEEDBACK_EMAIL_TO` if unset)
 
 ## Local development
 1. Install dependencies:

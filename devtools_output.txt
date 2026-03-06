@@ -14,7 +14,7 @@ Invoke-WebRequest -UseBasicParsing -Uri "https://cymrucards.fly.dev/api/translat
   "accept-language"="en-GB,en;q=0.9,en-US;q=0.8,es;q=0.7"
   "origin"="https://cymrucards.fly.dev"
   "priority"="u=1, i"
-  "referer"="https://cymrucards.fly.dev/flashcards?duration=50&front=welsh&rarity=10&session=1772792192011&themes=mind%2Cfood_consumption&types=ADJ%2CNOUN%2CVERB"
+  "referer"="https://cymrucards.fly.dev/flashcards?duration=50&front=welsh&rarity=10&session=1772793331045&themes=mind%2Cfood_consumption&types=ADJ%2CNOUN%2CVERB"
   "sec-ch-ua"="`"Not:A-Brand`";v=`"99`", `"Microsoft Edge`";v=`"145`", `"Chromium`";v=`"145`""
   "sec-ch-ua-mobile"="?0"
   "sec-ch-ua-platform"="`"Windows`""
@@ -23,4 +23,4 @@ Invoke-WebRequest -UseBasicParsing -Uri "https://cymrucards.fly.dev/api/translat
   "sec-fetch-site"="same-origin"
 } `
 -ContentType "application/json" `
--Body "{`"english_1`":`"mother`",`"theme`":`"body_health`",`"welsh_lc`":`"mam`",`"word_id`":40016}"
+-Body "{`"english_1`":`"hope`",`"theme`":`"mind`",`"welsh_lc`":`"gobeithio`",`"word_id`":29636}"

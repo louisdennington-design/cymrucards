@@ -14,7 +14,7 @@ type CategoryBarChartProps = {
   totalsByFrequency: Record<FrequencyFilterOption, Record<CoreLinguisticTypeOption, number>>;
 };
 
-const BAR_COLORS = ['#234812', '#4f6a24', '#769036'];
+const BAR_COLORS = ['#2C5439', '#4f6a24', '#2C5439'];
 
 export function CategoryBarChart({ learnedCounts, seenCounts, totalsByFrequency }: CategoryBarChartProps) {
   const categories = [...CORE_TYPE_OPTIONS].sort((left, right) => left.label.localeCompare(right.label));

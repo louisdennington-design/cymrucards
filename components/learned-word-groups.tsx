@@ -84,7 +84,7 @@ export function LearnedWordGroups({ onReinstate, words }: LearnedWordGroupsProps
                           </div>
                           {onReinstate ? (
                             <button
-                              className="rounded-full border border-[#769036] px-3 py-2 text-xs font-semibold text-[#234812]"
+                              className="rounded-full border border-[#2C5439] px-3 py-2 text-xs font-semibold text-[#2C5439]"
                               disabled={pendingWordId === word.id}
                               onClick={() => void handleReinstate(word.id)}
                               type="button"

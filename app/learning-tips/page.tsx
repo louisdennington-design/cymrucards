@@ -3,7 +3,7 @@ export default function LearningTipsPage() {
     <main className="mx-auto flex min-h-screen w-full max-w-md flex-col gap-5 px-5 py-8">
       <section
         className="rounded-[2rem] border p-6 shadow-[0_28px_80px_rgba(26,67,46,0.16)] backdrop-blur"
-        style={{ backgroundColor: '#769036', borderColor: '#769036' }}
+        style={{ backgroundColor: '#2C5439', borderColor: '#2C5439' }}
       >
         <h1 className="text-lg font-semibold text-white">Learning tips</h1>
       </section>
@@ -36,7 +36,7 @@ export default function LearningTipsPage() {
 
       <section
         className="rounded-[2rem] border p-6 shadow-[0_28px_80px_rgba(26,67,46,0.16)] backdrop-blur"
-        style={{ backgroundColor: '#769036', borderColor: '#769036' }}
+        style={{ backgroundColor: '#2C5439', borderColor: '#2C5439' }}
       >
         <h2 className="text-lg font-semibold text-white">The Welsh Language</h2>
       </section>

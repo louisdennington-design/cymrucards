@@ -254,7 +254,7 @@ function renderWordCard(
 function renderStaticCard(card: DisplayCard, frontLanguage: FrontLanguage, isFlipped = false, onOpenFeedback?: () => void) {
   if (card.kind === 'fact') {
     return (
-      <div className="flashcard-card rounded-[2rem] border border-white/60 bg-[#234812] p-7 text-white shadow-[0_34px_70px_rgba(16,24,18,0.3)]">
+      <div className="flashcard-card rounded-[2rem] border border-white/60 bg-[#2C5439] p-7 text-white shadow-[0_34px_70px_rgba(16,24,18,0.3)]">
         <div className="fact-card-face flashcard-face">
           <p className="text-xs uppercase tracking-[0.24em] text-[#e8efcd]">Did you know...?</p>
           <p className="mt-6 text-center text-[0.93rem] font-semibold leading-tight hyphens-auto [overflow-wrap:anywhere]">{card.fact}</p>
@@ -310,6 +310,7 @@ export function FlashcardSession({
   const [completionHistory, setCompletionHistory] = useState<SessionHistoryPoint[]>([]);
   const [user, setUser] = useState<Pick<User, 'id'> | null>(initialUser);
   const [pendingSwipeDirection, setPendingSwipeDirection] = useState<SwipeDirection | null>(null);
+  const [unlockedLevel, setUnlockedLevel] = useState<ReturnType<typeof getCurrentLevel> | null>(null);
   const completionTriggeredRef = useRef(false);
   const dragStartX = useRef<number | null>(null);
   const keyboardSwipeHandlerRef = useRef<((event: KeyboardEvent) => void) | null>(null);
@@ -373,6 +374,14 @@ export function FlashcardSession({
 
   useEffect(() => {
     function handleOverlayKeyDown(event: KeyboardEvent) {
+      if (unlockedLevel) {
+        if (event.key === 'Escape' || event.key === 'Enter') {
+          event.preventDefault();
+          setUnlockedLevel(null);
+        }
+        return;
+      }
+
       if (showIntroOverlay) {
         if (event.key === 'Escape' || event.key === 'Enter') {
           event.preventDefault();
@@ -421,7 +430,7 @@ export function FlashcardSession({
       window.removeEventListener('keydown', handleOverlayKeyDown);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [modalState, showFeedbackPrompt, showIntroOverlay, showPhoneticAid]);
+  }, [modalState, showFeedbackPrompt, showIntroOverlay, showPhoneticAid, unlockedLevel]);
 
   useEffect(() => {
     if (!currentCard || readLocalFlag(INTRO_OVERLAY_KEY)) {
@@ -495,8 +504,11 @@ export function FlashcardSession({
       const activeUser = await resolveActiveUser();
 
       if (!activeUser) {
+        const previousHistory = readLocalSessionStats().sessionHistory;
         recordLocalSessionCompletion(reviewedCount);
-        setCompletionHistory(readLocalSessionStats().sessionHistory);
+        const nextHistory = readLocalSessionStats().sessionHistory;
+        setCompletionHistory(nextHistory);
+        maybeOpenLevelModal(previousHistory, nextHistory);
         return;
       }
 
@@ -511,14 +523,20 @@ export function FlashcardSession({
         },
         method: 'POST',
       });
-      const payload = (await response.json().catch(() => null)) as { error?: string; session_history?: SessionHistoryPoint[] } | null;
+      const payload = (await response.json().catch(() => null)) as {
+        error?: string;
+        previous_session_history?: SessionHistoryPoint[];
+        session_history?: SessionHistoryPoint[];
+      } | null;
 
       if (!response.ok) {
         throw new Error(payload?.error ?? 'Unable to finalize cloud session.');
       }
 
       if (Array.isArray(payload?.session_history)) {
+        const previousHistory = Array.isArray(payload?.previous_session_history) ? payload.previous_session_history : completionHistory;
         setCompletionHistory(payload.session_history);
+        maybeOpenLevelModal(previousHistory, payload.session_history);
       }
     }
 
@@ -528,6 +546,15 @@ export function FlashcardSession({
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isComplete, learnedCount, reviewedCount, user]);
+
+  function maybeOpenLevelModal(previousHistory: SessionHistoryPoint[], nextHistory: SessionHistoryPoint[]) {
+    const previousLevel = getCurrentLevel(previousHistory);
+    const nextLevel = getCurrentLevel(nextHistory);
+
+    if (nextLevel.name !== previousLevel.name) {
+      setUnlockedLevel(nextLevel);
+    }
+  }
 
   useEffect(() => {
     if (!exitingCard || exitingCard.isExiting) {
@@ -921,13 +948,17 @@ export function FlashcardSession({
         method: 'POST',
       });
 
-      const payload = (await response.json().catch(() => null)) as { error?: string } | null;
+      const payload = (await response.json().catch(() => null)) as { error?: string; message_id?: string | null; provider_status?: number } | null;
 
       if (!response.ok) {
         throw new Error(payload?.error ?? 'Unable to send feedback.');
       }
 
-      setFeedbackStatus('Translation query sent.');
+      setFeedbackStatus(
+        payload?.provider_status
+          ? `Translation query sent (provider status ${payload.provider_status}${payload.message_id ? `, id ${payload.message_id}` : ''}).`
+          : 'Translation query sent.',
+      );
       setShowFeedbackPrompt(false);
     } catch (error) {
       const message = getErrorMessage(error, 'Unable to send feedback.');
@@ -1055,7 +1086,7 @@ export function FlashcardSession({
         </div>
         {saveError ? <p className="mt-4 text-sm text-amber-700">{saveError}</p> : null}
         <div className="mt-5 flex gap-3">
-          <Link className="rounded-full px-4 py-2 text-sm font-semibold text-white" href="/flashcards" style={{ backgroundColor: '#234812' }}>
+          <Link className="rounded-full px-4 py-2 text-sm font-semibold text-white" href="/flashcards" style={{ backgroundColor: '#2C5439' }}>
             New session
           </Link>
         </div>
@@ -1099,7 +1130,7 @@ export function FlashcardSession({
             href="/flashcards"
           >
             <svg aria-hidden="true" className="h-5 w-5" fill="none" viewBox="0 0 24 24">
-              <path d="M15 5 8 12l7 7" stroke="#234812" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3.2" />
+              <path d="M15 5 8 12l7 7" stroke="#2C5439" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3.2" />
             </svg>
           </Link>
           <p className="pointer-events-none absolute left-1/2 -translate-x-1/2 text-center text-sm font-medium text-slate-700">
@@ -1109,7 +1140,7 @@ export function FlashcardSession({
             <button
               className={`rounded-full px-3 py-1.5 text-xs font-semibold ${frontLanguage === 'welsh' ? 'text-white' : 'text-slate-600'}`}
               onClick={() => setFrontLanguage('welsh')}
-              style={frontLanguage === 'welsh' ? { backgroundColor: '#769036' } : undefined}
+              style={frontLanguage === 'welsh' ? { backgroundColor: '#2C5439' } : undefined}
               type="button"
             >
               Welsh
@@ -1117,7 +1148,7 @@ export function FlashcardSession({
             <button
               className={`rounded-full px-3 py-1.5 text-xs font-semibold ${frontLanguage === 'english' ? 'text-white' : 'text-slate-600'}`}
               onClick={() => setFrontLanguage('english')}
-              style={frontLanguage === 'english' ? { backgroundColor: '#769036' } : undefined}
+              style={frontLanguage === 'english' ? { backgroundColor: '#2C5439' } : undefined}
               type="button"
             >
               English
@@ -1171,7 +1202,7 @@ export function FlashcardSession({
               className="rounded-full px-4 py-3 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(20,40,22,0.22)]"
               data-card-control="true"
               onClick={requestMarkLearned}
-              style={{ backgroundColor: '#234812' }}
+              style={{ backgroundColor: '#2C5439' }}
               type="button"
             >
               Stop seeing this card
@@ -1182,7 +1213,7 @@ export function FlashcardSession({
               }`}
               data-card-control="true"
               onClick={requestToggleStack}
-              style={isInStack ? { backgroundColor: '#769036', borderColor: '#769036' } : { borderColor: '#d5dfbb' }}
+              style={isInStack ? { backgroundColor: '#2C5439', borderColor: '#2C5439' } : { borderColor: '#d5dfbb' }}
               type="button"
             >
               {isInStack ? 'Remove from stack' : 'Add to my stack'}
@@ -1194,7 +1225,7 @@ export function FlashcardSession({
               }`}
               data-card-control="true"
               onClick={togglePhoneticAid}
-              style={showPhoneticAid ? { backgroundColor: '#769036', borderColor: '#769036' } : { borderColor: '#d5dfbb' }}
+              style={showPhoneticAid ? { backgroundColor: '#2C5439', borderColor: '#2C5439' } : { borderColor: '#d5dfbb' }}
               type="button"
             >
               Aa
@@ -1234,7 +1265,7 @@ export function FlashcardSession({
             <button
               className="mt-6 w-full rounded-full px-4 py-3 text-sm font-semibold text-white"
               onClick={closeIntroOverlay}
-              style={{ backgroundColor: '#234812' }}
+              style={{ backgroundColor: '#2C5439' }}
               type="button"
             >
               OK
@@ -1278,7 +1309,7 @@ export function FlashcardSession({
               <button
                 className="flex-1 rounded-full px-4 py-3 text-sm font-semibold text-white"
                 onClick={confirmModalAction}
-                style={{ backgroundColor: '#234812' }}
+                style={{ backgroundColor: '#2C5439' }}
                 type="button"
               >
                 OK
@@ -1351,12 +1382,43 @@ export function FlashcardSession({
               <button
                 className="flex-1 rounded-full px-4 py-3 text-sm font-semibold text-white"
                 onClick={() => void submitTranslationFeedback()}
-                style={{ backgroundColor: '#234812' }}
+                style={{ backgroundColor: '#2C5439' }}
                 type="button"
               >
                 Send
               </button>
             </div>
+          </div>
+        </div>
+      ) : null}
+
+      {unlockedLevel ? (
+        <div className="modal-backdrop" onClick={() => setUnlockedLevel(null)}>
+          <div
+            className="w-full max-w-sm rounded-[2rem] border border-white/50 bg-white p-6 shadow-[0_28px_80px_rgba(15,23,42,0.22)]"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <h2 className="text-xl font-semibold text-slate-900">
+              <strong>Gwaith gwych - you&apos;ve unlocked a new badge!</strong>
+            </h2>
+            <div className="mt-5 flex justify-center">
+              <div className="relative h-24 w-24">
+                <Image alt={unlockedLevel.name} className="object-contain" fill sizes="96px" src={unlockedLevel.glyph} />
+              </div>
+            </div>
+            <p className="mt-4 text-center text-sm leading-6 text-slate-700">
+              <span className="font-semibold">{unlockedLevel.name}</span>
+              {' - '}
+              {unlockedLevel.description}
+            </p>
+            <button
+              className="mt-6 w-full rounded-full px-4 py-3 text-sm font-semibold text-white"
+              onClick={() => setUnlockedLevel(null)}
+              style={{ backgroundColor: '#2C5439' }}
+              type="button"
+            >
+              OK
+            </button>
           </div>
         </div>
       ) : null}

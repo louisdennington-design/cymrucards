@@ -25,6 +25,7 @@ async function sendFeedbackEmail(body: Required<Pick<FeedbackBody, 'english_1' |
   const sendGridApiKey = process.env.SENDGRID_API_KEY?.trim();
   const fromEmail = process.env.FEEDBACK_EMAIL_FROM?.trim();
   const toEmail = process.env.FEEDBACK_EMAIL_TO?.trim() || 'cymru.cards.app@gmail.com';
+  const replyToEmail = process.env.FEEDBACK_EMAIL_REPLY_TO?.trim() || toEmail;
 
   if (!sendGridApiKey || !fromEmail) {
     throw new Error('Feedback email delivery is not configured. Set SENDGRID_API_KEY and FEEDBACK_EMAIL_FROM.');
@@ -35,6 +36,7 @@ async function sendFeedbackEmail(body: Required<Pick<FeedbackBody, 'english_1' |
       content: [{ type: 'text/plain', value: buildFeedbackEmailText(body, userId) }],
       from: { email: fromEmail },
       personalizations: [{ to: [{ email: toEmail }] }],
+      reply_to: { email: replyToEmail },
       subject: `CymruCards translation feedback (word_id ${body.word_id})`,
     }),
     headers: {
@@ -49,7 +51,10 @@ async function sendFeedbackEmail(body: Required<Pick<FeedbackBody, 'english_1' |
     throw new Error(`Failed to send feedback email: ${sendGridError || response.statusText}`);
   }
 
-  return response.headers.get('x-message-id');
+  return {
+    messageId: response.headers.get('x-message-id'),
+    status: response.status,
+  };
 }
 
 export async function POST(request: Request) {
@@ -78,13 +83,14 @@ export async function POST(request: Request) {
   }
 
   try {
-    const messageId = await sendFeedbackEmail(payload, user?.id ?? null);
+    const emailResult = await sendFeedbackEmail(payload, user?.id ?? null);
     console.info('translation-feedback email sent', {
-      message_id: messageId,
+      message_id: emailResult.messageId,
+      provider_status: emailResult.status,
       to: process.env.FEEDBACK_EMAIL_TO?.trim() || 'cymru.cards.app@gmail.com',
       word_id: payload.word_id,
     });
-    return NextResponse.json({ message_id: messageId, ok: true });
+    return NextResponse.json({ message_id: emailResult.messageId, ok: true, provider_status: emailResult.status });
   } catch (emailError) {
     const message =
       emailError instanceof Error

@@ -27,7 +27,7 @@ export function LevelCard({ history }: LevelCardProps) {
         <div className="mt-3 h-3 overflow-hidden rounded-full bg-[#dfe8c6]">
           <div
             className="h-full rounded-full transition-[width] duration-300"
-            style={{ backgroundColor: '#769036', width: `${progressPercentage}%` }}
+            style={{ backgroundColor: '#2C5439', width: `${progressPercentage}%` }}
           />
         </div>
         {nextLevel ? null : <p className="mt-2 text-sm text-slate-600">{progressLabel}</p>}

@@ -1,0 +1,115 @@
+Email Details
+Timezone
+UTC+00:00 - UTC
+Message ID
+qBPAvMqOQyaH68_B8fGkIg.recvd-6cfbc69475-74lcb-1-69AAADF8-29.0
+To
+cymru.cards.app@gmail.com
+Account Username
+cymru.cards.app@gmail.com
+Subject
+CymruCards translation feedback (word_id 29636)
+From
+cymru.cards.app@gmail.com
+Sending IP address
+149.72.120.130
+Event History
+Processed
+
+3/6/2026 10:35:36
+Delivered
+
+Unengaged
+
+End to end time: Less than a minute
+Expand all events
+Latest event time	Event	Details
+3/6/2026 10:35:36	
+Received
+
+View details
+3/6/2026 10:35:36	
+Processed
+
+View details
+3/6/2026 10:35:37	
+Deferred (1)
+
+3/6/2026 10:35:47	
+Delivered
+
+View details
+
+
+
+Received event
+{
+  "event": "received",
+  "recv_msgid": "qBPAvMqOQyaH68_B8fGkIg",
+  "sg_event_id": "cmVjZWl2ZWQtNjA2MjE4MjYtMXBmaFVObThURnVOWDVRb1pBX0lUUQ",
+  "timestamp": "2026-03-06T10:35:36.000Z",
+  "api_key_id": "DeksweZmTBeshPSC2wnnEA",
+  "api_version": "3",
+  "client_ip": "205.234.240.58",
+  "protocol": "HTTP",
+  "recipient_count": 1,
+  "reseller_id": "60621826",
+  "size": 802,
+  "useragent": "node",
+  "v3_payload_details": {
+    "content_bytes": 195,
+    "attachments_bytes": 0,
+    "recipient_count": 1,
+    "sender_count": 1,
+    "substitution_bytes": 0,
+    "substitution_count": 0,
+    "customarg_count": 0,
+    "customarg_largest_bytes": 2,
+    "personalization_count": 1,
+    "text/plain": 1
+  }
+}
+
+
+
+Processed event
+{
+  "event": "processed",
+  "email": "cymru.cards.app@gmail.com",
+  "sg_message_id": "qBPAvMqOQyaH68_B8fGkIg.recvd-6cfbc69475-74lcb-1-69AAADF8-29.0",
+  "sg_event_id": "cHJvY2Vzc2VkLTYwNjIxODI2LXFCUEF2TXFPUXlhSDY4X0I4ZkdrSWctMA",
+  "timestamp": "2026-03-06T10:35:36.000Z",
+  "smtp-id": "<qBPAvMqOQyaH68_B8fGkIg@geopod-ismtpd-0>"
+}
+
+
+Deferred event
+{
+  "event": "deferred",
+  "email": "cymru.cards.app@gmail.com",
+  "sg_message_id": "qBPAvMqOQyaH68_B8fGkIg.recvd-6cfbc69475-74lcb-1-69AAADF8-29.0",
+  "sg_event_id": "ZGVmZXJyZWQtMC02MDYyMTgyNi1xQlBBdk1xT1F5YUg2OF9COGZHa0lnLTA",
+  "timestamp": "2026-03-06T10:35:37.000Z",
+  "smtp-id": "<qBPAvMqOQyaH68_B8fGkIg@geopod-ismtpd-0>",
+  "response": "421 4.7.32 Your email has been rate limited because the From: header (RFC5322) in this message isn't aligned with either the authenticated SPF or DKIM organizational domain. To learn more about DMARC alignment, visit https://support.google.com/a?p=dmarc-alignment To learn more about Gmail requirements for bulk senders, visit https://support.google.com/a?p=sender-guidelines. d75a77b69052e-508f66fc2aasi9452551cf.320 - gsmtp",
+  "attempt": 0,
+  "ip": "149.72.120.130",
+  "tls": 1,
+  "domain": "gmail.com",
+  "from": "cymru.cards.app@gmail.com"
+}
+
+
+
+Delivered event
+{
+  "event": "delivered",
+  "email": "cymru.cards.app@gmail.com",
+  "sg_message_id": "qBPAvMqOQyaH68_B8fGkIg.recvd-6cfbc69475-74lcb-1-69AAADF8-29.0",
+  "sg_event_id": "ZGVsaXZlcmVkLTEtNjA2MjE4MjYtcUJQQXZNcU9ReWFINjhfQjhmR2tJZy0w",
+  "timestamp": "2026-03-06T10:35:47.000Z",
+  "smtp-id": "<qBPAvMqOQyaH68_B8fGkIg@geopod-ismtpd-0>",
+  "ip": "149.72.154.232",
+  "response": "250 2.0.0 OK  1772793347 af79cd13be357-8cd6f5818easi87277985a.346 - gsmtp",
+  "tls": 1
+}
