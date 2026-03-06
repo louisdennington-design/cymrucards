@@ -48,6 +48,8 @@ async function sendFeedbackEmail(body: Required<Pick<FeedbackBody, 'english_1' |
     const sendGridError = await response.text().catch(() => '');
     throw new Error(`Failed to send feedback email: ${sendGridError || response.statusText}`);
   }
+
+  return response.headers.get('x-message-id');
 }
 
 export async function POST(request: Request) {
@@ -71,18 +73,24 @@ export async function POST(request: Request) {
   const { error } = await supabaseServer.schema('public').from('translation_feedback').insert({ ...payload, user_id: user?.id ?? null });
 
   if (error) {
+    console.error('translation-feedback db insert failed', { error: error.message, word_id: payload.word_id });
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 
   try {
-    await sendFeedbackEmail(payload, user?.id ?? null);
+    const messageId = await sendFeedbackEmail(payload, user?.id ?? null);
+    console.info('translation-feedback email sent', {
+      message_id: messageId,
+      to: process.env.FEEDBACK_EMAIL_TO?.trim() || 'cymru.cards.app@gmail.com',
+      word_id: payload.word_id,
+    });
+    return NextResponse.json({ message_id: messageId, ok: true });
   } catch (emailError) {
     const message =
       emailError instanceof Error
         ? emailError.message
         : 'Failed to send feedback email.';
+    console.error('translation-feedback email failed', { error: message, word_id: payload.word_id });
     return NextResponse.json({ error: message }, { status: 500 });
   }
-
-  return NextResponse.json({ ok: true });
 }
