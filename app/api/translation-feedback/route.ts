@@ -84,7 +84,16 @@ export async function POST(request: Request) {
     word_id: body.word_id,
   };
 
-  const { error } = await supabaseServer.schema('public').from('translation_feedback').insert({ ...payload, user_id: user?.id ?? null });
+  const { error } = await supabaseServer
+    .schema('public')
+    .from('translation_feedback')
+    .insert({
+      english_1: payload.english_1,
+      theme: payload.theme,
+      user_id: user?.id ?? null,
+      welsh_lc: payload.welsh_lc,
+      word_id: payload.word_id,
+    });
 
   if (error) {
     console.error('translation-feedback db insert failed', { error: error.message, word_id: payload.word_id });

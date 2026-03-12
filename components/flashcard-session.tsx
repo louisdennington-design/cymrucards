@@ -179,6 +179,10 @@ function isInteractiveCardControl(target: EventTarget | null) {
   return target instanceof HTMLElement && target.closest('[data-card-control="true"]') !== null;
 }
 
+function stopKeyboardPropagation(event: React.KeyboardEvent<HTMLElement>) {
+  event.stopPropagation();
+}
+
 function getErrorMessage(error: unknown, fallback: string) {
   if (error instanceof Error) {
     return error.message;
@@ -1438,7 +1442,10 @@ export function FlashcardSession({
 
       {showFeedbackPrompt && currentCard?.kind === 'word' ? (
         <div className="modal-backdrop">
-          <div className="w-full max-w-sm rounded-[2rem] border border-white/50 bg-white p-6 shadow-[0_28px_80px_rgba(15,23,42,0.22)]">
+          <div
+            className="w-full max-w-sm rounded-[2rem] border border-white/50 bg-white p-6 shadow-[0_28px_80px_rgba(15,23,42,0.22)]"
+            onKeyDown={stopKeyboardPropagation}
+          >
             <h2 className="text-xl font-semibold text-slate-900">Query this translation...</h2>
             <p className="mt-3 text-sm leading-6 text-slate-700">
               If you think this translation is incorrect, you can flag it to the app&apos;s developer.
@@ -1446,6 +1453,7 @@ export function FlashcardSession({
             <textarea
               className="mt-4 min-h-28 w-full rounded-2xl border border-slate-300 px-4 py-3 text-sm text-slate-900"
               onChange={(event) => setFeedbackText(event.target.value)}
+              onKeyDown={stopKeyboardPropagation}
               placeholder="Add any detail you want to send with this report."
               value={feedbackText}
             />
