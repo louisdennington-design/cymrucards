@@ -186,6 +186,29 @@ The Android shell is configured to load the hosted URL from `CAPACITOR_SERVER_UR
 ## Mobile deployment
 See [MOBILE_BUILD.md](/workspaces/welsh_language_practice/MOBILE_BUILD.md) for the current Android deployment notes and environment URL requirements.
 
+## PWA support
+The app now includes a conservative Progressive Web App layer for Android Chrome installability without changing the current Fly deployment model.
+
+Added files:
+- `app/manifest.ts`: web app manifest with standalone display mode, theme colors, and install metadata
+- `app/pwa-icons/[size]/route.tsx`: generated PNG install icons at `192x192` and `512x512`
+- `app/apple-icon.tsx`: Apple touch icon
+- `public/sw.js`: minimal service worker with safe caching for static assets and network-first navigation fallback
+- `components/pwa-registration.tsx`: client-side service worker registration
+
+Wiring:
+- `app/layout.tsx` now exposes the manifest, theme color, Apple web app metadata, and registers the service worker
+
+Caching strategy:
+- Static assets such as `/_next/static`, `/images`, `/glyphs`, manifest, and PWA icons use a conservative cache-first plus background refresh approach
+- Page navigations are network-first and only fall back to the most recently cached shell if offline
+- API requests are never cached by the service worker
+
+Follow-up steps:
+1. Replace the generated `CC` monogram icons with final branded PNG assets if needed
+2. If you want polished store-grade assets later, generate dedicated `192x192`, `512x512`, and maskable icon artwork instead of the current generated icons
+3. After deployment, test installability in Android Chrome using DevTools Lighthouse or Chrome's install prompt
+
 ## Validation
 Run the standard checks:
 

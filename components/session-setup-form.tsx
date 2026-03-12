@@ -145,6 +145,12 @@ export function SessionSetupForm({
     });
   }
 
+  function toggleAllThemes() {
+    setThemes((currentThemes) =>
+      currentThemes.length === THEME_OPTIONS.length ? [] : THEME_OPTIONS.map((option) => option.value),
+    );
+  }
+
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setPendingNavigation('start');
@@ -370,7 +376,16 @@ export function SessionSetupForm({
           </fieldset>
 
           <fieldset className="space-y-2">
-            <legend className="text-sm font-medium text-slate-900">Theme</legend>
+            <div className="flex items-center justify-between gap-3">
+              <legend className="text-sm font-medium text-slate-900">Theme</legend>
+              <button
+                className="rounded-full border border-[#d5dfbb] bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-sm"
+                onClick={toggleAllThemes}
+                type="button"
+              >
+                Select all / none
+              </button>
+            </div>
             <div className="grid grid-cols-2 gap-2">
               {THEME_OPTIONS.map((option) => (
                 <label

@@ -1,12 +1,23 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Suspense } from 'react';
 import { AppShell } from '@/components/app-shell';
 import { GoogleAnalytics } from '@/components/google-analytics';
+import { PwaRegistration } from '@/components/pwa-registration';
 import './globals.css';
 
 export const metadata: Metadata = {
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'CymruCards',
+  },
   title: 'CymruCards',
   description: 'Mobile-first Welsh vocabulary spaced repetition app',
+  manifest: '/manifest.webmanifest',
+};
+
+export const viewport: Viewport = {
+  themeColor: '#2C5439',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -27,6 +38,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Suspense fallback={null}>
           <GoogleAnalytics measurementId={gaMeasurementId} />
         </Suspense>
+        <PwaRegistration />
         <AppShell>{children}</AppShell>
       </body>
     </html>
