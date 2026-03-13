@@ -142,11 +142,11 @@ export function SignedInStatsPanel({
 
       <LevelCard history={sessionHistory} />
 
+      <StackWordGroups onRemove={handleRemoveFromStack} words={stackWords} />
+
       <CategoryBarChart learnedCounts={learnedCounts} seenCounts={seenCounts} totalsByFrequency={totalsByFrequency} />
 
       <SessionHistoryGraph history={sessionHistory} />
-
-      <StackWordGroups onRemove={handleRemoveFromStack} words={stackWords} />
 
       <LearnedWordGroups onReinstate={handleReinstate} words={learnedWords} />
       {saveError ? <p className="text-sm text-amber-800">{saveError}</p> : null}

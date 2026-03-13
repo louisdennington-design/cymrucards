@@ -69,10 +69,18 @@ export default async function AboutPage() {
         className="rounded-[2rem] border p-6 shadow-[0_28px_80px_rgba(26,67,46,0.16)] backdrop-blur"
         style={{ backgroundColor: '#2C5439', borderColor: '#2C5439' }}
       >
-        <h1 className="text-lg font-semibold text-white">Licences</h1>
+        <h1 className="text-lg font-semibold text-white">About</h1>
       </section>
       <section className="rounded-[2rem] border border-white/50 bg-white/84 p-5 shadow-[0_22px_50px_rgba(26,67,46,0.12)] backdrop-blur">
-        <div className="space-y-4">{contentBlocks.map((block) => renderBlock(block))}</div>
+        <p className="text-sm leading-6 text-slate-700">
+          This app was developed by Louis Dennington, a clinical psychologist with an interest in the Welsh language:{' '}
+          <a className="underline underline-offset-2" href="https://www.louisdennington.co.uk" rel="noreferrer" target="_blank">
+            https://www.louisdennington.co.uk
+          </a>
+        </p>
+        <Link className="mt-4 inline-flex text-sm font-medium text-slate-700 underline underline-offset-2" href="/settings">
+          Open diagnostics
+        </Link>
       </section>
 
       <section
@@ -110,18 +118,10 @@ export default async function AboutPage() {
         className="rounded-[2rem] border p-6 shadow-[0_28px_80px_rgba(26,67,46,0.16)] backdrop-blur"
         style={{ backgroundColor: '#2C5439', borderColor: '#2C5439' }}
       >
-        <h2 className="text-lg font-semibold text-white">About</h2>
+        <h2 className="text-lg font-semibold text-white">Licences</h2>
       </section>
       <section className="rounded-[2rem] border border-white/50 bg-white/84 p-5 shadow-[0_22px_50px_rgba(26,67,46,0.12)] backdrop-blur">
-        <p className="text-sm leading-6 text-slate-700">
-          This app was developed by Louis Dennington, a clinical psychologist with an interest in the Welsh language:{' '}
-          <a className="underline underline-offset-2" href="https://www.louisdennington.co.uk" rel="noreferrer" target="_blank">
-            https://www.louisdennington.co.uk
-          </a>
-        </p>
-        <Link className="mt-4 inline-flex text-sm font-medium text-slate-700 underline underline-offset-2" href="/settings">
-          Open diagnostics
-        </Link>
+        <div className="space-y-4">{contentBlocks.map((block) => renderBlock(block))}</div>
       </section>
     </main>
   );

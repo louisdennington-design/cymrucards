@@ -1064,6 +1064,12 @@ export function FlashcardSession({
       return;
     }
 
+    if (event.key.toLowerCase() === 'a') {
+      event.preventDefault();
+      requestToggleStack();
+      return;
+    }
+
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
       handleCardTap();
@@ -1178,6 +1184,12 @@ export function FlashcardSession({
     if (event.key === 'ArrowRight') {
       event.preventDefault();
       handleSessionSwipe('right');
+      return;
+    }
+
+    if (event.key.toLowerCase() === 'a') {
+      event.preventDefault();
+      requestToggleStack();
       return;
     }
 
@@ -1336,6 +1348,9 @@ export function FlashcardSession({
                 <div className="intro-demo-card">
                   <div className="intro-demo-swing-right">Right</div>
                 </div>
+              </div>
+              <div className="space-y-2">
+                <p className="text-sm leading-6 text-slate-700">Press A on the keyboard to add the current card to My stack or remove it from My stack.</p>
               </div>
             </div>
             <button

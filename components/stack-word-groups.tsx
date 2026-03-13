@@ -55,7 +55,9 @@ export function StackWordGroups({ onRemove, words }: StackWordGroupsProps) {
 
   return (
     <section className="rounded-[2rem] border border-white/50 bg-white/84 p-5 shadow-[0_22px_50px_rgba(26,67,46,0.12)] backdrop-blur">
-      <h2 className="text-lg font-semibold text-slate-900">My stack</h2>
+      <h2 className="text-lg text-slate-900">
+        <span className="font-semibold">My stack:</span> <span className="font-normal">Cards I&apos;m learning</span>
+      </h2>
       {groupedWords.length === 0 ? (
         <p className="mt-4 text-sm leading-6 text-slate-600">You have not added any cards to your stack yet.</p>
       ) : (

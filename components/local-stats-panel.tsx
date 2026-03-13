@@ -72,11 +72,11 @@ export function LocalStatsPanel({ totalsByFrequency }: LocalStatsPanelProps) {
 
       <LevelCard history={stats.sessionHistory} />
 
+      <StackWordGroups onRemove={handleRemoveFromStack} words={stackWords} />
+
       <CategoryBarChart learnedCounts={learnedCounts} seenCounts={seenCounts} totalsByFrequency={totalsByFrequency} />
 
       <SessionHistoryGraph history={stats.sessionHistory} requiresLogin />
-
-      <StackWordGroups onRemove={handleRemoveFromStack} words={stackWords} />
 
       <LearnedWordGroups onReinstate={handleReinstate} words={stats.learnedWords} />
     </div>

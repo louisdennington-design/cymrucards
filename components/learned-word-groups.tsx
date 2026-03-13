@@ -55,7 +55,7 @@ export function LearnedWordGroups({ onReinstate, words }: LearnedWordGroupsProps
 
   return (
     <section className="rounded-[2rem] border border-white/50 bg-white/84 p-5 shadow-[0_22px_50px_rgba(26,67,46,0.12)] backdrop-blur">
-      <h2 className="text-lg font-semibold text-slate-900">Removed cards</h2>
+      <h2 className="text-lg font-semibold text-slate-900">Words I&apos;ve learned</h2>
       {groupedWords.length === 0 ? (
         <p className="mt-4 text-sm leading-6 text-slate-600">No cards have been marked as learned yet.</p>
       ) : (
